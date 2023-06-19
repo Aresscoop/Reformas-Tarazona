@@ -1,11 +1,11 @@
 <script>
-import { Carousel, Slide } from "vue-carousel";
 import {
-  UserIcon,
-  MailIcon,
-  KeyIcon,
   ArrowUpIcon,
-  HelpCircleIcon,
+  ArrowRightIcon,
+  FacebookIcon,
+  InstagramIcon,
+  TwitterIcon,
+  LinkedinIcon,
 } from "vue-feather-icons";
 
 import Navbar from "@/components/navbar";
@@ -13,60 +13,119 @@ import Switcher from "@/components/switcher";
 import Footer from "@/components/footer";
 
 /**
- * Index-1
+ * Index-seo-agency component
  */
 export default {
   components: {
     Navbar,
     Switcher,
-    Carousel,
-    Slide,
-    UserIcon,
-    MailIcon,
-    KeyIcon,
-    ArrowUpIcon,
     Footer,
-    HelpCircleIcon,
+    ArrowUpIcon,
+    ArrowRightIcon,
+    FacebookIcon,
+    InstagramIcon,
+    TwitterIcon,
+    LinkedinIcon,
   },
-  methods: {},
+  data() {
+    return {
+      list: [
+        {
+          image: "images/construction/o1.jpg",
+          title: "Iphone mockup",
+          type: "offices",
+          category: "offices",
+        },
+        {
+          image: "images/construction/b1.jpg",
+          title: "Mockup Collection",
+          type: "Mockup",
+          category: "buildings",
+        },
+        {
+          image: "images/construction/r1.jpg",
+          title: "Abstract images",
+          type: "Abstract",
+          category: "roads",
+        },
+        {
+          image: "images/construction/b2.jpg",
+          title: "Yellow bg with Books",
+          type: "Books",
+          category: "buildings",
+        },
+        {
+          image: "images/construction/r2.jpg",
+          title: "Company V-card",
+          type: "V-card",
+          category: "roads",
+        },
+        {
+          image: "images/construction/o2.jpg",
+          title: "Mockup box with paints",
+          type: "Photography",
+          category: "offices",
+        },
+      ],
+      filterCategory: "all",
+      index: 0,
+    };
+  },
+  mounted() {
+    document
+      .getElementById("color-opt")
+      .setAttribute("href", "./css/colors/yellow.css");
+  },
+  destroyed() {
+    document
+      .getElementById("color-opt")
+      .setAttribute("href", "./css/colors/default.css");
+  },
+  computed: {
+    filteredData: function () {
+      if (this.filterCategory === "all") {
+        return this.list;
+      } else {
+        return this.list.filter((x) => x.category === this.filterCategory);
+      }
+    },
+  },
+  methods: {
+    updateFilter(filterName) {
+      this.filterCategory = filterName;
+    },
+  },
 };
 </script>
 
 <template>
   <div>
-    <Navbar />
+    <Navbar :nav-light="true" />
+
     <!-- Hero Start -->
-    <section class="bg-half-170 d-table w-100" id="home">
+    <section
+      class="bg-half-260 d-table w-100"
+      style="background: url('images/construction/bg.jpg') center center"
+    >
+      <div class="bg-overlay" style="opacity: 0.65"></div>
       <div class="container">
-        <div class="row mt-5 align-items-center">
-          <div class="col-lg-7 col-md-7">
+        <div class="row mt-5 mt-md-4">
+          <div class="col-12">
             <div class="title-heading">
-              <h1 class="heading mb-3">
-                Our Creativity Is Your <span class="text-primary">Success</span>
-              </h1>
-              <p class="para-desc text-muted">
+              <h4 class="display-4 mb-4 font-weight-bold text-white title-dark">
+                Start building <br />
+                your dream home
+              </h4>
+              <p class="para-desc text-white-50">
                 Launch your campaign and benefit from our expertise on designing
                 and managing conversion centered bootstrap4 html page.
               </p>
-              <div class="mt-4">
-                <router-link
-                  to="/page-contact-one"
-                  class="btn btn-primary mt-2 mr-2"
-                  ><i class="mdi mdi-email"></i> Get Started</router-link
-                >
-                <router-link
-                  to="/documentation"
-                  class="btn btn-outline-primary mt-2"
-                  ><i class="mdi mdi-book-outline"></i>
-                  Documentation</router-link
+              <div class="mt-4 pt-2">
+                <a href="javascript:void(0)" class="btn btn-primary"
+                  >Get Started</a
                 >
               </div>
             </div>
-          </div>
-          <!--end col-->
-
-          <div class="col-lg-5 col-md-5 mt-4 pt-2 mt-sm-0 pt-sm-0">
-            <img src="images/illustrator/Startup_SVG.svg" alt="" />
           </div>
           <!--end col-->
         </div>
@@ -77,61 +136,114 @@ export default {
     <!--end section-->
     <!-- Hero End -->
 
-    <!-- Partners start -->
-    <section class="py-4 border-bottom border-top">
+    <section class="section bg-light">
       <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-2 col-md-2 col-6 text-center py-4">
-            <img
-              src="images/client/amazon.svg"
-              class="avatar avatar-ex-sm"
-              alt=""
-            />
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="features-absolute rounded bg-white shadow">
+              <div class="row">
+                <div class="col-lg-8 col-md-12 my-4">
+                  <div class="row">
+                    <div class="col-md-6 col-12">
+                      <div class="media features p-4">
+                        <div
+                          class="icon text-center rounded-circle text-primary mr-3 mt-2"
+                        >
+                          <i
+                            class="uil uil-ruler-combined align-middle h4 mb-0"
+                          ></i>
+                        </div>
+                        <div class="media-body">
+                          <h4 class="title">Project Planning</h4>
+                          <p class="text-muted para mb-0">
+                            Composed in a pseudo-Latin language which more
+                            corresponds.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <!--end col-->
+
+                    <div class="col-md-6 col-12">
+                      <div class="media features p-4">
+                        <div
+                          class="icon text-center rounded-circle text-primary mr-3 mt-2"
+                        >
+                          <i
+                            class="uil uil-constructor align-middle h4 mb-0"
+                          ></i>
+                        </div>
+                        <div class="media-body">
+                          <h4 class="title">Qualified Specialists</h4>
+                          <p class="text-muted para mb-0">
+                            Composed in a pseudo-Latin language which more
+                            corresponds.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <!--end col-->
+
+                    <div class="col-md-6 col-12">
+                      <div class="media features p-4">
+                        <div
+                          class="icon text-center rounded-circle text-primary mr-3 mt-2"
+                        >
+                          <i class="uil uil-no-entry align-middle h4 mb-0"></i>
+                        </div>
+                        <div class="media-body">
+                          <h4 class="title">Constant Maintenance</h4>
+                          <p class="text-muted para mb-0">
+                            Composed in a pseudo-Latin language which more
+                            corresponds.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <!--end col-->
+
+                    <div class="col-md-6 col-12">
+                      <div class="media features p-4">
+                        <div
+                          class="icon text-center rounded-circle text-primary mr-3 mt-2"
+                        >
+                          <i class="uil uil-cog align-middle h4 mb-0"></i>
+                        </div>
+                        <div class="media-body">
+                          <h4 class="title">Warranty Service</h4>
+                          <p class="text-muted para mb-0">
+                            Composed in a pseudo-Latin language which more
+                            corresponds.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <!--end col-->
+                  </div>
+                  <!--end row-->
+                </div>
+                <!--end col-->
+
+                <div class="col-lg-4 d-none d-lg-block position-relative">
+                  <img
+                    src="images/construction/serveices.png"
+                    class="img-fluid mx-auto d-block construction-img"
+                    alt=""
+                  />
+                </div>
+                <!--end col-->
+              </div>
+              <!--end row-->
+            </div>
           </div>
           <!--end col-->
 
-          <div class="col-lg-2 col-md-2 col-6 text-center py-4">
-            <img
-              src="images/client/google.svg"
-              class="avatar avatar-ex-sm"
-              alt=""
-            />
-          </div>
-          <!--end col-->
-
-          <div class="col-lg-2 col-md-2 col-6 text-center py-4">
-            <img
-              src="images/client/lenovo.svg"
-              class="avatar avatar-ex-sm"
-              alt=""
-            />
-          </div>
-          <!--end col-->
-
-          <div class="col-lg-2 col-md-2 col-6 text-center py-4">
-            <img
-              src="images/client/paypal.svg"
-              class="avatar avatar-ex-sm"
-              alt=""
-            />
-          </div>
-          <!--end col-->
-
-          <div class="col-lg-2 col-md-2 col-6 text-center py-4">
-            <img
-              src="images/client/shopify.svg"
-              class="avatar avatar-ex-sm"
-              alt=""
-            />
-          </div>
-          <!--end col-->
-
-          <div class="col-lg-2 col-md-2 col-6 text-center py-4">
-            <img
-              src="images/client/spotify.svg"
-              class="avatar avatar-ex-sm"
-              alt=""
-            />
+          <div class="col-12 mt-4 pt-2 text-center">
+            <p class="text-muted mb-0">
+              Our list of services does not end here.
+              <a href="javascript:void(0)" class="text-primary h6">Click here</a
+              >, and We’ll come up with more solution for you!
+            </p>
           </div>
           <!--end col-->
         </div>
@@ -140,61 +252,76 @@ export default {
       <!--end container-->
     </section>
     <!--end section-->
-    <!-- Partners End -->
 
-    <!-- How It Work Start -->
-    <section class="section bg-light border-bottom">
+    <section class="section">
       <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-12 text-center">
-            <div class="section-title mb-4 pb-2">
-              <h4 class="title mb-4">How It Work ?</h4>
-              <p class="text-muted para-desc mb-0 mx-auto">
-                Start working with
-                <span class="text-primary font-weight-bold">Landrick</span> that
-                can provide everything you need to generate awareness, drive
-                traffic, connect.
-              </p>
+        <div class="row align-items-center">
+          <div class="col-lg-5 col-md-6 col-12">
+            <div class="position-relative">
+              <img
+                src="images/construction/about.jpg"
+                class="rounded img-fluid mx-auto d-block"
+                alt=""
+              />
+              <div class="play-icon">
+                <a
+                  href="javascript: void(0);"
+                  v-b-modal.modal-1
+                  class="play-btn video-play-icon"
+                >
+                  <i
+                    class="mdi mdi-play text-primary rounded-circle bg-white shadow"
+                  ></i>
+                </a>
+                <b-modal
+                  id="modal-1"
+                  hide-footer
+                  size="lg"
+                  header-close-variant="white"
+                  header-class="border-0"
+                  content-class="border-0"
+                  centered
+                >
+                  <vimeo-player
+                    ref="player"
+                    :player-width="750"
+                    :player-height="450"
+                    :video-id="287684225"
+                  />
+                </b-modal>
+              </div>
             </div>
           </div>
           <!--end col-->
-        </div>
-        <!--end row-->
 
-        <div class="row align-items-center">
-          <div class="col-lg-5 col-md-6 mt-4 pt-2">
-            <img src="images/illustrator/SEO_SVG.svg" alt="" />
-          </div>
-          <!--end col-->
-
-          <div class="col-lg-7 col-md-6 mt-4 pt-2">
-            <div class="section-title ml-lg-5">
-              <h4 class="title mb-4">Change the way you build websites</h4>
-              <p class="text-muted">
-                You can combine all the Landrick templates into a single one,
-                you can take a component from the Application theme and use it
-                in the Website.
-              </p>
-              <ul class="list-unstyled text-muted">
-                <li class="mb-0">
-                  <span class="text-primary h5 mr-2"
-                    ><i class="uil uil-check-circle align-middle"></i></span
-                  >Digital Marketing Solutions for Tomorrow
-                </li>
-                <li class="mb-0">
-                  <span class="text-primary h5 mr-2"
-                    ><i class="uil uil-check-circle align-middle"></i></span
-                  >Our Talented & Experienced Marketing Agency
-                </li>
-                <li class="mb-0">
-                  <span class="text-primary h5 mr-2"
-                    ><i class="uil uil-check-circle align-middle"></i></span
-                  >Create your own skin to match your brand
-                </li>
-              </ul>
-              <a href="javascript:void(0)" class="mt-3 h6 text-primary"
-                >Find Out More <i class="mdi mdi-chevron-right"></i
-              ></a>
+          <div class="col-lg-7 col-md-6 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
+            <div class="ml-lg-5 ml-md-4">
+              <div class="section-title">
+                <span class="badge badge-pill badge-soft-primary"
+                  >About us</span
+                >
+                <h4 class="title mt-3 mb-4">
+                  We are the leader <br />
+                  in the <span class="text-primary">Landrick</span>
+                </h4>
+                <p class="text-muted para-desc mx-auto">
+                  Start working with
+                  <span class="text-primary font-weight-bold">Landrick</span>
+                  that can provide everything you need to generate awareness,
+                  drive traffic, connect.
+                </p>
+                <p class="text-muted para-desc mx-auto mb-0">
+                  The most well-known dummy text is the 'Lorem Ipsum', which is
+                  said to have originated in the 16th century. Lorem Ipsum is
+                  composed in a pseudo-Latin language which more or less
+                  corresponds to 'proper' Latin.
+                </p>
+                <div class="mt-4">
+                  <a href="javascript:void(0)" class="btn btn-primary"
+                    >Learn More</a
+                  >
+                </div>
+              </div>
             </div>
           </div>
           <!--end col-->
@@ -205,518 +332,400 @@ export default {
 
       <div class="container mt-100 mt-60">
         <div class="row align-items-center">
-          <div
-            class="col-lg-7 col-md-6 order-2 order-md-1 mt-4 mt-sm-0 pt-2 pt-sm-0"
-          >
-            <div class="section-title">
-              <h4 class="title mb-4">
-                Speed up your development <br />
-                with <span class="text-primary">Landrick.</span>
+          <div class="col-lg-4 col-md-3">
+            <h6 class="text-muted mb-0">
+              Trusted by over 2,000 of the world’s leading construction
+              companies
+            </h6>
+          </div>
+          <!--end col-->
+
+          <div class="col-lg-8 col-md-9 mt-4 pt-2 mt-sm-0 pt-sm-0">
+            <div class="rounded shadow bg-light p-4">
+              <div class="row justify-content-center">
+                <div class="col-lg-3 col-md-3 col-6 text-center py-4">
+                  <img
+                    src="images/client/amazon.svg"
+                    class="avatar avatar-ex-sm"
+                    alt=""
+                  />
+                </div>
+                <!--end col-->
+
+                <div class="col-lg-3 col-md-3 col-6 text-center py-4">
+                  <img
+                    src="images/client/google.svg"
+                    class="avatar avatar-ex-sm"
+                    alt=""
+                  />
+                </div>
+                <!--end col-->
+
+                <div class="col-lg-3 col-md-3 col-6 text-center py-4">
+                  <img
+                    src="images/client/lenovo.svg"
+                    class="avatar avatar-ex-sm"
+                    alt=""
+                  />
+                </div>
+                <!--end col-->
+
+                <div class="col-lg-3 col-md-3 col-6 text-center py-4">
+                  <img
+                    src="images/client/paypal.svg"
+                    class="avatar avatar-ex-sm"
+                    alt=""
+                  />
+                </div>
+                <!--end col-->
+              </div>
+              <!--end row-->
+            </div>
+          </div>
+          <!--end col-->
+        </div>
+        <!--end row-->
+      </div>
+      <!--end container-->
+
+      <div class="container mt-100 mt-60">
+        <div class="row">
+          <div class="col-lg-4 col-md-6">
+            <div class="section-title sticky-bar position-sticky">
+              <span class="badge badge-pill badge-soft-primary">Projects</span>
+              <h4 class="title mt-3 mb-4">
+                Our latest projects <br />
+                check now dears
               </h4>
-              <p class="text-muted">
-                Using Landrick to build your site means never worrying about
-                designing another page or cross browser compatibility. Our
-                ever-growing library of components and pre-designed layouts will
-                make your life easier.
+              <p class="text-muted para-desc mb-0">
+                Start working with
+                <span class="text-primary font-weight-bold">Landrick</span> that
+                can provide everything you need to generate awareness, drive
+                traffic, connect.
               </p>
-              <ul class="list-unstyled text-muted">
-                <li class="mb-0">
-                  <span class="text-primary h5 mr-2"
-                    ><i class="uil uil-check-circle align-middle"></i></span
-                  >Digital Marketing Solutions for Tomorrow
+              <div class="mt-4 d-none d-md-block">
+                <a href="javascript:void(0)" class="btn btn-soft-primary"
+                  >See More
+                  <arrow-right-icon class="fea icon-sm"></arrow-right-icon
+                ></a>
+              </div>
+            </div>
+          </div>
+          <!--end col-->
+
+          <div class="col-lg-8 col-md-6 mt-4 pt-2 mt-sm-0 pt-sm-0">
+            <div class="row">
+              <ul
+                class="col container-filter list-unstyled categories-filter mb-0"
+                id="filter"
+              >
+                <li class="list-inline-item">
+                  <a
+                    class="categories-name border d-block text-dark rounded"
+                    @click="updateFilter('all')"
+                    :class="{ active: filterCategory == 'all' }"
+                    >All</a
+                  >
                 </li>
-                <li class="mb-0">
-                  <span class="text-primary h5 mr-2"
-                    ><i class="uil uil-check-circle align-middle"></i></span
-                  >Our Talented & Experienced Marketing Agency
+                <li class="list-inline-item">
+                  <a
+                    class="categories-name border d-block text-dark rounded"
+                    data-filter=".offices"
+                    @click="updateFilter('offices')"
+                    :class="{ active: filterCategory == 'offices' }"
+                    >Offices</a
+                  >
                 </li>
-                <li class="mb-0">
-                  <span class="text-primary h5 mr-2"
-                    ><i class="uil uil-check-circle align-middle"></i></span
-                  >Create your own skin to match your brand
+                <li class="list-inline-item">
+                  <a
+                    class="categories-name border d-block text-dark rounded"
+                    data-filter=".buildings"
+                    @click="updateFilter('buildings')"
+                    :class="{ active: filterCategory == 'buildings' }"
+                    >Buildings</a
+                  >
+                </li>
+                <li class="list-inline-item">
+                  <a
+                    class="categories-name border d-block text-dark rounded"
+                    data-filter=".roads"
+                    @click="updateFilter('roads')"
+                    :class="{ active: filterCategory == 'roads' }"
+                    >Roads</a
+                  >
                 </li>
               </ul>
-              <a href="javascript:void(0)" class="mt-3 h6 text-primary"
-                >Find Out More <i class="mdi mdi-chevron-right"></i
-              ></a>
-            </div>
-          </div>
-          <!--end col-->
-
-          <div class="col-lg-5 col-md-6 order-1 order-md-2">
-            <div class="card rounded border-0 shadow ml-lg-5">
-              <div class="card-body">
-                <img
-                  src="images/illustrator/Mobile_notification_SVG.svg"
-                  alt=""
-                />
-
-                <div class="content mt-4 pt-2">
-                  <form>
-                    <div class="row">
-                      <div class="col-lg-12">
-                        <div class="form-group">
-                          <label
-                            >Name : <span class="text-danger">*</span></label
-                          >
-                          <div class="position-relative">
-                            <user-icon class="fea icon-sm icons"></user-icon>
-                            <input
-                              type="text"
-                              class="form-control pl-5"
-                              placeholder="Name"
-                              name="name"
-                              required=""
-                            />
-                          </div>
-                        </div>
-                      </div>
-                      <!--end col-->
-
-                      <div class="col-lg-12">
-                        <div class="form-group">
-                          <label
-                            >Email : <span class="text-danger">*</span></label
-                          >
-                          <div class="position-relative">
-                            <mail-icon class="fea icon-sm icons"></mail-icon>
-                            <input
-                              type="email"
-                              class="form-control pl-5"
-                              placeholder="Email"
-                              name="email"
-                              required=""
-                            />
-                          </div>
-                        </div>
-                      </div>
-                      <!--end col-->
-
-                      <div class="col-lg-12">
-                        <div class="form-group">
-                          <label
-                            >Password :
-                            <span class="text-danger">*</span></label
-                          >
-                          <div class="position-relative">
-                            <key-icon class="fea icon-sm icons"></key-icon>
-                            <input
-                              type="password"
-                              class="form-control pl-5"
-                              placeholder="Password"
-                              required=""
-                            />
-                          </div>
-                        </div>
-                      </div>
-                      <!--end col-->
-
-                      <div class="col-lg-12 mt-2 mb-0">
-                        <button class="btn btn-primary btn-block">
-                          Download
-                        </button>
-                      </div>
-                      <!--end col-->
-                    </div>
-                  </form>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!--end col-->
-        </div>
-        <!--end row-->
-      </div>
-      <!--end container-->
-    </section>
-    <!--end section-->
-    <!-- How It Work End -->
-
-    <!-- Testi Start -->
-    <section class="section pb-0">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-12 text-center">
-            <div class="section-title mb-4 pb-2">
-              <h6>We believe in building each other and hence</h6>
-              <h4 class="title mb-4">Work with some amazing partners</h4>
-              <p class="text-muted para-desc mx-auto mb-0">
-                Start working with
-                <span class="text-primary font-weight-bold">Landrick</span> that
-                can provide everything you need to generate awareness, drive
-                traffic, connect.
-              </p>
-            </div>
-          </div>
-          <!--end col-->
-        </div>
-        <!--end row-->
-
-        <div class="row">
-          <div class="col-12 mt-4 pt-2">
-            <carousel
-              id="customer-testi"
-              ref="carousel"
-              dir="ltr"
-              :per-page="3"
-              class="owl-carousel owl-theme"
-              :autoplay="true"
-              :loop="true"
-            >
-              <slide>
-                <div
-                  class="card customer-testi text-center border rounded mx-2"
-                >
-                  <div class="card-body">
-                    <img
-                      src="images/client/amazon.svg"
-                      class="img-fluid avatar avatar-ex-sm mx-auto"
-                      alt=""
-                    />
-                    <p class="text-muted mt-4">
-                      " It seems that only fragments of the original text remain
-                      in the Lorem Ipsum texts used today. "
-                    </p>
-                    <h6 class="text-primary">- Thomas Israel</h6>
-                  </div>
-                </div>
-              </slide>
-              <slide>
-                <div
-                  class="card customer-testi text-center border rounded mx-2"
-                >
-                  <div class="card-body">
-                    <img
-                      src="images/client/google.svg"
-                      class="img-fluid avatar avatar-ex-sm mx-auto"
-                      alt=""
-                    />
-                    <p class="text-muted mt-4">
-                      " The most well-known dummy text is the 'Lorem Ipsum',
-                      which is said to have originated in the 16th century. "
-                    </p>
-                    <h6 class="text-primary">- Carl Oliver</h6>
-                  </div>
-                </div>
-              </slide>
-              <slide>
-                <div
-                  class="card customer-testi text-center border rounded mx-2"
-                >
-                  <div class="card-body">
-                    <img
-                      src="images/client/lenovo.svg"
-                      class="img-fluid avatar avatar-ex-sm mx-auto"
-                      alt=""
-                    />
-                    <p class="text-muted mt-4">
-                      " One disadvantage of Lorum Ipsum is that in Latin certain
-                      letters appear more frequently than others. "
-                    </p>
-                    <h6 class="text-primary">- Barbara McIntosh</h6>
-                  </div>
-                </div>
-              </slide>
-              <slide>
-                <div
-                  class="card customer-testi text-center border rounded mx-2"
-                >
-                  <div class="card-body">
-                    <img
-                      src="images/client/paypal.svg"
-                      class="img-fluid avatar avatar-ex-sm mx-auto"
-                      alt=""
-                    />
-                    <p class="text-muted mt-4">
-                      " Thus, Lorem Ipsum has only limited suitability as a
-                      visual filler for German texts. "
-                    </p>
-                    <h6 class="text-primary">- Jill Webb</h6>
-                  </div>
-                </div>
-              </slide>
-              <slide>
-                <div
-                  class="card customer-testi text-center border rounded mx-2"
-                >
-                  <div class="card-body">
-                    <img
-                      src="images/client/shopify.svg"
-                      class="img-fluid avatar avatar-ex-sm mx-auto"
-                      alt=""
-                    />
-                    <p class="text-muted mt-4">
-                      " There is now an abundance of readable dummy texts. These
-                      are usually used when a text is required. "
-                    </p>
-                    <h6 class="text-primary">- Dean Tolle</h6>
-                  </div>
-                </div>
-              </slide>
-              <slide>
-                <div
-                  class="card customer-testi text-center border rounded mx-2"
-                >
-                  <div class="card-body">
-                    <img
-                      src="images/client/spotify.svg"
-                      class="img-fluid avatar avatar-ex-sm mx-auto"
-                      alt=""
-                    />
-                    <p class="text-muted mt-4">
-                      " According to most sources, Lorum Ipsum can be traced
-                      back to a text composed by Cicero. "
-                    </p>
-                    <h6 class="text-primary">- Christa Smith</h6>
-                  </div>
-                </div>
-              </slide>
-            </carousel>
-          </div>
-          <!--end col-->
-        </div>
-        <!--end row-->
-      </div>
-      <!--end container-->
-    </section>
-    <!--end section-->
-    <!-- Testi End -->
-
-    <!-- Pricing Start -->
-    <section class="section">
-      <div class="container">
-        <div class="row mt-lg-4 align-items-center">
-          <div class="col-lg-5 col-md-12 text-center text-lg-left">
-            <div class="section-title mb-4 mb-lg-0 pb-2 pb-lg-0">
-              <h4 class="title mb-4">Our Comfortable Rates</h4>
-              <p class="text-muted para-desc mx-auto mb-0">
-                Start working with
-                <span class="text-primary font-weight-bold">Landrick</span> that
-                can provide everything you need to generate awareness, drive
-                traffic, connect.
-              </p>
-              <a
-                href="https://1.envato.market/4n73n"
-                target="_blank"
-                class="btn btn-primary mt-4"
-                >Buy Now
-                <span class="badge badge-pill badge-danger ml-2">v2.5</span></a
-              >
-            </div>
-          </div>
-          <!--end col-->
-
-          <div class="col-lg-7 col-md-12 mt-4 mt-lg-0 pt-2 pt-lg-0">
-            <div class="ml-lg-5">
-            <div class="row align-items-center ml-lg-5">
-              <div class="col-md-6 col-12 px-md-0">
-                <div
-                  class="card pricing-rates starter-plan shadow rounded border-0"
-                >
-                  <div class="card-body py-5">
-                    <h6 class="title font-weight-bold text-uppercase text-primary mb-4">
-                      Starter
-                    </h6>
-                    <div class="d-flex mb-4">
-                      <span class="h4 mb-0 mt-2">$</span>
-                      <span class="price h1 mb-0">39</span>
-                      <span class="h4 align-self-end mb-1">/mo</span>
-                    </div>
-
-                    <ul class="list-unstyled mb-0 pl-0">
-                      <li class="h6 text-muted mb-0">
-                        <span class="text-primary h5 mr-2"
-                          ><i class="uil uil-check-circle align-middle"></i></span
-                        >Full Access
-                      </li>
-                      <li class="h6 text-muted mb-0">
-                        <span class="text-primary h5 mr-2"
-                          ><i class="uil uil-check-circle align-middle"></i></span
-                        >Source Files
-                      </li>
-                      <li class="h6 text-muted mb-0">
-                        <span class="text-primary h5 mr-2"
-                          ><i class="uil uil-check-circle align-middle"></i></span
-                        >Free Appointments
-                      </li>
-                      <li class="h6 text-muted mb-0">
-                        <span class="text-primary h5 mr-2"
-                          ><i class="uil uil-check-circle align-middle"></i></span
-                        >Enhanced Security
-                      </li>
-                    </ul>
-                    <a href="javascript:void(0)" class="btn btn-primary mt-4"
-                      >Get Started</a
-                    >
-                  </div>
-                </div>
-              </div>
-              <!--end col-->
-
-              <div class="col-md-6 col-12 mt-4 pt-2 pt-sm-0 mt-sm-0 px-md-0">
-                <div
-                  class="card pricing-rates bg-light shadow rounded border-0"
-                >
-                  <div class="card-body py-5">
-                    <h6 class="title font-weight-bold text-uppercase text-primary mb-4">
-                      Professional
-                    </h6>
-                    <div class="d-flex mb-4">
-                      <span class="h4 mb-0 mt-2">$</span>
-                      <span class="price h1 mb-0">59</span>
-                      <span class="h4 align-self-end mb-1">/mo</span>
-                    </div>
-
-                    <ul class="list-unstyled mb-0 pl-0">
-                      <li class="h6 text-muted mb-0">
-                        <span class="text-primary h5 mr-2"
-                          ><i class="uil uil-check-circle align-middle"></i></span
-                        >Full Access
-                      </li>
-                      <li class="h6 text-muted mb-0">
-                        <span class="text-primary h5 mr-2"
-                          ><i class="uil uil-check-circle align-middle"></i></span
-                        >Source Files
-                      </li>
-                      <li class="h6 text-muted mb-0">
-                        <span class="text-primary h5 mr-2"
-                          ><i class="uil uil-check-circle align-middle"></i></span
-                        >Free Appointments
-                      </li>
-                      <li class="h6 text-muted mb-0">
-                        <span class="text-primary h5 mr-2"
-                          ><i class="uil uil-check-circle align-middle"></i></span
-                        >Enhanced Security
-                      </li>
-                    </ul>
-                    <a href="javascript:void(0)" class="btn btn-primary mt-4"
-                      >Try it now</a
-                    >
-                  </div>
-                </div>
-              </div>
-              <!--end col-->
-            </div>
             </div>
             <!--end row-->
+
+            <div class="row projects-wrapper">
+              <div
+                class="col-lg-6 col-12 mt-4 pt-2 offices"
+                v-for="(item, index) in filteredData"
+                :key="index"
+              >
+                <div
+                  class="card border-0 work-container work-classic shadow overflow-hidden"
+                >
+                  <div class="card-body p-0">
+                    <router-link to="/page-portfolio-detail"
+                      ><img
+                        :src="item.image"
+                        class="img-fluid work-image"
+                        alt=""
+                    /></router-link>
+                    <div class="content p-4">
+                      <h5 class="mb-0">
+                        <router-link
+                          to="/page-portfolio-detail"
+                          class="text-dark title"
+                          >{{ item.title }}</router-link
+                        >
+                      </h5>
+                      <h6 class="text-muted tag mb-0">{{ item.type }}</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--end col-->
+
+              <div class="col-12 mt-4 pt-2">
+                <div class="d-block d-md-none">
+                  <a href="javascript:void(0)" class="btn btn-soft-primary"
+                    >See More
+                    <arrow-right-icon class="fea icon-sm"></arrow-right-icon
+                  ></a>
+                </div>
+              </div>
+            </div>
           </div>
-          <!--end col-->
         </div>
         <!--end row-->
       </div>
       <!--end container-->
-    </section>
-    <!--end section-->
-    <div class="position-relative">
-      <div class="shape overflow-hidden text-light">
-        <svg
-          viewBox="0 0 2880 250"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M720 125L2160 0H2880V250H0V125H720Z"
-            fill="currentColor"
-          ></path>
-        </svg>
-      </div>
-    </div>
-    <!-- Pricing End -->
-    <!-- FAQ n Contact Start -->
-    <section class="section bg-light">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6 col-12">
-            <div class="media">
-              <help-circle-icon
-                class="fea icon-ex-md text-primary mr-2 mt-1"
-              ></help-circle-icon>
-              <div class="media-body">
-                <h5 class="mt-0">
-                  How our <span class="text-primary">Landrick</span> work ?
-                </h5>
-                <p class="answer text-muted mb-0">
-                  Due to its widespread use as filler text for layouts,
-                  non-readability is of great importance: human perception is
-                  tuned to recognize certain patterns and repetitions in texts.
-                </p>
-              </div>
-            </div>
-          </div>
-          <!--end col-->
 
-          <div class="col-md-6 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
-            <div class="media">
-              <help-circle-icon
-                class="fea icon-ex-md text-primary mr-2 mt-1"
-              ></help-circle-icon>
-              <div class="media-body">
-                <h5 class="mt-0">What is the main process open account ?</h5>
-                <p class="answer text-muted mb-0">
-                  If the distribution of letters and 'words' is random, the
-                  reader will not be distracted from making a neutral judgement
-                  on the visual impact
-                </p>
-              </div>
-            </div>
-          </div>
-          <!--end col-->
-
-          <div class="col-md-6 col-12 mt-4 pt-2">
-            <div class="media">
-              <help-circle-icon
-                class="fea icon-ex-md text-primary mr-2 mt-1"
-              ></help-circle-icon>
-              <div class="media-body">
-                <h5 class="mt-0">How to make unlimited data entry ?</h5>
-                <p class="answer text-muted mb-0">
-                  Furthermore, it is advantageous when the dummy text is
-                  relatively realistic so that the layout impression of the
-                  final publication is not compromised.
-                </p>
-              </div>
-            </div>
-          </div>
-          <!--end col-->
-
-          <div class="col-md-6 col-12 mt-4 pt-2">
-            <div class="media">
-              <help-circle-icon
-                class="fea icon-ex-md text-primary mr-2 mt-1"
-              ></help-circle-icon>
-              <div class="media-body">
-                <h5 class="mt-0">
-                  Is <span class="text-primary">Landrick</span> safer to use
-                  with my account ?
-                </h5>
-                <p class="answer text-muted mb-0">
-                  The most well-known dummy text is the 'Lorem Ipsum', which is
-                  said to have originated in the 16th century. Lorem Ipsum is
-                  composed in a pseudo-Latin language which more or less
-                  corresponds to 'proper' Latin.
-                </p>
-              </div>
-            </div>
-          </div>
-          <!--end col-->
-        </div>
-        <!--end row-->
-
-        <div
-          class="row my-md-5 pt-md-3 my-4 pt-2 pb-lg-5 mt-sm-0 pt-sm-0 justify-content-center"
-        >
-          <div class="col-12 text-center">
-            <div class="section-title">
-              <h4 class="title mb-4">Have Question ? Get in touch!</h4>
-              <p class="text-muted para-desc mx-auto">
+      <div class="container mt-100 mt-60">
+        <div class="row justify-content-center">
+          <div class="col-12">
+            <div class="section-title mb-4 pb-2 text-center">
+              <h4 class="title mb-4">Expert Team Members</h4>
+              <p class="text-muted mx-auto para-desc mb-0">
                 Start working with
                 <span class="text-primary font-weight-bold">Landrick</span> that
                 can provide everything you need to generate awareness, drive
                 traffic, connect.
               </p>
-              <router-link to="/page-contact-two" class="btn btn-primary mt-4"
-                ><i class="mdi mdi-phone"></i> Contact us</router-link
-              >
+            </div>
+          </div>
+          <!--end col-->
+        </div>
+        <!--end row-->
+
+        <div class="row">
+          <div class="col-lg-3 col-md-6 mt-4 pt-2">
+            <div class="card team text-center border-0">
+              <div class="position-relative">
+                <img
+                  src="images/construction/t1.jpg"
+                  class="img-fluid"
+                  alt=""
+                />
+                <ul class="list-unstyled social-icon team-icon mb-0 mt-4">
+                  <li class="list-inline-item">
+                    <a href="javascript:void(0)" class="rounded"
+                      ><facebook-icon
+                        class="fea icon-sm fea-social"
+                      ></facebook-icon
+                    ></a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="javascript:void(0)" class="rounded"
+                      ><instagram-icon
+                        class="fea icon-sm fea-social"
+                      ></instagram-icon
+                    ></a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="javascript:void(0)" class="rounded"
+                      ><twitter-icon
+                        class="fea icon-sm fea-social"
+                      ></twitter-icon
+                    ></a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="javascript:void(0)" class="rounded"
+                      ><linkedin-icon
+                        class="fea icon-sm fea-social"
+                      ></linkedin-icon
+                    ></a>
+                  </li>
+                </ul>
+                <!--end icon-->
+              </div>
+              <div class="card-body py-3 px-0 content">
+                <h5 class="mb-0">
+                  <a href="javascript:void(0)" class="name text-dark"
+                    >Ronny Jofra</a
+                  >
+                </h5>
+                <small class="designation text-muted">Architecture</small>
+              </div>
+            </div>
+          </div>
+          <!--end col-->
+
+          <div class="col-lg-3 col-md-6 mt-4 pt-2">
+            <div class="card team text-center border-0">
+              <div class="position-relative">
+                <img
+                  src="images/construction/t3.jpg"
+                  class="img-fluid"
+                  alt=""
+                />
+                <ul class="list-unstyled social-icon team-icon mb-0 mt-4">
+                  <li class="list-inline-item">
+                    <a href="javascript:void(0)" class="rounded"
+                      ><facebook-icon
+                        class="fea icon-sm fea-social"
+                      ></facebook-icon
+                    ></a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="javascript:void(0)" class="rounded"
+                      ><instagram-icon
+                        class="fea icon-sm fea-social"
+                      ></instagram-icon
+                    ></a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="javascript:void(0)" class="rounded"
+                      ><twitter-icon
+                        class="fea icon-sm fea-social"
+                      ></twitter-icon
+                    ></a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="javascript:void(0)" class="rounded"
+                      ><linkedin-icon
+                        class="fea icon-sm fea-social"
+                      ></linkedin-icon
+                    ></a>
+                  </li>
+                </ul>
+                <!--end icon-->
+              </div>
+              <div class="card-body py-3 px-0 content">
+                <h5 class="mb-0">
+                  <a href="javascript:void(0)" class="name text-dark"
+                    >Micheal Carlo</a
+                  >
+                </h5>
+                <small class="designation text-muted">Project Manager</small>
+              </div>
+            </div>
+          </div>
+          <!--end col-->
+
+          <div class="col-lg-3 col-md-6 mt-4 pt-2">
+            <div class="card team text-center border-0">
+              <div class="position-relative">
+                <img
+                  src="images/construction/t2.jpg"
+                  class="img-fluid"
+                  alt=""
+                />
+                <ul class="list-unstyled social-icon team-icon mb-0 mt-4">
+                  <li class="list-inline-item">
+                    <a href="javascript:void(0)" class="rounded"
+                      ><facebook-icon
+                        class="fea icon-sm fea-social"
+                      ></facebook-icon
+                    ></a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="javascript:void(0)" class="rounded"
+                      ><instagram-icon
+                        class="fea icon-sm fea-social"
+                      ></instagram-icon
+                    ></a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="javascript:void(0)" class="rounded"
+                      ><twitter-icon
+                        class="fea icon-sm fea-social"
+                      ></twitter-icon
+                    ></a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="javascript:void(0)" class="rounded"
+                      ><linkedin-icon
+                        class="fea icon-sm fea-social"
+                      ></linkedin-icon
+                    ></a>
+                  </li>
+                </ul>
+                <!--end icon-->
+              </div>
+              <div class="card-body py-3 px-0 content">
+                <h5 class="mb-0">
+                  <a href="javascript:void(0)" class="name text-dark"
+                    >Aliana Rosy</a
+                  >
+                </h5>
+                <small class="designation text-muted">Builder Advisor</small>
+              </div>
+            </div>
+          </div>
+          <!--end col-->
+
+          <div class="col-lg-3 col-md-6 mt-4 pt-2">
+            <div class="card team text-center border-0">
+              <div class="position-relative">
+                <img
+                  src="images/construction/t4.jpg"
+                  class="img-fluid"
+                  alt=""
+                />
+                <ul class="list-unstyled social-icon team-icon mb-0 mt-4">
+                  <li class="list-inline-item">
+                    <a href="javascript:void(0)" class="rounded"
+                      ><facebook-icon
+                        class="fea icon-sm fea-social"
+                      ></facebook-icon
+                    ></a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="javascript:void(0)" class="rounded"
+                      ><instagram-icon
+                        class="fea icon-sm fea-social"
+                      ></instagram-icon
+                    ></a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="javascript:void(0)" class="rounded"
+                      ><twitter-icon
+                        class="fea icon-sm fea-social"
+                      ></twitter-icon
+                    ></a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="javascript:void(0)" class="rounded"
+                      ><linkedin-icon
+                        class="fea icon-sm fea-social"
+                      ></linkedin-icon
+                    ></a>
+                  </li>
+                </ul>
+                <!--end icon-->
+              </div>
+              <div class="card-body py-3 px-0 content">
+                <h5 class="mb-0">
+                  <a href="javascript:void(0)" class="name text-dark"
+                    >Sofia Razaq</a
+                  >
+                </h5>
+                <small class="designation text-muted">HR Manager</small>
+              </div>
             </div>
           </div>
           <!--end col-->
@@ -726,21 +735,190 @@ export default {
       <!--end container-->
     </section>
     <!--end section-->
-    <div class="position-relative">
-      <div class="shape overflow-hidden text-footer">
-        <svg
-          viewBox="0 0 2880 250"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M720 125L2160 0H2880V250H0V125H720Z"
-            fill="currentColor"
-          ></path>
-        </svg>
+
+    <section class="section bg-light">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12">
+            <div class="section-title mb-4 pb-2 text-center">
+              <span class="badge badge-pill badge-soft-primary"
+                >Blogs & News</span
+              >
+              <h4 class="title mt-3 mb-4">Latest News & Articals</h4>
+              <p class="text-muted mx-auto para-desc mb-0">
+                Start working with
+                <span class="text-primary font-weight-bold">Landrick</span> that
+                can provide everything you need to generate awareness, drive
+                traffic, connect.
+              </p>
+            </div>
+          </div>
+          <!--end col-->
+        </div>
+        <!--end row-->
+
+        <div class="row">
+          <div class="col-lg-4 col-md-6 mt-4 pt-2">
+            <div class="card blog rounded border-0 shadow">
+              <div class="position-relative">
+                <img
+                  src="images/construction/o1.jpg"
+                  class="card-img-top rounded-top"
+                  alt="..."
+                />
+                <div class="overlay rounded-top bg-dark"></div>
+              </div>
+              <div class="card-body content">
+                <h5>
+                  <a
+                    href="javascript:void(0)"
+                    class="card-title title text-dark"
+                    >High quality work for demand our customer.</a
+                  >
+                </h5>
+                <div class="post-meta d-flex justify-content-between mt-3">
+                  <ul class="list-unstyled mb-0">
+                    <li class="list-inline-item mr-2 mb-0">
+                      <a href="javascript:void(0)" class="text-muted like"
+                        ><i class="mdi mdi-heart-outline mr-1"></i>33</a
+                      >
+                    </li>
+                    <li class="list-inline-item">
+                      <a href="javascript:void(0)" class="text-muted comments"
+                        ><i class="mdi mdi-comment-outline mr-1"></i>08</a
+                      >
+                    </li>
+                  </ul>
+                  <router-link
+                    tag="a"
+                    to="/page-blog-detail"
+                    class="text-muted readmore"
+                    >Read More <i class="mdi mdi-chevron-right"></i
+                  ></router-link>
+                </div>
+              </div>
+              <div class="author">
+                <small class="text-light user d-block"
+                  ><i class="mdi mdi-account"></i> Calvin Carlo</small
+                >
+                <small class="text-light date"
+                  ><i class="mdi mdi-calendar-check"></i> 13th August,
+                  2019</small
+                >
+              </div>
+            </div>
+          </div>
+          <!--end col-->
+
+          <div class="col-lg-4 col-md-6 mt-4 pt-2">
+            <div class="card blog rounded border-0 shadow">
+              <div class="position-relative">
+                <img
+                  src="images/construction/b1.jpg"
+                  class="card-img-top rounded-top"
+                  alt="..."
+                />
+                <div class="overlay rounded-top bg-dark"></div>
+              </div>
+              <div class="card-body content">
+                <h5>
+                  <a
+                    href="javascript:void(0)"
+                    class="card-title title text-dark"
+                    >Building public support for a severige work bond</a
+                  >
+                </h5>
+                <div class="post-meta d-flex justify-content-between mt-3">
+                  <ul class="list-unstyled mb-0">
+                    <li class="list-inline-item mr-2 mb-0">
+                      <a href="javascript:void(0)" class="text-muted like"
+                        ><i class="mdi mdi-heart-outline mr-1"></i>33</a
+                      >
+                    </li>
+                    <li class="list-inline-item">
+                      <a href="javascript:void(0)" class="text-muted comments"
+                        ><i class="mdi mdi-comment-outline mr-1"></i>08</a
+                      >
+                    </li>
+                  </ul>
+                  <router-link
+                    tag="a"
+                    to="/page-blog-detail"
+                    class="text-muted readmore"
+                    >Read More <i class="mdi mdi-chevron-right"></i
+                  ></router-link>
+                </div>
+              </div>
+              <div class="author">
+                <small class="text-light user d-block"
+                  ><i class="mdi mdi-account"></i> Calvin Carlo</small
+                >
+                <small class="text-light date"
+                  ><i class="mdi mdi-calendar-check"></i> 13th August,
+                  2019</small
+                >
+              </div>
+            </div>
+          </div>
+          <!--end col-->
+
+          <div class="col-lg-4 col-md-6 mt-4 pt-2">
+            <div class="card blog rounded border-0 shadow">
+              <div class="position-relative">
+                <img
+                  src="images/construction/r1.jpg"
+                  class="card-img-top rounded-top"
+                  alt="..."
+                />
+                <div class="overlay rounded-top bg-dark"></div>
+              </div>
+              <div class="card-body content">
+                <h5>
+                  <a
+                    href="javascript:void(0)"
+                    class="card-title title text-dark"
+                    >Satisfection for the customer our first parity.</a
+                  >
+                </h5>
+                <div class="post-meta d-flex justify-content-between mt-3">
+                  <ul class="list-unstyled mb-0">
+                    <li class="list-inline-item mr-2 mb-0">
+                      <a href="javascript:void(0)" class="text-muted like"
+                        ><i class="mdi mdi-heart-outline mr-1"></i>33</a
+                      >
+                    </li>
+                    <li class="list-inline-item">
+                      <a href="javascript:void(0)" class="text-muted comments"
+                        ><i class="mdi mdi-comment-outline mr-1"></i>08</a
+                      >
+                    </li>
+                  </ul>
+                  <router-link
+                    tag="a"
+                    to="/page-blog-detail"
+                    class="text-muted readmore"
+                    >Read More <i class="mdi mdi-chevron-right"></i
+                  ></router-link>
+                </div>
+              </div>
+              <div class="author">
+                <small class="text-light user d-block"
+                  ><i class="mdi mdi-account"></i> Calvin Carlo</small
+                >
+                <small class="text-light date"
+                  ><i class="mdi mdi-calendar-check"></i> 13th August,
+                  2019</small
+                >
+              </div>
+            </div>
+          </div>
+          <!--end col-->
+        </div>
+        <!--end row-->
       </div>
-    </div>
-    <!-- FAQ n Contact End -->
+      <!--end container-->
+    </section>
+    <!--end section-->
 
     <Footer />
     <!-- Footer End -->
@@ -757,3 +935,9 @@ export default {
     <!-- Back to top -->
   </div>
 </template>
+
+<style>
+.modal-content {
+  background-color: transparent;
+}
+</style>

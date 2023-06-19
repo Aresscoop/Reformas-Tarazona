@@ -193,11 +193,11 @@ const routes = [
     name: 'index-seo-agency',
     component: () => import('../views/index-seo-agency')
   },
-  {
-    path: '/index-construction',
-    name: 'index-construction',
-    component: () => import('../views/index-construction')
-  },
+  // {
+  //   path: '/index-construction',
+  //   name: 'index-construction',
+  //   component: () => import('../views/index-construction')
+  // },
   {
     path: '/index-real-estate',
     name: 'index-real-estate',

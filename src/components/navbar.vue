@@ -221,9 +221,11 @@ export default {
             :class="{ 'nav-light': navLight === true }"
           >
             <li>
-              <router-link to="/" class="side-nav-link-ref">Home</router-link>
+              <router-link to="/index" class="side-nav-link-ref"
+                >Inicio</router-link
+              >
             </li>
-            <li class="has-submenu">
+            <!-- <li class="has-submenu">
               <a href="javascript:void(0)" @click="onMenuClick">Landing</a
               ><span class="menu-arrow"></span>
               <ul class="submenu megamenu">
@@ -571,9 +573,9 @@ export default {
                   </ul>
                 </li>
               </ul>
-            </li>
+            </li> -->
 
-            <li class="has-submenu">
+            <!-- <li class="has-submenu">
               <a href="javascript:void(0)" @click="onMenuClick">Pages</a
               ><span class="menu-arrow"></span>
               <ul class="submenu">
@@ -1082,7 +1084,8 @@ export default {
                   </ul>
                 </li>
                 <li class="has-submenu">
-                  <a href="javascript:void(0)" @click="onMenuClick"> Special 
+                  <a href="javascript:void(0)" @click="onMenuClick">
+                    Special
                     <span class="badge badge-success rounded">Added</span></a
                   ><span class="submenu-arrow"></span>
                   <ul class="submenu">
@@ -1149,8 +1152,8 @@ export default {
                   </ul>
                 </li>
               </ul>
-            </li>
-            <li class="has-submenu">
+            </li> -->
+            <!-- <li class="has-submenu">
               <a href="javascript:void(0)" @click="onMenuClick">Docs</a
               ><span class="menu-arrow"></span>
               <ul class="submenu">
@@ -1175,17 +1178,42 @@ export default {
                   >
                 </li>
               </ul>
+            </li> -->
+            <li>
+              <router-link to="/page-portfolio-grid" class="side-nav-link-ref"
+                >Proyectos</router-link
+              >
+            </li>
+            <li>
+              <router-link to="/page-portfolio-grid" class="side-nav-link-ref"
+                >Productos</router-link
+              >
+            </li>
+            <li>
+              <router-link to="/page-services" class="side-nav-link-ref"
+                >Servicios</router-link
+              >
+            </li>
+            <li>
+              <router-link to="/page-portfolio-grid" class="side-nav-link-ref"
+                >Contract</router-link
+              >
+            </li>
+            <li>
+              <router-link to="/page-contact-three" class="side-nav-link-ref"
+                >Contacto</router-link
+              >
             </li>
           </ul>
           <!--end navigation menu-->
-          <div class="buy-menu-btn d-none">
+          <!-- <div class="buy-menu-btn d-none">
             <a
               href="https://1.envato.market/4n73n"
               target="_blank"
               class="btn btn-primary"
               >Buy Now</a
             >
-          </div>
+          </div> -->
           <!--end login button-->
         </div>
         <!--end navigation-->
