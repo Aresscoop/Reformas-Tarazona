@@ -3,7 +3,7 @@ import { ArrowUpIcon } from "vue-feather-icons";
 import { Carousel, Slide } from "vue-carousel";
 
 import Navbar from "@/components/navbar";
-import Switcher from "@/components/switcher";
+// import Switcher from "@/components/switcher";
 import Footer from "@/components/footer";
 import Testimonial from "@/components/testimonial";
 
@@ -105,7 +105,7 @@ export default {
   },
   components: {
     Navbar,
-    Switcher,
+    // Switcher,
     Footer,
     Carousel,
     Testimonial,

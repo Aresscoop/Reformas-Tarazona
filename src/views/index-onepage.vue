@@ -95,14 +95,14 @@ export default {
             <img src="images/logo-dark.png" height="24" alt="" />
           </a>
         </div>
-        <div class="buy-button">
+        <!-- <div class="buy-button">
           <a
             href="https://1.envato.market/4n73n"
             target="_blank"
             class="btn btn-primary"
             >Buy Now</a
           >
-        </div>
+        </div> -->
         <!--end login button-->
         <!-- End Logo container-->
         <div class="menu-extras">
@@ -491,17 +491,17 @@ export default {
                 <form>
                   <div class="row">
                     <div class="col-lg-12">
-                      <div class="form-group ">
+                      <div class="form-group">
                         <label>Name : <span class="text-danger">*</span></label>
                         <div class="position-relative">
-                        <user-icon class="fea icon-sm icons"></user-icon>
-                        <input
-                          type="text"
-                          class="form-control pl-5"
-                          placeholder="Name"
-                          name="name"
-                          required=""
-                        />
+                          <user-icon class="fea icon-sm icons"></user-icon>
+                          <input
+                            type="text"
+                            class="form-control pl-5"
+                            placeholder="Name"
+                            name="name"
+                            required=""
+                          />
                         </div>
                       </div>
                     </div>
@@ -513,32 +513,32 @@ export default {
                           >Email : <span class="text-danger">*</span></label
                         >
                         <div class="position-relative">
-                        <mail-icon class="fea icon-sm icons"></mail-icon>
-                        <input
-                          type="email"
-                          class="form-control pl-5"
-                          placeholder="Email"
-                          name="email"
-                          required=""
-                        />
+                          <mail-icon class="fea icon-sm icons"></mail-icon>
+                          <input
+                            type="email"
+                            class="form-control pl-5"
+                            placeholder="Email"
+                            name="email"
+                            required=""
+                          />
                         </div>
                       </div>
                     </div>
                     <!--end col-->
 
                     <div class="col-lg-12">
-                      <div class="form-group ">
+                      <div class="form-group">
                         <label
                           >Password : <span class="text-danger">*</span></label
                         >
                         <div class="position-relative">
-                        <key-icon class="fea icon-sm icons"></key-icon>
-                        <input
-                          type="password"
-                          class="form-control pl-5"
-                          placeholder="Password"
-                          required=""
-                        />
+                          <key-icon class="fea icon-sm icons"></key-icon>
+                          <input
+                            type="password"
+                            class="form-control pl-5"
+                            placeholder="Password"
+                            required=""
+                          />
                         </div>
                       </div>
                     </div>

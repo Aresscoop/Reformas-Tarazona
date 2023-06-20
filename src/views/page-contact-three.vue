@@ -8,7 +8,7 @@ import {
 } from "vue-feather-icons";
 
 import Navbar from "@/components/navbar";
-import Switcher from "@/components/switcher";
+// import Switcher from "@/components/switcher";
 import Footer from "@/components/footer";
 
 /**
@@ -20,7 +20,7 @@ export default {
   },
   components: {
     Navbar,
-    Switcher,
+    // Switcher,
     Footer,
     UserIcon,
     ArrowUpIcon,
@@ -38,24 +38,22 @@ export default {
     <!-- Hero Start -->
     <section
       class="bg-half bg-light d-table w-100"
-      style="background: url('images/contact-detail.jpg') center center"
+      style="background: url('images/salon.png') center center"
     >
       <div class="bg-overlay bg-overlay-white"></div>
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-12 text-center">
             <div class="page-next-level">
-              <h4 class="title">Contacto</h4>
+              <h1 class="title">Contacto</h1>
               <div class="page-next">
                 <nav aria-label="breadcrumb" class="d-inline-block">
                   <ul class="breadcrumb bg-white rounded shadow mb-0">
                     <li class="breadcrumb-item">
-                      <router-link to="/">Landrick</router-link>
+                      <router-link to="/">Inicio</router-link>
                     </li>
-                    <li class="breadcrumb-item"><a href="#">Page</a></li>
-                    <li class="breadcrumb-item"><a href="#">Contact</a></li>
                     <li class="breadcrumb-item active" aria-current="page">
-                      Contact Three
+                      Contacto
                     </li>
                   </ul>
                 </nav>
@@ -95,7 +93,7 @@ export default {
           <div class="col-lg-4 col-md-6 mt-4 pt-2">
             <div class="card shadow rounded border-0">
               <div class="card-body py-5">
-                <h4 class="card-title">Get In Touch !</h4>
+                <h2 class="card-title">Contáctanos !</h2>
                 <div class="custom-form mt-4">
                   <div id="message"></div>
                   <form name="contact-form" id="contact-form">
@@ -103,7 +101,7 @@ export default {
                       <div class="col-md-6">
                         <div class="form-group">
                           <label
-                            >Your Name <span class="text-danger">*</span></label
+                            >Nombre <span class="text-danger">*</span></label
                           >
                           <div class="position-relative">
                             <user-icon class="fea icon-sm icons"></user-icon>
@@ -112,7 +110,7 @@ export default {
                               id="name"
                               type="text"
                               class="form-control pl-5"
-                              placeholder="First Name :"
+                              placeholder="Nombre:"
                             />
                           </div>
                         </div>
@@ -121,8 +119,7 @@ export default {
                       <div class="col-md-6">
                         <div class="form-group">
                           <label
-                            >Your Email
-                            <span class="text-danger">*</span></label
+                            >Email <span class="text-danger">*</span></label
                           >
                           <div class="position-relative">
                             <mail-icon class="fea icon-sm icons"></mail-icon>
@@ -131,7 +128,7 @@ export default {
                               id="email"
                               type="email"
                               class="form-control pl-5"
-                              placeholder="Your email :"
+                              placeholder="Email:"
                             />
                           </div>
                         </div>
@@ -139,7 +136,7 @@ export default {
                       <!--end col-->
                       <div class="col-md-12">
                         <div class="form-group">
-                          <label>Subject</label>
+                          <label>Motivo del mensaje</label>
                           <div class="position-relative">
                             <book-icon class="fea icon-sm icons"></book-icon>
                             <input
@@ -147,7 +144,7 @@ export default {
                               id="subject"
                               type="text"
                               class="form-control pl-5"
-                              placeholder="Subject"
+                              placeholder="Motivo"
                             />
                           </div>
                         </div>
@@ -155,7 +152,7 @@ export default {
                       <!--end col-->
                       <div class="col-md-12">
                         <div class="form-group">
-                          <label>Comments</label>
+                          <label>Mensaje</label>
                           <div class="position-relative">
                             <message-circle-icon
                               class="fea icon-sm icons"
@@ -165,7 +162,7 @@ export default {
                               id="comments"
                               rows="4"
                               class="form-control pl-5"
-                              placeholder="Your Message :"
+                              placeholder="Escribir mensaje..."
                             ></textarea>
                           </div>
                         </div>
@@ -179,7 +176,7 @@ export default {
                           id="submit"
                           name="send"
                           class="submitBnt btn btn-primary btn-block"
-                          value="Send Message"
+                          value="Envíar mensaje"
                         />
                         <div id="simple-msg"></div>
                       </div>
@@ -199,10 +196,13 @@ export default {
             <div class="card map map-height-two rounded map-gray border-0">
               <div class="card-body p-0">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d39206.002432144705!2d-95.4973981212445!3d29.709510002925988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640c16de81f3ca5%3A0xf43e0b60ae539ac9!2sGerald+D.+Hines+Waterwall+Park!5e0!3m2!1sen!2sin!4v1566305861440!5m2!1sen!2sin"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24658.65688901229!2d-0.40887074339804175!3d39.41661383759325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd604e9c97ccea21%3A0x8b8534f159f832a!2sReformas%20Tarazona!5e0!3m2!1ses!2ses!4v1687256989937!5m2!1ses!2ses"
+                  width="600"
+                  height="450"
                   style="border: 0"
-                  class="rounded"
                   allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
                 ></iframe>
               </div>
             </div>
@@ -221,12 +221,12 @@ export default {
                 <i class="uil uil-phone d-block rounded h3 mb-0"></i>
               </div>
               <div class="content mt-3">
-                <h5 class="font-weight-bold">Phone</h5>
+                <h5 class="font-weight-bold">Teléfono</h5>
                 <p class="text-muted">
-                  Start working with Landrick that can provide everything
+                  Si tienes cualrquier duda contacta con nosotros!
                 </p>
-                <a href="tel:+152534-468-854" class="text-primary"
-                  >+152 534-468-854</a
+                <a href="tel:+34961262385" class="text-primary"
+                  >(+34) 96 126 23 85</a
                 >
               </div>
             </div>
@@ -241,10 +241,10 @@ export default {
               <div class="content mt-3">
                 <h5 class="font-weight-bold">Email</h5>
                 <p class="text-muted">
-                  Start working with Landrick that can provide everything
+                  O si lo prefieres puedes envíarnos un correo!
                 </p>
-                <a href="mailto:contact@example.com" class="text-primary"
-                  >contact@example.com</a
+                <a href="mailto:info@reformastarazona.es" class="text-primary"
+                  >info@reformastarazona.es</a
                 >
               </div>
             </div>
@@ -259,12 +259,13 @@ export default {
               <div class="content mt-3">
                 <h5 class="font-weight-bold">Location</h5>
                 <p class="text-muted">
-                  C/54 Northwest Freeway, Suite 558, <br />Houston, USA 485
+                  Av. Ramón y Cajal, 89, Bajo.<br />
+                  Catarroja (Valencia) 46470
                 </p>
                 <a
-                  href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d39206.002432144705!2d-95.4973981212445!3d29.709510002925988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640c16de81f3ca5%3A0xf43e0b60ae539ac9!2sGerald+D.+Hines+Waterwall+Park!5e0!3m2!1sen!2sin!4v1566305861440!5m2!1sen!2sin"
+                  href="https://goo.gl/maps/kNVnJkdgqCh6Wqad7"
                   class="video-play-icon h6 text-primary"
-                  >View on Google map</a
+                  >Ver en Google Maps</a
                 >
               </div>
             </div>

@@ -534,7 +534,7 @@ export default {
 
 <style>
 .vue-typer .custom.char.typed {
-  color: #2f55d4;
+  color: #144e78;
 }
 
 .modal-content {

@@ -9,7 +9,7 @@ import {
 } from "vue-feather-icons";
 
 import Navbar from "@/components/navbar";
-import Switcher from "@/components/switcher";
+// import Switcher from "@/components/switcher";
 import Footer from "@/components/footer";
 
 /**
@@ -18,7 +18,7 @@ import Footer from "@/components/footer";
 export default {
   components: {
     Navbar,
-    Switcher,
+    // Switcher,
     Footer,
     ArrowUpIcon,
     ArrowRightIcon,
