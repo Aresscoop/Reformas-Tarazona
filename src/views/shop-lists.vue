@@ -162,7 +162,7 @@ export default {
                     <li class="list-inline-item">
                       <a
                         href="javascript:void(0)"
-                        class="btn btn-sm btn-icon btn-pills btn-secondary ml-1" 
+                        class="btn btn-sm btn-icon btn-pills btn-secondary ml-1"
                         ><span class="d-none">.</span></a
                       >
                     </li>
@@ -289,7 +289,7 @@ export default {
                   </div>
 
                   <div class="mx-2">
-                    <router-link to="/shop-grids" tag="a" class="h5 text-muted"
+                    <router-link to="/productos" tag="a" class="h5 text-muted"
                       ><i class="uil uil-apps"></i
                     ></router-link>
                   </div>
@@ -339,7 +339,8 @@ export default {
 
                     <div class="col-lg-8 col-md-6">
                       <div class="card-body content p-4">
-                        <router-link tag="a"
+                        <router-link
+                          tag="a"
                           to="/shop-product-detail"
                           class="text-dark product-name h6"
                           >Branded T-Shirt</router-link
@@ -389,7 +390,8 @@ export default {
                             ></a>
                           </li>
                           <li class="mt-2 list-inline-item ml-1">
-                            <router-link tag="a"
+                            <router-link
+                              tag="a"
                               to="/shop-cart"
                               class="btn btn-icon btn-pills btn-soft-primary"
                               ><shopping-cart-icon
@@ -442,7 +444,11 @@ export default {
                             class="img-fluid"
                             alt=""
                         /></router-link>
-                        <router-link tag="a" to="/shop-product-detail" class="overlay-work">
+                        <router-link
+                          tag="a"
+                          to="/shop-product-detail"
+                          class="overlay-work"
+                        >
                           <img
                             src="images/shop/product/s-2.jpg"
                             class="img-fluid"
@@ -455,7 +461,8 @@ export default {
 
                     <div class="col-lg-8 col-md-6">
                       <div class="card-body content p-4">
-                        <router-link tag="a"
+                        <router-link
+                          tag="a"
                           to="/shop-product-detail"
                           class="text-dark product-name h6"
                           >Shopping Bag</router-link
@@ -505,7 +512,8 @@ export default {
                             ></a>
                           </li>
                           <li class="mt-2 list-inline-item ml-1">
-                            <router-link tag="a"
+                            <router-link
+                              tag="a"
                               to="/shop-cart"
                               class="btn btn-icon btn-pills btn-soft-primary"
                               ><shopping-cart-icon
@@ -544,7 +552,11 @@ export default {
                             class="img-fluid"
                             alt=""
                         /></router-link>
-                        <router-link tag="a" to="/shop-product-detail" class="overlay-work">
+                        <router-link
+                          tag="a"
+                          to="/shop-product-detail"
+                          class="overlay-work"
+                        >
                           <img
                             src="images/shop/product/s-3.jpg"
                             class="img-fluid"
@@ -557,7 +569,8 @@ export default {
 
                     <div class="col-lg-8 col-md-6">
                       <div class="card-body content p-4">
-                        <router-link tag="a"
+                        <router-link
+                          tag="a"
                           to="/shop-product-detail"
                           class="text-dark product-name h6"
                           >Elegent Watch</router-link
@@ -607,7 +620,8 @@ export default {
                             ></a>
                           </li>
                           <li class="mt-2 list-inline-item ml-1">
-                            <router-link tag="a"
+                            <router-link
+                              tag="a"
                               to="/shop-cart"
                               class="btn btn-icon btn-pills btn-soft-primary"
                               ><shopping-cart-icon
@@ -673,7 +687,8 @@ export default {
 
                     <div class="col-lg-8 col-md-6">
                       <div class="card-body content p-4">
-                        <router-link tag="a"
+                        <router-link
+                          tag="a"
                           to="/shop-product-detail"
                           class="text-dark product-name h6"
                           >Casual Shoes</router-link
@@ -723,7 +738,8 @@ export default {
                             ></a>
                           </li>
                           <li class="mt-2 list-inline-item ml-1">
-                            <router-link tag="a"
+                            <router-link
+                              tag="a"
                               to="/shop-cart"
                               class="btn btn-icon btn-pills btn-soft-primary"
                               ><shopping-cart-icon
@@ -753,7 +769,11 @@ export default {
                             class="img-fluid"
                             alt=""
                         /></router-link>
-                        <router-link tag="a" to="/shop-product-detail" class="overlay-work">
+                        <router-link
+                          tag="a"
+                          to="/shop-product-detail"
+                          class="overlay-work"
+                        >
                           <img
                             src="images/shop/product/s-5.jpg"
                             class="img-fluid"
@@ -766,7 +786,8 @@ export default {
 
                     <div class="col-lg-8 col-md-6">
                       <div class="card-body content p-4">
-                        <router-link tag="a"
+                        <router-link
+                          tag="a"
                           to="/shop-product-detail"
                           class="text-dark product-name h6"
                           >Earphones</router-link
@@ -816,7 +837,8 @@ export default {
                             ></a>
                           </li>
                           <li class="mt-2 list-inline-item ml-1">
-                            <router-link tag="a"
+                            <router-link
+                              tag="a"
                               to="/shop-cart"
                               class="btn btn-icon btn-pills btn-soft-primary"
                               ><shopping-cart-icon
@@ -846,7 +868,11 @@ export default {
                             class="img-fluid"
                             alt=""
                         /></router-link>
-                        <router-link tag="a" to="/shop-product-detail" class="overlay-work">
+                        <router-link
+                          tag="a"
+                          to="/shop-product-detail"
+                          class="overlay-work"
+                        >
                           <img
                             src="images/shop/product/s-6.jpg"
                             class="img-fluid"
@@ -859,7 +885,8 @@ export default {
 
                     <div class="col-lg-8 col-md-6">
                       <div class="card-body content p-4">
-                        <router-link tag="a"
+                        <router-link
+                          tag="a"
                           to="/shop-product-detail"
                           class="text-dark product-name h6"
                           >Elegent Mug</router-link
@@ -909,7 +936,8 @@ export default {
                             ></a>
                           </li>
                           <li class="mt-2 list-inline-item ml-1">
-                            <router-link tag="a"
+                            <router-link
+                              tag="a"
                               to="/shop-cart"
                               class="btn btn-icon btn-pills btn-soft-primary"
                               ><shopping-cart-icon
@@ -952,7 +980,8 @@ export default {
 
                     <div class="col-lg-8 col-md-6">
                       <div class="card-body content p-4">
-                        <router-link tag="a"
+                        <router-link
+                          tag="a"
                           to="/shop-product-detail"
                           class="text-dark product-name h6"
                           >Sony Headphones</router-link
@@ -1002,7 +1031,8 @@ export default {
                             ></a>
                           </li>
                           <li class="mt-2 list-inline-item ml-1">
-                            <router-link tag="a"
+                            <router-link
+                              tag="a"
                               to="/shop-cart"
                               class="btn btn-icon btn-pills btn-soft-primary"
                               ><shopping-cart-icon
@@ -1041,7 +1071,11 @@ export default {
                             class="img-fluid"
                             alt=""
                         /></router-link>
-                        <router-link tag="a" to="/shop-product-detail" class="overlay-work">
+                        <router-link
+                          tag="a"
+                          to="/shop-product-detail"
+                          class="overlay-work"
+                        >
                           <img
                             src="images/shop/product/s-8.jpg"
                             class="img-fluid"
@@ -1054,7 +1088,8 @@ export default {
 
                     <div class="col-lg-8 col-md-6">
                       <div class="card-body content p-4">
-                        <router-link tag="a"
+                        <router-link
+                          tag="a"
                           to="/shop-product-detail"
                           class="text-dark product-name h6"
                           >Wooden Stools</router-link
@@ -1104,7 +1139,8 @@ export default {
                             ></a>
                           </li>
                           <li class="mt-2 list-inline-item ml-1">
-                            <router-link tag="a"
+                            <router-link
+                              tag="a"
                               to="/shop-cart"
                               class="btn btn-icon btn-pills btn-soft-primary"
                               ><shopping-cart-icon
@@ -1134,7 +1170,11 @@ export default {
                             class="img-fluid"
                             alt=""
                         /></router-link>
-                        <router-link tag="a" to="/shop-product-detail" class="overlay-work">
+                        <router-link
+                          tag="a"
+                          to="/shop-product-detail"
+                          class="overlay-work"
+                        >
                           <img
                             src="images/shop/product/s-9.jpg"
                             class="img-fluid"
@@ -1147,7 +1187,8 @@ export default {
 
                     <div class="col-lg-8 col-md-6">
                       <div class="card-body content p-4">
-                        <router-link tag="a"
+                        <router-link
+                          tag="a"
                           to="/shop-product-detail"
                           class="text-dark product-name h6"
                           >Coffee Cup / Mug</router-link
@@ -1197,7 +1238,8 @@ export default {
                             ></a>
                           </li>
                           <li class="mt-2 list-inline-item ml-1">
-                            <router-link tag="a"
+                            <router-link
+                              tag="a"
                               to="/shop-cart"
                               class="btn btn-icon btn-pills btn-soft-primary"
                               ><shopping-cart-icon
@@ -1236,7 +1278,11 @@ export default {
                             class="img-fluid"
                             alt=""
                         /></router-link>
-                        <router-link tag="a" to="/shop-product-detail" class="overlay-work">
+                        <router-link
+                          tag="a"
+                          to="/shop-product-detail"
+                          class="overlay-work"
+                        >
                           <img
                             src="images/shop/product/s-10.jpg"
                             class="img-fluid"
@@ -1249,7 +1295,8 @@ export default {
 
                     <div class="col-lg-8 col-md-6">
                       <div class="card-body content p-4">
-                        <router-link tag="a"
+                        <router-link
+                          tag="a"
                           to="/shop-product-detail"
                           class="text-dark product-name h6"
                           >Sunglasses</router-link
@@ -1299,7 +1346,8 @@ export default {
                             ></a>
                           </li>
                           <li class="mt-2 list-inline-item ml-1">
-                            <router-link tag="a"
+                            <router-link
+                              tag="a"
                               to="/shop-cart"
                               class="btn btn-icon btn-pills btn-soft-primary"
                               ><shopping-cart-icon
@@ -1329,7 +1377,11 @@ export default {
                             class="img-fluid"
                             alt=""
                         /></router-link>
-                        <router-link tag="a" to="/shop-product-detail" class="overlay-work">
+                        <router-link
+                          tag="a"
+                          to="/shop-product-detail"
+                          class="overlay-work"
+                        >
                           <img
                             src="images/shop/product/s-11.jpg"
                             class="img-fluid"
@@ -1342,7 +1394,8 @@ export default {
 
                     <div class="col-lg-8 col-md-6">
                       <div class="card-body content p-4">
-                        <router-link tag="a"
+                        <router-link
+                          tag="a"
                           to="/shop-product-detail"
                           class="text-dark product-name h6"
                           >Loafer Shoes</router-link
@@ -1392,7 +1445,8 @@ export default {
                             ></a>
                           </li>
                           <li class="mt-2 list-inline-item ml-1">
-                            <router-link tag="a"
+                            <router-link
+                              tag="a"
                               to="/shop-cart"
                               class="btn btn-icon btn-pills btn-soft-primary"
                               ><shopping-cart-icon
@@ -1422,7 +1476,11 @@ export default {
                             class="img-fluid"
                             alt=""
                         /></router-link>
-                        <router-link tag="a" to="/shop-product-detail" class="overlay-work">
+                        <router-link
+                          tag="a"
+                          to="/shop-product-detail"
+                          class="overlay-work"
+                        >
                           <img
                             src="images/shop/product/s-12.jpg"
                             class="img-fluid"
@@ -1435,7 +1493,8 @@ export default {
 
                     <div class="col-lg-8 col-md-6">
                       <div class="card-body content p-4">
-                        <router-link tag="a"
+                        <router-link
+                          tag="a"
                           to="/shop-product-detail"
                           class="text-dark product-name h6"
                           >T-Shirts</router-link
@@ -1485,7 +1544,8 @@ export default {
                             ></a>
                           </li>
                           <li class="mt-2 list-inline-item ml-1">
-                            <router-link tag="a"
+                            <router-link
+                              tag="a"
                               to="/shop-cart"
                               class="btn btn-icon btn-pills btn-soft-primary"
                               ><shopping-cart-icon
@@ -1515,7 +1575,11 @@ export default {
                             class="img-fluid"
                             alt=""
                         /></router-link>
-                        <router-link tag="a" to="/shop-product-detail" class="overlay-work">
+                        <router-link
+                          tag="a"
+                          to="/shop-product-detail"
+                          class="overlay-work"
+                        >
                           <img
                             src="images/shop/product/s-13.jpg"
                             class="img-fluid"
@@ -1528,7 +1592,8 @@ export default {
 
                     <div class="col-lg-8 col-md-6">
                       <div class="card-body content p-4">
-                        <router-link tag="a"
+                        <router-link
+                          tag="a"
                           to="/shop-product-detail"
                           class="text-dark product-name h6"
                           >Wooden Chair</router-link
@@ -1578,7 +1643,8 @@ export default {
                             ></a>
                           </li>
                           <li class="mt-2 list-inline-item ml-1">
-                            <router-link tag="a"
+                            <router-link
+                              tag="a"
                               to="/shop-cart"
                               class="btn btn-icon btn-pills btn-soft-primary"
                               ><shopping-cart-icon
@@ -1631,7 +1697,11 @@ export default {
                             class="img-fluid"
                             alt=""
                         /></router-link>
-                        <router-link tag="a" to="/shop-product-detail" class="overlay-work">
+                        <router-link
+                          tag="a"
+                          to="/shop-product-detail"
+                          class="overlay-work"
+                        >
                           <img
                             src="images/shop/product/s-14.jpg"
                             class="img-fluid"
@@ -1644,7 +1714,8 @@ export default {
 
                     <div class="col-lg-8 col-md-6">
                       <div class="card-body content p-4">
-                        <router-link tag="a"
+                        <router-link
+                          tag="a"
                           to="/shop-product-detail"
                           class="text-dark product-name h6"
                           >Women Block Heels</router-link
@@ -1694,7 +1765,8 @@ export default {
                             ></a>
                           </li>
                           <li class="mt-2 list-inline-item ml-1">
-                            <router-link tag="a"
+                            <router-link
+                              tag="a"
                               to="/shop-cart"
                               class="btn btn-icon btn-pills btn-soft-primary"
                               ><shopping-cart-icon
@@ -1724,7 +1796,11 @@ export default {
                             class="img-fluid"
                             alt=""
                         /></router-link>
-                        <router-link tag="a" to="/shop-product-detail" class="overlay-work">
+                        <router-link
+                          tag="a"
+                          to="/shop-product-detail"
+                          class="overlay-work"
+                        >
                           <img
                             src="images/shop/product/s-15.jpg"
                             class="img-fluid"
@@ -1737,7 +1813,8 @@ export default {
 
                     <div class="col-lg-8 col-md-6">
                       <div class="card-body content p-4">
-                        <router-link tag="a"
+                        <router-link
+                          tag="a"
                           to="/shop-product-detail"
                           class="text-dark product-name h6"
                           >T-Shirts</router-link
@@ -1787,7 +1864,8 @@ export default {
                             ></a>
                           </li>
                           <li class="mt-2 list-inline-item ml-1">
-                            <router-link tag="a"
+                            <router-link
+                              tag="a"
                               to="/shop-cart"
                               class="btn btn-icon btn-pills btn-soft-primary"
                               ><shopping-cart-icon
@@ -1865,4 +1943,3 @@ export default {
     <!-- Back to top -->
   </div>
 </template>
-    

@@ -715,8 +715,8 @@ export default {
                 to generate awareness, drive traffic, connect.
               </p>
               <a
-                 href="javascript: void(0);"
-                  v-b-modal.modal-2
+                href="javascript: void(0);"
+                v-b-modal.modal-2
                 class="play-btn border border-light mt-4 video-play-icon"
               >
                 <play-icon
@@ -1148,7 +1148,7 @@ export default {
                 >
               </li>
               <li>
-                <router-link to="/page-services" class="text-foot"
+                <router-link to="/servicios" class="text-foot"
                   ><i class="mdi mdi-chevron-right mr-1"></i>
                   Services</router-link
                 >

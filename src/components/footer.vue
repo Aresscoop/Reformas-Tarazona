@@ -89,36 +89,36 @@ export default {
             <h5 class="text-light footer-head">Páginas</h5>
             <ul class="list-unstyled footer-list mt-4">
               <li>
-                <router-link to="/page-aboutus" class="text-foot"
+                <router-link to="/" class="text-foot"
                   ><i class="mdi mdi-chevron-right mr-1"></i>Inicio</router-link
                 >
               </li>
               <li>
-                <router-link to="/page-services" class="text-foot"
+                <router-link to="proyectos" class="text-foot"
                   ><i class="mdi mdi-chevron-right mr-1"></i>
                   Proyectos</router-link
                 >
               </li>
               <li>
-                <router-link to="/page-team" class="text-foot"
+                <router-link to="productos" class="text-foot"
                   ><i class="mdi mdi-chevron-right mr-1"></i>
                   Productos</router-link
                 >
               </li>
               <li>
-                <router-link to="/page-pricing" class="text-foot"
+                <router-link to="servicios" class="text-foot"
                   ><i class="mdi mdi-chevron-right mr-1"></i>
                   Servicios</router-link
                 >
               </li>
               <li>
-                <router-link to="/page-portfolio-modern" class="text-foot"
+                <router-link to="contract" class="text-foot"
                   ><i class="mdi mdi-chevron-right mr-1"></i>
                   Contract</router-link
                 >
               </li>
               <li>
-                <router-link to="/page-jobs" class="text-foot"
+                <router-link to="contacto" class="text-foot"
                   ><i class="mdi mdi-chevron-right mr-1"></i>
                   Contacto</router-link
                 >

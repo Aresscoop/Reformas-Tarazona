@@ -8,7 +8,7 @@ import Footer from "@/components/footer";
 import Testimonial from "@/components/testimonial";
 
 /**
- * Page-services component
+ * servicios component
  */
 export default {
   data() {

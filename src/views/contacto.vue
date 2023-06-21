@@ -12,7 +12,7 @@ import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
 
 /**
- * Page-contact-three component
+ * contacto component
  */
 export default {
   data() {

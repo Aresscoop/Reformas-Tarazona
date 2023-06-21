@@ -818,7 +818,7 @@ export default {
                 >
               </li>
               <li>
-                <router-link to="/page-services" class="text-foot"
+                <router-link to="/servicios" class="text-foot"
                   ><i class="mdi mdi-chevron-right mr-1"></i>
                   Services</router-link
                 >

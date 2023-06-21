@@ -324,7 +324,7 @@ export default {
                 <div class="col-md-6 col-12 mt-4 pt-2">
                   <div class="card border-0 work-container work-classic">
                     <div class="card-body p-0">
-                      <router-link to="/page-portfolio-detail"
+                      <router-link to="/contract"
                         ><img
                           src="images/work/1.jpg"
                           class="img-fluid rounded work-image"
@@ -332,9 +332,7 @@ export default {
                       /></router-link>
                       <div class="content pt-3">
                         <h5 class="mb-0">
-                          <router-link
-                            to="/page-portfolio-detail"
-                            class="text-dark title"
+                          <router-link to="/contract" class="text-dark title"
                             >Iphone mockup</router-link
                           >
                         </h5>
@@ -348,7 +346,7 @@ export default {
                 <div class="col-md-6 col-12 mt-4 pt-2">
                   <div class="card border-0 work-container work-classic">
                     <div class="card-body p-0">
-                      <router-link to="/page-portfolio-detail"
+                      <router-link to="/contract"
                         ><img
                           src="images/work/2.jpg"
                           class="img-fluid rounded work-image"
@@ -356,9 +354,7 @@ export default {
                       /></router-link>
                       <div class="content pt-3">
                         <h5 class="mb-0">
-                          <router-link
-                            to="/page-portfolio-detail"
-                            class="text-dark title"
+                          <router-link to="/contract" class="text-dark title"
                             >Mockup Collection</router-link
                           >
                         </h5>
@@ -372,7 +368,7 @@ export default {
                 <div class="col-md-6 col-12 mt-4 pt-2">
                   <div class="card border-0 work-container work-classic">
                     <div class="card-body p-0">
-                      <router-link to="/page-portfolio-detail"
+                      <router-link to="/contract"
                         ><img
                           src="images/work/3.jpg"
                           class="img-fluid rounded work-image"
@@ -380,9 +376,7 @@ export default {
                       /></router-link>
                       <div class="content pt-3">
                         <h5 class="mb-0">
-                          <router-link
-                            to="/page-portfolio-detail"
-                            class="text-dark title"
+                          <router-link to="/contract" class="text-dark title"
                             >Abstract images</router-link
                           >
                         </h5>
@@ -396,7 +390,7 @@ export default {
                 <div class="col-md-6 col-12 mt-4 pt-2">
                   <div class="card border-0 work-container work-classic">
                     <div class="card-body p-0">
-                      <router-link to="/page-portfolio-detail"
+                      <router-link to="/contract"
                         ><img
                           src="images/work/4.jpg"
                           class="img-fluid rounded work-image"
@@ -404,9 +398,7 @@ export default {
                       /></router-link>
                       <div class="content pt-3">
                         <h5 class="mb-0">
-                          <router-link
-                            to="/page-portfolio-detail"
-                            class="text-dark title"
+                          <router-link to="/contract" class="text-dark title"
                             >Yellow bg with Books</router-link
                           >
                         </h5>

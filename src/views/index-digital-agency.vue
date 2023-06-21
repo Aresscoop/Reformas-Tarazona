@@ -10,7 +10,7 @@ import {
   TwitterIcon,
   LinkedinIcon,
   MailIcon,
-  ArrowRightIcon
+  ArrowRightIcon,
 } from "vue-feather-icons";
 import { Carousel, Slide } from "vue-carousel";
 
@@ -39,7 +39,7 @@ export default {
     LinkedinIcon,
     MailIcon,
     SmartphoneIcon,
-    ArrowRightIcon
+    ArrowRightIcon,
   },
 };
 </script>
@@ -434,7 +434,9 @@ export default {
                 the distribution of letters visual impact.
               </p>
               <a href="javascript:void(0)" class="btn btn-primary"
-                >Find More  <arrow-right-icon class="fea icon-sm"></arrow-right-icon></a>
+                >Find More
+                <arrow-right-icon class="fea icon-sm"></arrow-right-icon
+              ></a>
             </div>
           </div>
           <!--end col--->
@@ -1249,7 +1251,7 @@ export default {
                 >
               </li>
               <li>
-                <router-link to="/page-services" class="text-foot"
+                <router-link to="/servicios" class="text-foot"
                   ><i class="mdi mdi-chevron-right mr-1"></i>
                   Services</router-link
                 >

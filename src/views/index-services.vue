@@ -1,9 +1,13 @@
 <script>
-import { ArrowUpIcon, VideoIcon,  FacebookIcon,
+import {
+  ArrowUpIcon,
+  VideoIcon,
+  FacebookIcon,
   InstagramIcon,
   TwitterIcon,
   LinkedinIcon,
-  MailIcon, } from "vue-feather-icons";
+  MailIcon,
+} from "vue-feather-icons";
 import { Carousel, Slide } from "vue-carousel";
 import countTo from "vue-count-to";
 
@@ -17,7 +21,7 @@ import Features from "@/components/features";
 export default {
   data() {
     return {
-        featuresData: [
+      featuresData: [
         {
           icon: "uil uil-flip-h",
           title: "Built for Everyone",
@@ -46,13 +50,13 @@ export default {
     Slide,
     ArrowUpIcon,
     VideoIcon,
-      FacebookIcon,
-  InstagramIcon,
-  TwitterIcon,
-  LinkedinIcon,
-  MailIcon,
+    FacebookIcon,
+    InstagramIcon,
+    TwitterIcon,
+    LinkedinIcon,
+    MailIcon,
     countTo,
-    Features
+    Features,
   },
 };
 </script>
@@ -75,9 +79,7 @@ export default {
                 and managing conversion centered bootstrap4 html page.
               </p>
               <div class="watch-video mt-4 pt-2">
-                <router-link
-                  to="/page-services"
-                  class="btn btn-primary mb-2 mr-2"
+                <router-link to="/servicios" class="btn btn-primary mb-2 mr-2"
                   >Our Services</router-link
                 >
                 <a
@@ -127,7 +129,7 @@ export default {
     <!-- Feature Start -->
     <section class="section pt-0">
       <div class="container">
-         <Features :featuresData="featuresData" />
+        <Features :featuresData="featuresData" />
       </div>
       <!--end container-->
     </section>
@@ -445,7 +447,7 @@ export default {
     <!--end section-->
     <!-- Testimonial End -->
     <!--end section-->
-       <!-- Footer Start -->
+    <!-- Footer Start -->
     <footer class="footer bg-light">
       <div class="container">
         <div class="row">
@@ -501,7 +503,7 @@ export default {
                 >
               </li>
               <li>
-                <router-link to="/page-services" class="text-foot"
+                <router-link to="/servicios" class="text-foot"
                   ><i class="mdi mdi-chevron-right mr-1"></i>
                   Services</router-link
                 >

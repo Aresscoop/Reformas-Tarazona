@@ -178,27 +178,27 @@ export default {
               <router-link to="/" class="side-nav-link-ref">Inicio</router-link>
             </li>
             <li>
-              <router-link to="/page-portfolio-grid" class="side-nav-link-ref"
+              <router-link to="/proyectos" class="side-nav-link-ref"
                 >Proyectos</router-link
               >
             </li>
             <li>
-              <router-link to="/shop-grids" class="side-nav-link-ref"
+              <router-link to="/productos" class="side-nav-link-ref"
                 >Productos</router-link
               >
             </li>
             <li>
-              <router-link to="/page-services" class="side-nav-link-ref"
+              <router-link to="/servicios" class="side-nav-link-ref"
                 >Servicios</router-link
               >
             </li>
             <li>
-              <router-link to="/page-portfolio-detail" class="side-nav-link-ref"
+              <router-link to="/contract" class="side-nav-link-ref"
                 >Contract</router-link
               >
             </li>
             <li>
-              <router-link to="/page-contact-three" class="side-nav-link-ref"
+              <router-link to="/contacto" class="side-nav-link-ref"
                 >Contacto</router-link
               >
             </li>

@@ -105,24 +105,26 @@ export default {
     <!-- Hero Start -->
     <section
       class="bg-half-260 d-table w-100"
-      style="background: url('images/construction/bg.jpg') center center"
+      style="background: url('images/principal/fondo.png') center center"
     >
       <div class="bg-overlay" style="opacity: 0.65"></div>
       <div class="container">
         <div class="row mt-5 mt-md-4">
           <div class="col-12">
             <div class="title-heading">
-              <h4 class="display-4 mb-4 font-weight-bold text-white title-dark">
-                Start building <br />
-                your dream home
-              </h4>
+              <h1 class="display-4 mb-4 font-weight-bold text-white title-dark">
+                ¿Quieres la
+                <span class="text-primary font-weight-bold">casa</span><br />
+                de tus sueños?
+              </h1>
               <p class="para-desc text-white-50">
-                Launch your campaign and benefit from our expertise on designing
-                and managing conversion centered bootstrap4 html page.
+                En Reformas Tarazona realizamos todo tipo de reformas, desde tu
+                cocina a tu baño, cambiando azulejos, parquet, muebles,
+                mamparas, etc.
               </p>
               <div class="mt-4 pt-2">
-                <a href="javascript:void(0)" class="btn btn-primary"
-                  >Get Started</a
+                <a href="../views/contacto.vue" class="btn btn-primary"
+                  >Contáctanos!</a
                 >
               </div>
             </div>
@@ -150,14 +152,14 @@ export default {
                           class="icon text-center rounded-circle text-primary mr-3 mt-2"
                         >
                           <i
-                            class="uil uil-ruler-combined align-middle h4 mb-0"
+                            class="uil uil-shopping-bag align-middle h4 mb-0"
                           ></i>
                         </div>
                         <div class="media-body">
-                          <h4 class="title">Project Planning</h4>
+                          <h2 class="title">Venta de productos</h2>
                           <p class="text-muted para mb-0">
-                            Composed in a pseudo-Latin language which more
-                            corresponds.
+                            Gran variedad de productos y muebles para el baño,
+                            la cocina y el hogar.
                           </p>
                         </div>
                       </div>
@@ -174,10 +176,10 @@ export default {
                           ></i>
                         </div>
                         <div class="media-body">
-                          <h4 class="title">Qualified Specialists</h4>
+                          <h2 class="title">Reformas</h2>
                           <p class="text-muted para mb-0">
-                            Composed in a pseudo-Latin language which more
-                            corresponds.
+                            Reformas de las distintas zonas de tu casa, tanto de
+                            interior como de exterior.
                           </p>
                         </div>
                       </div>
@@ -189,13 +191,15 @@ export default {
                         <div
                           class="icon text-center rounded-circle text-primary mr-3 mt-2"
                         >
-                          <i class="uil uil-no-entry align-middle h4 mb-0"></i>
+                          <i
+                            class="uil uil-swatchbook align-middle h4 mb-0"
+                          ></i>
                         </div>
                         <div class="media-body">
-                          <h4 class="title">Constant Maintenance</h4>
+                          <h2 class="title">Contract</h2>
                           <p class="text-muted para mb-0">
-                            Composed in a pseudo-Latin language which more
-                            corresponds.
+                            Diseños exclusivos a medida para conseguir la
+                            estancia de tus sueños.
                           </p>
                         </div>
                       </div>
@@ -207,13 +211,13 @@ export default {
                         <div
                           class="icon text-center rounded-circle text-primary mr-3 mt-2"
                         >
-                          <i class="uil uil-cog align-middle h4 mb-0"></i>
+                          <i class="uil uil-selfie align-middle h4 mb-0"></i>
                         </div>
                         <div class="media-body">
-                          <h4 class="title">Warranty Service</h4>
+                          <h2 class="title">Asesoramiento</h2>
                           <p class="text-muted para mb-0">
-                            Composed in a pseudo-Latin language which more
-                            corresponds.
+                            Te asesoramos y aconsejamos sobre como mejorar tu
+                            casa.
                           </p>
                         </div>
                       </div>
@@ -226,8 +230,9 @@ export default {
 
                 <div class="col-lg-4 d-none d-lg-block position-relative">
                   <img
-                    src="images/construction/serveices.png"
+                    src="images/principal/baño_1.png"
                     class="img-fluid mx-auto d-block construction-img"
+                    style="border-radius: 10px 10px 0px 0px"
                     alt=""
                   />
                 </div>
@@ -240,9 +245,10 @@ export default {
 
           <div class="col-12 mt-4 pt-2 text-center">
             <p class="text-muted mb-0">
-              Our list of services does not end here.
-              <a href="javascript:void(0)" class="text-primary h6">Click here</a
-              >, and We’ll come up with more solution for you!
+              Si quieres conocer todos nuestros servicios.
+              <a href="../views/servicios.vue" class="text-primary h6"
+                >Haz click aquí</a
+              >, si tienes cualquier duda te asesoraremos!
             </p>
           </div>
           <!--end col-->
@@ -250,6 +256,81 @@ export default {
         <!--end row-->
       </div>
       <!--end container-->
+      <!-- Features Start -->
+      <div class="container-fluid mt-5 pt-2">
+        <div class="row">
+          <div class="col-md-4">
+            <div
+              class="py-5 rounded shadow"
+              style="
+                background: url('images/principal/cocina-banner.png') top center;
+              "
+            >
+              <div class="p-4 banner">
+                <h3>
+                  Descuentos en <br />
+                  Cocinas
+                </h3>
+                <a
+                  href="javascript:void(0)"
+                  class="btn btn-sm btn-soft-primary mt-2"
+                  >Más info.</a
+                >
+              </div>
+            </div>
+          </div>
+          <!--end col-->
+
+          <div class="col-md-4 mt-4 pt-2 mt-sm-0 pt-sm-0">
+            <div
+              class="py-5 rounded shadow"
+              style="
+                background: url('images/principal/baño-banner.png') top center;
+              "
+            >
+              <div class="p-4 banner">
+                <h3>
+                  Descuentos en <br />
+                  Baños
+                </h3>
+                <a
+                  href="javascript:void(0)"
+                  class="btn btn-sm btn-soft-primary mt-2"
+                  style="color= yellow"
+                  >Más info.</a
+                >
+              </div>
+            </div>
+          </div>
+          <!--end col-->
+
+          <div class="col-md-4 mt-4 pt-2 mt-sm-0 pt-sm-0">
+            <div
+              class="py-5 rounded shadow"
+              style="
+                background: url('images/principal/mampara-banner.png') top
+                  center;
+              "
+            >
+              <div class="p-4 banner">
+                <h3>
+                  Descuentos en <br />
+                  Mamparas
+                </h3>
+                <a
+                  href="javascript:void(0)"
+                  class="btn btn-sm btn-soft-primary mt-2"
+                  >Más info.</a
+                >
+              </div>
+            </div>
+          </div>
+          <!--end col-->
+        </div>
+        <!--end row-->
+      </div>
+      <!--end container-->
+      <!-- Features End -->
     </section>
     <!--end section-->
 
@@ -259,37 +340,10 @@ export default {
           <div class="col-lg-5 col-md-6 col-12">
             <div class="position-relative">
               <img
-                src="images/construction/about.jpg"
+                src="images/principal/baño.png"
                 class="rounded img-fluid mx-auto d-block"
                 alt=""
               />
-              <div class="play-icon">
-                <a
-                  href="javascript: void(0);"
-                  v-b-modal.modal-1
-                  class="play-btn video-play-icon"
-                >
-                  <i
-                    class="mdi mdi-play text-primary rounded-circle bg-white shadow"
-                  ></i>
-                </a>
-                <b-modal
-                  id="modal-1"
-                  hide-footer
-                  size="lg"
-                  header-close-variant="white"
-                  header-class="border-0"
-                  content-class="border-0"
-                  centered
-                >
-                  <vimeo-player
-                    ref="player"
-                    :player-width="750"
-                    :player-height="450"
-                    :video-id="287684225"
-                  />
-                </b-modal>
-              </div>
             </div>
           </div>
           <!--end col-->
@@ -298,27 +352,36 @@ export default {
             <div class="ml-lg-5 ml-md-4">
               <div class="section-title">
                 <span class="badge badge-pill badge-soft-primary"
-                  >About us</span
+                  >Sobre nosotros</span
                 >
-                <h4 class="title mt-3 mb-4">
-                  We are the leader <br />
-                  in the <span class="text-primary">Landrick</span>
-                </h4>
+                <h2 class="title mt-3 mb-4">
+                  El cambio que tu hogar se
+                  <span class="text-primary">merece</span>.
+                </h2>
                 <p class="text-muted para-desc mx-auto">
-                  Start working with
-                  <span class="text-primary font-weight-bold">Landrick</span>
-                  that can provide everything you need to generate awareness,
-                  drive traffic, connect.
+                  En
+                  <span class="text-primary font-weight-bold"
+                    >Reformas Tarazona</span
+                  >
+                  hacemos cualquier tipo de reforma, asñi como instalación y
+                  venta de mamparas de baño, muebles de cocina y baño, venta de
+                  azulejos y pavimento, instalación y venta de parquet, mamparas
+                  de baño, grifería, etc.
                 </p>
                 <p class="text-muted para-desc mx-auto mb-0">
-                  The most well-known dummy text is the 'Lorem Ipsum', which is
-                  said to have originated in the 16th century. Lorem Ipsum is
-                  composed in a pseudo-Latin language which more or less
-                  corresponds to 'proper' Latin.
+                  Es momento de conseguir el cambio en tu hogar que tanto
+                  deseabas, reformamos el interior y exterior de tu casa, para
+                  conseguir una armonía en los espacios. Especialistas en
+                  cocinas y baños.
+                </p>
+                <br />
+                <p class="text-muted para-desc mx-auto mb-0">
+                  Si quieres saber más sobre nosotros puedes ver los proyectos
+                  que hemos realizado desde el siguiente enlace.
                 </p>
                 <div class="mt-4">
-                  <a href="javascript:void(0)" class="btn btn-primary"
-                    >Learn More</a
+                  <a href="../views/proyectos.vue" class="btn btn-primary"
+                    >Proyectos</a
                   >
                 </div>
               </div>
@@ -330,82 +393,60 @@ export default {
       </div>
       <!--end container-->
 
-      <div class="container mt-100 mt-60">
-        <div class="row align-items-center">
-          <div class="col-lg-4 col-md-3">
-            <h6 class="text-muted mb-0">
-              Trusted by over 2,000 of the world’s leading construction
-              companies
-            </h6>
-          </div>
-          <!--end col-->
-
-          <div class="col-lg-8 col-md-9 mt-4 pt-2 mt-sm-0 pt-sm-0">
-            <div class="rounded shadow bg-light p-4">
-              <div class="row justify-content-center">
-                <div class="col-lg-3 col-md-3 col-6 text-center py-4">
-                  <img
-                    src="images/client/amazon.svg"
-                    class="avatar avatar-ex-sm"
-                    alt=""
-                  />
+      <!-- Start CTA -->
+      <div class="container-fluid mt-100 mt-60">
+        <div
+          class="rounded py-5"
+          style="background: url('images/shop/cta.jpg') fixed"
+        >
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <div class="section-title">
+                  <h2 class="font-weight-bold mb-4">
+                    End of Season Clearance <br />
+                    Sale upto 30%
+                  </h2>
+                  <p class="para-desc para-white text-muted mb-0">
+                    Launch your campaign and benefit from our expertise on
+                    designing and managing conversion centered bootstrap4 html
+                    page.
+                  </p>
+                  <div class="mt-4">
+                    <a href="javascript:void(0)" class="btn btn-primary"
+                      >Saber más</a
+                    >
+                  </div>
                 </div>
-                <!--end col-->
-
-                <div class="col-lg-3 col-md-3 col-6 text-center py-4">
-                  <img
-                    src="images/client/google.svg"
-                    class="avatar avatar-ex-sm"
-                    alt=""
-                  />
-                </div>
-                <!--end col-->
-
-                <div class="col-lg-3 col-md-3 col-6 text-center py-4">
-                  <img
-                    src="images/client/lenovo.svg"
-                    class="avatar avatar-ex-sm"
-                    alt=""
-                  />
-                </div>
-                <!--end col-->
-
-                <div class="col-lg-3 col-md-3 col-6 text-center py-4">
-                  <img
-                    src="images/client/paypal.svg"
-                    class="avatar avatar-ex-sm"
-                    alt=""
-                  />
-                </div>
-                <!--end col-->
               </div>
-              <!--end row-->
+              <!--end col-->
             </div>
+            <!--end row-->
           </div>
-          <!--end col-->
+          <!--end container-->
         </div>
-        <!--end row-->
       </div>
       <!--end container-->
+      <!-- End CTA -->
 
       <div class="container mt-100 mt-60">
         <div class="row">
           <div class="col-lg-4 col-md-6">
             <div class="section-title sticky-bar position-sticky">
-              <span class="badge badge-pill badge-soft-primary">Projects</span>
-              <h4 class="title mt-3 mb-4">
-                Our latest projects <br />
-                check now dears
-              </h4>
+              <span class="badge badge-pill badge-soft-primary">Proyectos</span>
+              <h2 class="title mt-3 mb-4">Nuestros proyectos</h2>
               <p class="text-muted para-desc mb-0">
-                Start working with
-                <span class="text-primary font-weight-bold">Landrick</span> that
-                can provide everything you need to generate awareness, drive
-                traffic, connect.
+                En
+                <span class="text-primary font-weight-bold"
+                  >Reformas Tarazona</span
+                >
+                contamos con gran experiencia en el sector de la construcción y
+                las reformas, especialistas en baños y cocinas, aquí tienes
+                algunos de nuestros proyectos.
               </p>
               <div class="mt-4 d-none d-md-block">
-                <a href="javascript:void(0)" class="btn btn-soft-primary"
-                  >See More
+                <a href="../views/proyectos.vue)" class="btn btn-soft-primary"
+                  >Ver más
                   <arrow-right-icon class="fea icon-sm"></arrow-right-icon
                 ></a>
               </div>
@@ -468,7 +509,7 @@ export default {
                   class="card border-0 work-container work-classic shadow overflow-hidden"
                 >
                   <div class="card-body p-0">
-                    <router-link to="/page-portfolio-detail"
+                    <router-link to="/contract"
                       ><img
                         :src="item.image"
                         class="img-fluid work-image"
@@ -476,11 +517,9 @@ export default {
                     /></router-link>
                     <div class="content p-4">
                       <h5 class="mb-0">
-                        <router-link
-                          to="/page-portfolio-detail"
-                          class="text-dark title"
-                          >{{ item.title }}</router-link
-                        >
+                        <router-link to="/contract" class="text-dark title">{{
+                          item.title
+                        }}</router-link>
                       </h5>
                       <h6 class="text-muted tag mb-0">{{ item.type }}</h6>
                     </div>
@@ -503,413 +542,56 @@ export default {
         <!--end row-->
       </div>
       <!--end container-->
-
       <div class="container mt-100 mt-60">
-        <div class="row justify-content-center">
-          <div class="col-12">
-            <div class="section-title mb-4 pb-2 text-center">
-              <h4 class="title mb-4">Expert Team Members</h4>
-              <p class="text-muted mx-auto para-desc mb-0">
-                Start working with
-                <span class="text-primary font-weight-bold">Landrick</span> that
-                can provide everything you need to generate awareness, drive
-                traffic, connect.
-              </p>
-            </div>
-          </div>
-          <!--end col-->
-        </div>
-        <!--end row-->
-
-        <div class="row">
-          <div class="col-lg-3 col-md-6 mt-4 pt-2">
-            <div class="card team text-center border-0">
-              <div class="position-relative">
-                <img
-                  src="images/construction/t1.jpg"
-                  class="img-fluid"
-                  alt=""
-                />
-                <ul class="list-unstyled social-icon team-icon mb-0 mt-4">
-                  <li class="list-inline-item">
-                    <a href="javascript:void(0)" class="rounded"
-                      ><facebook-icon
-                        class="fea icon-sm fea-social"
-                      ></facebook-icon
-                    ></a>
-                  </li>
-                  <li class="list-inline-item">
-                    <a href="javascript:void(0)" class="rounded"
-                      ><instagram-icon
-                        class="fea icon-sm fea-social"
-                      ></instagram-icon
-                    ></a>
-                  </li>
-                  <li class="list-inline-item">
-                    <a href="javascript:void(0)" class="rounded"
-                      ><twitter-icon
-                        class="fea icon-sm fea-social"
-                      ></twitter-icon
-                    ></a>
-                  </li>
-                  <li class="list-inline-item">
-                    <a href="javascript:void(0)" class="rounded"
-                      ><linkedin-icon
-                        class="fea icon-sm fea-social"
-                      ></linkedin-icon
-                    ></a>
-                  </li>
-                </ul>
-                <!--end icon-->
-              </div>
-              <div class="card-body py-3 px-0 content">
-                <h5 class="mb-0">
-                  <a href="javascript:void(0)" class="name text-dark"
-                    >Ronny Jofra</a
-                  >
-                </h5>
-                <small class="designation text-muted">Architecture</small>
-              </div>
-            </div>
+        <div class="row align-items-center">
+          <div class="col-lg-4 col-md-3">
+            <p class="text-muted mb-0">
+              Trabajamos con gran variedad de empresas y marcas para ofrecer
+              servicios de calidad.
+            </p>
           </div>
           <!--end col-->
 
-          <div class="col-lg-3 col-md-6 mt-4 pt-2">
-            <div class="card team text-center border-0">
-              <div class="position-relative">
-                <img
-                  src="images/construction/t3.jpg"
-                  class="img-fluid"
-                  alt=""
-                />
-                <ul class="list-unstyled social-icon team-icon mb-0 mt-4">
-                  <li class="list-inline-item">
-                    <a href="javascript:void(0)" class="rounded"
-                      ><facebook-icon
-                        class="fea icon-sm fea-social"
-                      ></facebook-icon
-                    ></a>
-                  </li>
-                  <li class="list-inline-item">
-                    <a href="javascript:void(0)" class="rounded"
-                      ><instagram-icon
-                        class="fea icon-sm fea-social"
-                      ></instagram-icon
-                    ></a>
-                  </li>
-                  <li class="list-inline-item">
-                    <a href="javascript:void(0)" class="rounded"
-                      ><twitter-icon
-                        class="fea icon-sm fea-social"
-                      ></twitter-icon
-                    ></a>
-                  </li>
-                  <li class="list-inline-item">
-                    <a href="javascript:void(0)" class="rounded"
-                      ><linkedin-icon
-                        class="fea icon-sm fea-social"
-                      ></linkedin-icon
-                    ></a>
-                  </li>
-                </ul>
-                <!--end icon-->
-              </div>
-              <div class="card-body py-3 px-0 content">
-                <h5 class="mb-0">
-                  <a href="javascript:void(0)" class="name text-dark"
-                    >Micheal Carlo</a
-                  >
-                </h5>
-                <small class="designation text-muted">Project Manager</small>
-              </div>
-            </div>
-          </div>
-          <!--end col-->
-
-          <div class="col-lg-3 col-md-6 mt-4 pt-2">
-            <div class="card team text-center border-0">
-              <div class="position-relative">
-                <img
-                  src="images/construction/t2.jpg"
-                  class="img-fluid"
-                  alt=""
-                />
-                <ul class="list-unstyled social-icon team-icon mb-0 mt-4">
-                  <li class="list-inline-item">
-                    <a href="javascript:void(0)" class="rounded"
-                      ><facebook-icon
-                        class="fea icon-sm fea-social"
-                      ></facebook-icon
-                    ></a>
-                  </li>
-                  <li class="list-inline-item">
-                    <a href="javascript:void(0)" class="rounded"
-                      ><instagram-icon
-                        class="fea icon-sm fea-social"
-                      ></instagram-icon
-                    ></a>
-                  </li>
-                  <li class="list-inline-item">
-                    <a href="javascript:void(0)" class="rounded"
-                      ><twitter-icon
-                        class="fea icon-sm fea-social"
-                      ></twitter-icon
-                    ></a>
-                  </li>
-                  <li class="list-inline-item">
-                    <a href="javascript:void(0)" class="rounded"
-                      ><linkedin-icon
-                        class="fea icon-sm fea-social"
-                      ></linkedin-icon
-                    ></a>
-                  </li>
-                </ul>
-                <!--end icon-->
-              </div>
-              <div class="card-body py-3 px-0 content">
-                <h5 class="mb-0">
-                  <a href="javascript:void(0)" class="name text-dark"
-                    >Aliana Rosy</a
-                  >
-                </h5>
-                <small class="designation text-muted">Builder Advisor</small>
-              </div>
-            </div>
-          </div>
-          <!--end col-->
-
-          <div class="col-lg-3 col-md-6 mt-4 pt-2">
-            <div class="card team text-center border-0">
-              <div class="position-relative">
-                <img
-                  src="images/construction/t4.jpg"
-                  class="img-fluid"
-                  alt=""
-                />
-                <ul class="list-unstyled social-icon team-icon mb-0 mt-4">
-                  <li class="list-inline-item">
-                    <a href="javascript:void(0)" class="rounded"
-                      ><facebook-icon
-                        class="fea icon-sm fea-social"
-                      ></facebook-icon
-                    ></a>
-                  </li>
-                  <li class="list-inline-item">
-                    <a href="javascript:void(0)" class="rounded"
-                      ><instagram-icon
-                        class="fea icon-sm fea-social"
-                      ></instagram-icon
-                    ></a>
-                  </li>
-                  <li class="list-inline-item">
-                    <a href="javascript:void(0)" class="rounded"
-                      ><twitter-icon
-                        class="fea icon-sm fea-social"
-                      ></twitter-icon
-                    ></a>
-                  </li>
-                  <li class="list-inline-item">
-                    <a href="javascript:void(0)" class="rounded"
-                      ><linkedin-icon
-                        class="fea icon-sm fea-social"
-                      ></linkedin-icon
-                    ></a>
-                  </li>
-                </ul>
-                <!--end icon-->
-              </div>
-              <div class="card-body py-3 px-0 content">
-                <h5 class="mb-0">
-                  <a href="javascript:void(0)" class="name text-dark"
-                    >Sofia Razaq</a
-                  >
-                </h5>
-                <small class="designation text-muted">HR Manager</small>
-              </div>
-            </div>
-          </div>
-          <!--end col-->
-        </div>
-        <!--end row-->
-      </div>
-      <!--end container-->
-    </section>
-    <!--end section-->
-
-    <section class="section bg-light">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-12">
-            <div class="section-title mb-4 pb-2 text-center">
-              <span class="badge badge-pill badge-soft-primary"
-                >Blogs & News</span
-              >
-              <h4 class="title mt-3 mb-4">Latest News & Articals</h4>
-              <p class="text-muted mx-auto para-desc mb-0">
-                Start working with
-                <span class="text-primary font-weight-bold">Landrick</span> that
-                can provide everything you need to generate awareness, drive
-                traffic, connect.
-              </p>
-            </div>
-          </div>
-          <!--end col-->
-        </div>
-        <!--end row-->
-
-        <div class="row">
-          <div class="col-lg-4 col-md-6 mt-4 pt-2">
-            <div class="card blog rounded border-0 shadow">
-              <div class="position-relative">
-                <img
-                  src="images/construction/o1.jpg"
-                  class="card-img-top rounded-top"
-                  alt="..."
-                />
-                <div class="overlay rounded-top bg-dark"></div>
-              </div>
-              <div class="card-body content">
-                <h5>
-                  <a
-                    href="javascript:void(0)"
-                    class="card-title title text-dark"
-                    >High quality work for demand our customer.</a
-                  >
-                </h5>
-                <div class="post-meta d-flex justify-content-between mt-3">
-                  <ul class="list-unstyled mb-0">
-                    <li class="list-inline-item mr-2 mb-0">
-                      <a href="javascript:void(0)" class="text-muted like"
-                        ><i class="mdi mdi-heart-outline mr-1"></i>33</a
-                      >
-                    </li>
-                    <li class="list-inline-item">
-                      <a href="javascript:void(0)" class="text-muted comments"
-                        ><i class="mdi mdi-comment-outline mr-1"></i>08</a
-                      >
-                    </li>
-                  </ul>
-                  <router-link
-                    tag="a"
-                    to="/page-blog-detail"
-                    class="text-muted readmore"
-                    >Read More <i class="mdi mdi-chevron-right"></i
-                  ></router-link>
+          <div class="col-lg-8 col-md-9 mt-4 pt-2 mt-sm-0 pt-sm-0">
+            <div class="rounded shadow bg-light p-4">
+              <div class="row justify-content-center">
+                <div class="col-lg-3 col-md-3 col-6 text-center py-4">
+                  <img
+                    src="images/client/amazon.svg"
+                    class="avatar avatar-ex-sm"
+                    alt=""
+                  />
                 </div>
-              </div>
-              <div class="author">
-                <small class="text-light user d-block"
-                  ><i class="mdi mdi-account"></i> Calvin Carlo</small
-                >
-                <small class="text-light date"
-                  ><i class="mdi mdi-calendar-check"></i> 13th August,
-                  2019</small
-                >
-              </div>
-            </div>
-          </div>
-          <!--end col-->
+                <!--end col-->
 
-          <div class="col-lg-4 col-md-6 mt-4 pt-2">
-            <div class="card blog rounded border-0 shadow">
-              <div class="position-relative">
-                <img
-                  src="images/construction/b1.jpg"
-                  class="card-img-top rounded-top"
-                  alt="..."
-                />
-                <div class="overlay rounded-top bg-dark"></div>
-              </div>
-              <div class="card-body content">
-                <h5>
-                  <a
-                    href="javascript:void(0)"
-                    class="card-title title text-dark"
-                    >Building public support for a severige work bond</a
-                  >
-                </h5>
-                <div class="post-meta d-flex justify-content-between mt-3">
-                  <ul class="list-unstyled mb-0">
-                    <li class="list-inline-item mr-2 mb-0">
-                      <a href="javascript:void(0)" class="text-muted like"
-                        ><i class="mdi mdi-heart-outline mr-1"></i>33</a
-                      >
-                    </li>
-                    <li class="list-inline-item">
-                      <a href="javascript:void(0)" class="text-muted comments"
-                        ><i class="mdi mdi-comment-outline mr-1"></i>08</a
-                      >
-                    </li>
-                  </ul>
-                  <router-link
-                    tag="a"
-                    to="/page-blog-detail"
-                    class="text-muted readmore"
-                    >Read More <i class="mdi mdi-chevron-right"></i
-                  ></router-link>
+                <div class="col-lg-3 col-md-3 col-6 text-center py-4">
+                  <img
+                    src="images/client/google.svg"
+                    class="avatar avatar-ex-sm"
+                    alt=""
+                  />
                 </div>
-              </div>
-              <div class="author">
-                <small class="text-light user d-block"
-                  ><i class="mdi mdi-account"></i> Calvin Carlo</small
-                >
-                <small class="text-light date"
-                  ><i class="mdi mdi-calendar-check"></i> 13th August,
-                  2019</small
-                >
-              </div>
-            </div>
-          </div>
-          <!--end col-->
+                <!--end col-->
 
-          <div class="col-lg-4 col-md-6 mt-4 pt-2">
-            <div class="card blog rounded border-0 shadow">
-              <div class="position-relative">
-                <img
-                  src="images/construction/r1.jpg"
-                  class="card-img-top rounded-top"
-                  alt="..."
-                />
-                <div class="overlay rounded-top bg-dark"></div>
-              </div>
-              <div class="card-body content">
-                <h5>
-                  <a
-                    href="javascript:void(0)"
-                    class="card-title title text-dark"
-                    >Satisfection for the customer our first parity.</a
-                  >
-                </h5>
-                <div class="post-meta d-flex justify-content-between mt-3">
-                  <ul class="list-unstyled mb-0">
-                    <li class="list-inline-item mr-2 mb-0">
-                      <a href="javascript:void(0)" class="text-muted like"
-                        ><i class="mdi mdi-heart-outline mr-1"></i>33</a
-                      >
-                    </li>
-                    <li class="list-inline-item">
-                      <a href="javascript:void(0)" class="text-muted comments"
-                        ><i class="mdi mdi-comment-outline mr-1"></i>08</a
-                      >
-                    </li>
-                  </ul>
-                  <router-link
-                    tag="a"
-                    to="/page-blog-detail"
-                    class="text-muted readmore"
-                    >Read More <i class="mdi mdi-chevron-right"></i
-                  ></router-link>
+                <div class="col-lg-3 col-md-3 col-6 text-center py-4">
+                  <img
+                    src="images/client/lenovo.svg"
+                    class="avatar avatar-ex-sm"
+                    alt=""
+                  />
                 </div>
+                <!--end col-->
+
+                <div class="col-lg-3 col-md-3 col-6 text-center py-4">
+                  <img
+                    src="images/client/paypal.svg"
+                    class="avatar avatar-ex-sm"
+                    alt=""
+                  />
+                </div>
+                <!--end col-->
               </div>
-              <div class="author">
-                <small class="text-light user d-block"
-                  ><i class="mdi mdi-account"></i> Calvin Carlo</small
-                >
-                <small class="text-light date"
-                  ><i class="mdi mdi-calendar-check"></i> 13th August,
-                  2019</small
-                >
-              </div>
+              <!--end row-->
             </div>
           </div>
           <!--end col-->

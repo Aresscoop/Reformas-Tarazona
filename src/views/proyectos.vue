@@ -31,17 +31,15 @@ export default {
         <div class="row justify-content-center">
           <div class="col-lg-12 text-center">
             <div class="page-next-level">
-              <h4 class="title">Work Grid</h4>
+              <h1 class="title">Proyectos</h1>
               <div class="page-next">
                 <nav aria-label="breadcrumb" class="d-inline-block">
                   <ul class="breadcrumb bg-white rounded shadow mb-0">
                     <li class="breadcrumb-item">
-                      <router-link to="/">Landrick</router-link>
+                      <router-link to="/">Inicio</router-link>
                     </li>
-                    <li class="breadcrumb-item"><a href="#">Pages</a></li>
-                    <li class="breadcrumb-item"><a href="#">Work</a></li>
                     <li class="breadcrumb-item active" aria-current="page">
-                      Grid
+                      Proyectos
                     </li>
                   </ul>
                 </nav>
@@ -431,7 +429,7 @@ export default {
                   class="page-link"
                   href="javascript:void(0)"
                   aria-label="Previous"
-                  >Prev</a
+                  >Anterior</a
                 >
               </li>
               <li class="page-item active">
@@ -445,7 +443,7 @@ export default {
               </li>
               <li class="page-item">
                 <a class="page-link" href="javascript:void(0)" aria-label="Next"
-                  >Next</a
+                  >Siguiente</a
                 >
               </li>
             </ul>
