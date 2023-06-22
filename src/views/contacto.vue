@@ -38,7 +38,7 @@ export default {
     <!-- Hero Start -->
     <section
       class="bg-half bg-light d-table w-100"
-      style="background: url('images/salon.png') center center"
+      style="background: url('images/salon2.png') center center"
     >
       <div class="bg-overlay bg-overlay-white"></div>
       <div class="container">

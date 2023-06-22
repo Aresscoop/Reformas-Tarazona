@@ -16,37 +16,37 @@ export default {
       featuresData: [
         {
           icon: "uil uil-edit-alt",
-          title: "Design & Development",
+          title: "Carpintería",
           description:
             "Nisi aenean vulputate eleifend tellus vitae eleifend enim a Aliquam aenean elementum semper.",
         },
         {
           icon: "uil uil-vector-square",
-          title: "Management & Marketing",
+          title: "Albañilería",
           description:
             "Allegedly, a Latin scholar established the origin of the text by established compiling unusual word.",
         },
         {
           icon: "uil uil-file-search-alt",
-          title: "Stratagy & Research",
+          title: "Fontanería",
           description:
             "It seems that only fragments of the original text remain in the Lorem the original Ipsum texts used today.",
         },
         {
           icon: "uil uil-airplay",
-          title: "Easy To Use",
+          title: "Electricidad",
           description:
             "Nisi aenean vulputate eleifend tellus vitae eleifend enim a Aliquam eleifend aenean elementum semper.",
         },
         {
           icon: "uil uil-calendar-alt",
-          title: "Daily Reports",
+          title: "Climatización",
           description:
             "Allegedly, a Latin scholar established the origin of the established text by compiling unusual word.",
         },
         {
           icon: "uil uil-clock",
-          title: "Real Time Zone",
+          title: "Otros",
           description:
             "It seems that only fragments of the original text remain in only fragments the Lorem Ipsum texts used today.",
         },
@@ -125,16 +125,15 @@ export default {
         <div class="row justify-content-center">
           <div class="col-lg-12 text-center">
             <div class="page-next-level">
-              <h4 class="title">Services</h4>
+              <h1 class="title">Servicios</h1>
               <div class="page-next">
                 <nav aria-label="breadcrumb" class="d-inline-block">
                   <ul class="breadcrumb bg-white rounded shadow mb-0">
                     <li class="breadcrumb-item">
-                      <router-link to="/">Landrick</router-link>
+                      <router-link to="/">Inicio</router-link>
                     </li>
-                    <li class="breadcrumb-item"><a href="#">Page</a></li>
                     <li class="breadcrumb-item active" aria-current="page">
-                      Services
+                      Servicios
                     </li>
                   </ul>
                 </nav>
@@ -190,17 +189,76 @@ export default {
         </div>
       </div>
       <!--end container-->
+      <div class="container mt-100 mt-60">
+        <div class="row align-items-center">
+          <div class="col-lg-4 col-md-3">
+            <p class="text-muted mb-0">
+              Trabajamos con gran variedad de empresas y marcas para ofrecer
+              servicios de calidad.
+            </p>
+          </div>
+          <!--end col-->
+
+          <div class="col-lg-8 col-md-9 mt-4 pt-2 mt-sm-0 pt-sm-0">
+            <div class="rounded shadow bg-light p-4">
+              <div class="row justify-content-center">
+                <div class="col-lg-3 col-md-3 col-6 text-center py-4">
+                  <img
+                    src="images/client/amazon.svg"
+                    class="avatar avatar-ex-sm"
+                    alt=""
+                  />
+                </div>
+                <!--end col-->
+
+                <div class="col-lg-3 col-md-3 col-6 text-center py-4">
+                  <img
+                    src="images/client/google.svg"
+                    class="avatar avatar-ex-sm"
+                    alt=""
+                  />
+                </div>
+                <!--end col-->
+
+                <div class="col-lg-3 col-md-3 col-6 text-center py-4">
+                  <img
+                    src="images/client/lenovo.svg"
+                    class="avatar avatar-ex-sm"
+                    alt=""
+                  />
+                </div>
+                <!--end col-->
+
+                <div class="col-lg-3 col-md-3 col-6 text-center py-4">
+                  <img
+                    src="images/client/paypal.svg"
+                    class="avatar avatar-ex-sm"
+                    alt=""
+                  />
+                </div>
+                <!--end col-->
+              </div>
+              <!--end row-->
+            </div>
+          </div>
+          <!--end col-->
+        </div>
+        <!--end row-->
+      </div>
+      <!--end container-->
 
       <div class="container mt-100 mt-60">
         <div class="row justify-content-center">
           <div class="col-12 text-center">
             <div class="section-title mb-4 pb-2">
-              <h4 class="title mb-4">Client Reviews</h4>
+              <h2 class="title mb-4">Opiniones</h2>
               <p class="text-muted para-desc mx-auto mb-0">
-                Start working with
-                <span class="text-primary font-weight-bold">Landrick</span> that
-                can provide everything you need to generate awareness, drive
-                traffic, connect.
+                Para nosotros cada cliente es único por eso en
+                <span class="text-primary font-weight-bold"
+                  >Reformas Tarazona</span
+                >
+                nos gusta tratar a cada cliente de forma individual y
+                personalizada.
               </p>
             </div>
           </div>
@@ -227,12 +285,10 @@ export default {
         <div class="row justify-content-center">
           <div class="col-12 text-center">
             <div class="section-title mb-4 pb-2">
-              <h4 class="title mb-4">Our Latest Projects</h4>
+              <h4 class="title mb-4">Algunos Proyectos</h4>
               <p class="text-muted para-desc mx-auto mb-0">
-                Start working with
-                <span class="text-primary font-weight-bold">Landrick</span> that
-                can provide everything you need to generate awareness, drive
-                traffic, connect.
+                Contamos con un amplia experiencia en el sector de las reformas,
+                aquí puedes ver algunos de nuestros trabajos ya realizados.
               </p>
             </div>
           </div>
@@ -368,38 +424,6 @@ export default {
                     2019</small
                   >
                 </div>
-              </div>
-            </div>
-          </div>
-          <!--end col-->
-        </div>
-        <!--end row-->
-      </div>
-      <!--end container-->
-
-      <div class="container mt-100 mt-60">
-        <div class="row justify-content-center">
-          <div class="col-12 text-center">
-            <div class="section-title">
-              <h4 class="title mb-4">
-                See everything about your employee at one place.
-              </h4>
-              <p class="text-muted para-desc mx-auto">
-                Start working with
-                <span class="text-primary font-weight-bold">Landrick</span> that
-                can provide everything you need to generate awareness, drive
-                traffic, connect.
-              </p>
-
-              <div class="mt-4">
-                <a href="javascript:void(0)" class="btn btn-primary mt-2 mr-2"
-                  >Get Started Now</a
-                >
-                <a
-                  href="javascript:void(0)"
-                  class="btn btn-outline-primary mt-2"
-                  >Free Trial</a
-                >
               </div>
             </div>
           </div>

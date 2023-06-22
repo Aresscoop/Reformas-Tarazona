@@ -1,30 +1,191 @@
 <script>
-import {
-  ArrowUpIcon,
-  HeartIcon,
-  EyeIcon,
-  ShoppingCartIcon,
-} from "vue-feather-icons";
+import { ArrowUpIcon } from "vue-feather-icons";
 
 import Navbar from "@/components/navbar";
 // import Switcher from "@/components/switcher";
 import Footer from "@/components/footer";
 
 /**
- * Shop-products component
+ * Page-work-classic component
  */
 export default {
   data() {
-    return {};
+    return {
+      workData: [
+        {
+          image: "images/work/4.jpg",
+          title: "Grifería",
+          type: "Cocina",
+          category: "cocina",
+          url: "/src/views/shop-product-detail.vue",
+        },
+        {
+          image: "images/work/4.jpg",
+          title: "Muebles cocina",
+          type: "Cocina",
+          category: "cocina",
+        },
+        {
+          image: "images/work/4.jpg",
+          title: "Electrodomésticos",
+          type: "Cocina",
+          category: "cocina",
+        },
+        {
+          image: "images/work/4.jpg",
+          title: "Encimeras",
+          type: "Cocina",
+          category: "cocina",
+        },
+        {
+          image: "images/work/4.jpg",
+          title: "Accesorios",
+          type: "Cocina",
+          category: "cocina",
+        },
+        {
+          image: "images/work/2.jpg",
+          title: "Saneamiento",
+          type: "Baño",
+          category: "baño",
+        },
+        {
+          image: "images/work/2.jpg",
+          title: "Grifería",
+          type: "Baño",
+          category: "baño",
+        },
+        {
+          image: "images/work/2.jpg",
+          title: "Bañeras",
+          type: "Baño",
+          category: "baño",
+        },
+        {
+          image: "images/work/2.jpg",
+          title: "Duchas",
+          type: "Baño",
+          category: "baño",
+        },
+        {
+          image: "images/work/2.jpg",
+          title: "Mobiliario baño",
+          type: "Baño",
+          category: "baño",
+        },
+        {
+          image: "images/work/2.jpg",
+          title: "Mamparas",
+          type: "Baño",
+          category: "baño",
+        },
+        {
+          image: "images/work/2.jpg",
+          title: "Accesorios",
+          type: "Baño",
+          category: "baño",
+        },
+        {
+          image: "images/work/3.jpg",
+          title: "Porcelánico",
+          type: "Suelos",
+          category: "suelos",
+        },
+        {
+          image: "images/work/3.jpg",
+          title: "Parquet",
+          type: "Suelos",
+          category: "suelos",
+        },
+        {
+          image: "images/work/3.jpg",
+          title: "Laminado",
+          type: "Suelos",
+          category: "suelos",
+        },
+        {
+          image: "images/work/3.jpg",
+          title: "Vinílico",
+          type: "Suelos",
+          category: "suelos",
+        },
+        {
+          image: "images/work/3.jpg",
+          title: "Exterior",
+          type: "Suelos",
+          category: "suelos",
+        },
+        {
+          image: "images/work/3.jpg",
+          title: "Moqueta",
+          type: "Suelos",
+          category: "suelos",
+        },
+        {
+          image: "images/work/4.jpg",
+          title: "Puertas de entrada y exterior",
+          type: "Puertas",
+          category: "puertas",
+        },
+        {
+          image: "images/work/4.jpg",
+          title: "Puertas de interior",
+          type: "Puertas",
+          category: "puertas",
+        },
+        {
+          image: "images/work/6.jpg",
+          title: "Aluminio",
+          type: "Ventanas",
+          category: "ventanas",
+        },
+        {
+          image: "images/work/6.jpg",
+          title: "PVC",
+          type: "Ventanas",
+          category: "ventanas",
+        },
+        {
+          image: "images/work/6.jpg",
+          title: "Ventanas a medida",
+          type: "Ventanas",
+          category: "ventanas",
+        },
+        {
+          image: "images/work/6.jpg",
+          title: "Ventanas de techo y Claraboyas",
+          type: "Ventanas",
+          category: "ventanas",
+        },
+        {
+          image: "images/work/6.jpg",
+          title: "Mosquiteras",
+          type: "Ventanas",
+          category: "ventanas",
+        },
+      ],
+      filterCategory: "all",
+    };
   },
   components: {
     Navbar,
     // Switcher,
     Footer,
     ArrowUpIcon,
-    HeartIcon,
-    EyeIcon,
-    ShoppingCartIcon,
+  },
+  computed: {
+    filteredData: function () {
+      if (this.filterCategory === "all") {
+        return this.workData;
+      } else {
+        return this.workData.filter((x) => x.category === this.filterCategory);
+      }
+    },
+  },
+  methods: {
+    updateFilter(filterName) {
+      this.filterCategory = filterName;
+    },
   },
 };
 </script>
@@ -39,18 +200,15 @@ export default {
         <div class="row justify-content-center">
           <div class="col-lg-12 text-center">
             <div class="page-next-level">
-              <h4 class="title">All Products</h4>
+              <h1 class="title">Productos</h1>
               <div class="page-next">
                 <nav aria-label="breadcrumb" class="d-inline-block">
                   <ul class="breadcrumb bg-white rounded shadow mb-0">
                     <li class="breadcrumb-item">
-                      <router-link to="/">Landrick</router-link>
-                    </li>
-                    <li class="breadcrumb-item">
-                      <router-link to="/index-shop">Shop</router-link>
+                      <router-link to="/">Inicio</router-link>
                     </li>
                     <li class="breadcrumb-item active" aria-current="page">
-                      Products
+                      Productos
                     </li>
                   </ul>
                 </nav>
@@ -80,1484 +238,98 @@ export default {
     </div>
     <!-- Hero End -->
 
-    <!-- Start Products -->
+    <!-- Start -->
     <section class="section">
       <div class="container">
         <div class="row">
-          <div class="col-lg-3 col-md-4 col-12">
-            <div class="card border-0 sidebar sticky-bar">
+          <ul
+            class="col container-filter list-unstyled categories-filter text-center mb-0"
+            id="filter"
+          >
+            <li class="list-inline-item">
+              <a
+                class="categories border d-block text-dark rounded"
+                @click="updateFilter('all')"
+                :class="{ active: filterCategory == 'all' }"
+                >Todos</a
+              >
+            </li>
+            <li class="list-inline-item">
+              <a
+                class="categories border d-block text-dark rounded"
+                @click="updateFilter('cocina')"
+                :class="{ active: filterCategory == 'cocina' }"
+                >Cocina</a
+              >
+            </li>
+            <li class="list-inline-item">
+              <a
+                class="categories border d-block text-dark rounded"
+                @click="updateFilter('baño')"
+                :class="{ active: filterCategory == 'baño' }"
+                >Baño</a
+              >
+            </li>
+            <li class="list-inline-item">
+              <a
+                class="categories border d-block text-dark rounded"
+                @click="updateFilter('suelos')"
+                :class="{ active: filterCategory == 'suelos' }"
+                >Suelos</a
+              >
+            </li>
+            <li class="list-inline-item">
+              <a
+                class="categories border d-block text-dark rounded"
+                @click="updateFilter('puertas')"
+                :class="{ active: filterCategory == 'puertas' }"
+                >Puertas</a
+              >
+            </li>
+            <li class="list-inline-item">
+              <a
+                class="categories border d-block text-dark rounded"
+                @click="updateFilter('ventanas')"
+                :class="{ active: filterCategory == 'ventanas' }"
+                >Ventanas</a
+              >
+            </li>
+          </ul>
+        </div>
+        <!--end row-->
+
+        <div class="row projects-wrapper">
+          <div
+            class="col-lg-4 col-md-6 col-12 mt-4 pt-2 branding"
+            v-for="(item, index) in filteredData"
+            :key="index"
+          >
+            <div class="card border-0 work-container work-classic">
               <div class="card-body p-0">
-                <!-- SEARCH -->
-                <div class="widget">
-                  <div id="search2" class="widget-search mb-0">
-                    <form
-                      role="search"
-                      method="get"
-                      id="searchform"
-                      class="searchform"
-                    >
-                      <div>
-                        <input
-                          type="text"
-                          class="border rounded"
-                          name="s"
-                          id="s"
-                          placeholder="Search Keywords..."
-                        />
-                        <input type="submit" id="searchsubmit" value="Search" />
-                      </div>
-                    </form>
-                  </div>
-                </div>
-                <!-- SEARCH -->
-
-                <!-- CATAGORIES -->
-                <div class="widget mt-4 pt-2">
-                  <h4 class="widget-title">Catagories</h4>
-                  <ul class="list-unstyled mt-4 mb-0 blog-categories">
-                    <li><a href="javascript:void(0)">Men</a></li>
-                    <li><a href="javascript:void(0)">Women</a></li>
-                    <li><a href="javascript:void(0)">Electronics</a></li>
-                    <li><a href="javascript:void(0)">Jewellery</a></li>
-                    <li><a href="javascript:void(0)">Shoes</a></li>
-                    <li><a href="javascript:void(0)">Kid’s Wear</a></li>
-                    <li><a href="javascript:void(0)">Sports</a></li>
-                    <li><a href="javascript:void(0)">Toys</a></li>
-                    <li><a href="javascript:void(0)">Gift Corners</a></li>
-                  </ul>
-                </div>
-                <!-- CATAGORIES -->
-
-                <!-- color -->
-                <div class="widget mt-4 pt-2">
-                  <h4 class="widget-title">Color</h4>
-                  <ul class="list-unstyled mt-4 mb-0">
-                    <li class="list-inline-item">
-                      <a
-                        href="javascript:void(0)"
-                        class="px-3 py-1 rounded-pill bg-primary"
-                      ></a>
-                    </li>
-                    <li class="list-inline-item">
-                      <a
-                        href="javascript:void(0)"
-                        class="px-3 py-1 rounded-pill bg-danger ml-1"
-                      ></a>
-                    </li>
-                    <li class="list-inline-item">
-                      <a
-                        href="javascript:void(0)"
-                        class="px-3 py-1 rounded-pill bg-success ml-1"
-                      ></a>
-                    </li>
-                    <li class="list-inline-item">
-                      <a
-                        href="javascript:void(0)"
-                        class="px-3 py-1 rounded-pill bg-info ml-1"
-                      ></a>
-                    </li>
-                    <li class="list-inline-item">
-                      <a
-                        href="javascript:void(0)"
-                        class="px-3 py-1 rounded-pill bg-secondary ml-1"
-                      ></a>
-                    </li>
-                    <li class="list-inline-item">
-                      <a
-                        href="javascript:void(0)"
-                        class="px-3 py-1 rounded-pill bg-warning ml-1"
-                      ></a>
-                    </li>
-                  </ul>
-                </div>
-                <!-- COlor -->
-
-                <!-- Top Products -->
-                <div class="widget mt-4 pt-2">
-                  <h4 class="widget-title">Top Products</h4>
-                  <ul class="list-unstyled mt-4 mb-0">
-                    <li class="media align-items-center">
-                      <a href="javascript:void(0)">
-                        <img
-                          src="images/shop/product/s1.jpg"
-                          class="img-fluid avatar avatar-small rounded shadow"
-                          style="height: auto"
-                          alt=""
-                        />
-                      </a>
-                      <div class="content ml-3">
-                        <a href="javascript:void(0)" class="text-dark h6"
-                          >T-Shirt</a
-                        >
-                        <h6 class="text-muted small font-italic mb-0 mt-1">
-                          $18.00 <del class="text-danger ml-2">$22.00</del>
-                        </h6>
-                      </div>
-                    </li>
-                    <li class="media align-items-center mt-2">
-                      <a href="javascript:void(0)">
-                        <img
-                          src="images/shop/product/s3.jpg"
-                          class="img-fluid avatar avatar-small rounded shadow"
-                          style="height: auto"
-                          alt=""
-                        />
-                      </a>
-                      <div class="content ml-3">
-                        <a href="javascript:void(0)" class="text-dark h6"
-                          >Watch</a
-                        >
-                        <h6 class="text-muted small font-italic mb-0 mt-1">
-                          $18.00 <del class="text-danger ml-2">$22.00</del>
-                        </h6>
-                      </div>
-                    </li>
-                    <li class="media align-items-center mt-2">
-                      <a href="javascript:void(0)">
-                        <img
-                          src="images/shop/product/s6.jpg"
-                          class="img-fluid avatar avatar-small rounded shadow"
-                          style="height: auto"
-                          alt=""
-                        />
-                      </a>
-                      <div class="content ml-3">
-                        <a href="javascript:void(0)" class="text-dark h6"
-                          >Coffee Cup</a
-                        >
-                        <h6 class="text-muted small font-italic mb-0 mt-1">
-                          $18.00 <del class="text-danger ml-2">$22.00</del>
-                        </h6>
-                      </div>
-                    </li>
-                    <li class="media align-items-center mt-2">
-                      <a href="javascript:void(0)">
-                        <img
-                          src="images/shop/product/s8.jpg"
-                          class="img-fluid avatar avatar-small rounded shadow"
-                          style="height: auto"
-                          alt=""
-                        />
-                      </a>
-                      <div class="content ml-3">
-                        <a href="javascript:void(0)" class="text-dark h6"
-                          >Wooden Stools</a
-                        >
-                        <h6 class="text-muted small font-italic mb-0 mt-1">
-                          $18.00 <del class="text-danger ml-2">$22.00</del>
-                        </h6>
-                      </div>
-                    </li>
-                  </ul>
+                <router-link to="/page-blog-grid"
+                  ><img
+                    :src="item.image"
+                    class="img-fluid rounded work-image"
+                    alt=""
+                /></router-link>
+                <div class="content pt-3">
+                  <h5 class="mb-0">
+                    <router-link to="/page-blog-grid" class="text-dark title">{{
+                      item.title
+                    }}</router-link>
+                  </h5>
+                  <h6 class="text-muted tag mb-0">{{ item.type }}</h6>
                 </div>
               </div>
             </div>
           </div>
-          <!--end col-->
-
-          <div class="col-lg-9 col-md-8 col-12 mt-5 pt-2 mt-sm-0 pt-sm-0">
-            <div class="row align-items-center">
-              <div class="col-lg-9 col-md-7">
-                <div class="section-title">
-                  <h5 class="mb-0">Showing 1–15 of 47 results</h5>
-                </div>
-              </div>
-              <!--end col-->
-
-              <div class="col-lg-3 col-md-5 mt-4 mt-sm-0 pt-2 pt-sm-0">
-                <div class="form custom-form">
-                  <div class="form-group mb-0">
-                    <select
-                      class="form-control custom-select"
-                      id="Sortbylist-job"
-                    >
-                      <option>Sort by latest</option>
-                      <option>Sort by popularity</option>
-                      <option>Sort by rating</option>
-                      <option>Sort by price: low to high</option>
-                      <option>Sort by price: high to low</option>
-                    </select>
-                  </div>
-                </div>
-              </div>
-              <!--end col-->
-            </div>
-            <!--end row-->
-
-            <div class="row">
-              <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
-                <div
-                  class="card shop-list border-0 position-relative overflow-hidden"
-                >
-                  <div
-                    class="shop-image position-relative overflow-hidden rounded shadow"
-                  >
-                    <router-link to="/shop-product-detail"
-                      ><img
-                        src="images/shop/product/s1.jpg"
-                        class="img-fluid"
-                        alt=""
-                    /></router-link>
-                    <router-link to="/shop-product-detail" class="overlay-work">
-                      <img
-                        src="images/shop/product/s-1.jpg"
-                        class="img-fluid"
-                        alt=""
-                      />
-                    </router-link>
-                    <ul class="list-unstyled shop-icons">
-                      <li>
-                        <a
-                          href="javascript:void(0)"
-                          class="btn btn-icon btn-pills btn-soft-danger"
-                        >
-                          <heart-icon class="icons"></heart-icon>
-                        </a>
-                      </li>
-                      <li class="mt-2">
-                        <router-link
-                          to="/shop-product-detail"
-                          class="btn btn-icon btn-pills btn-soft-primary"
-                        >
-                          <eye-icon class="icons"></eye-icon>
-                        </router-link>
-                      </li>
-                      <li class="mt-2">
-                        <router-link
-                          to="/shop-cart"
-                          class="btn btn-icon btn-pills btn-soft-warning"
-                        >
-                          <shopping-cart-icon
-                            class="icons"
-                          ></shopping-cart-icon>
-                        </router-link>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="card-body content pt-4 p-2">
-                    <router-link
-                      to="/shop-product-detail"
-                      class="text-dark product-name h6"
-                      >Branded T-Shirt</router-link
-                    >
-                    <div class="d-flex justify-content-between mt-1">
-                      <h6 class="text-muted small font-italic mb-0 mt-1">
-                        $16.00 <del class="text-danger ml-2">$21.00</del>
-                      </h6>
-                      <ul class="list-unstyled text-warning mb-0">
-                        <li class="list-inline-item">
-                          <i class="mdi mdi-star"></i>
-                        </li>
-                        <li class="list-inline-item">
-                          <i class="mdi mdi-star"></i>
-                        </li>
-                        <li class="list-inline-item">
-                          <i class="mdi mdi-star"></i>
-                        </li>
-                        <li class="list-inline-item">
-                          <i class="mdi mdi-star"></i>
-                        </li>
-                        <li class="list-inline-item">
-                          <i class="mdi mdi-star"></i>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!--end col-->
-
-              <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
-                <div
-                  class="card shop-list border-0 position-relative overflow-hidden"
-                >
-                  <div
-                    class="shop-image position-relative overflow-hidden rounded shadow"
-                  >
-                    <router-link to="/shop-product-detail"
-                      ><img
-                        src="images/shop/product/s2.jpg"
-                        class="img-fluid"
-                        alt=""
-                    /></router-link>
-                    <router-link to="/shop-product-detail" class="overlay-work">
-                      <img
-                        src="images/shop/product/s-2.jpg"
-                        class="img-fluid"
-                        alt=""
-                      />
-                    </router-link>
-                    <ul class="list-unstyled shop-icons">
-                      <li>
-                        <a
-                          href="javascript:void(0)"
-                          class="btn btn-icon btn-pills btn-soft-danger"
-                        >
-                          <heart-icon class="icons"></heart-icon>
-                        </a>
-                      </li>
-                      <li class="mt-2">
-                        <router-link
-                          to="/shop-product-detail"
-                          class="btn btn-icon btn-pills btn-soft-primary"
-                        >
-                          <eye-icon class="icons"></eye-icon>
-                        </router-link>
-                      </li>
-                      <li class="mt-2">
-                        <router-link
-                          to="/shop-cart"
-                          class="btn btn-icon btn-pills btn-soft-warning"
-                        >
-                          <shopping-cart-icon
-                            class="icons"
-                          ></shopping-cart-icon>
-                        </router-link>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="card-body content pt-4 p-2">
-                    <router-link
-                      to="/shop-product-detail"
-                      class="text-dark product-name h6"
-                      >Shopping Bag</router-link
-                    >
-                    <div class="d-flex justify-content-between mt-1">
-                      <h6 class="text-muted small font-italic mb-0 mt-1">
-                        $21.00 <del class="text-danger ml-2">$25.00</del>
-                      </h6>
-                      <ul class="list-unstyled text-warning mb-0">
-                        <li class="list-inline-item">
-                          <i class="mdi mdi-star"></i>
-                        </li>
-                        <li class="list-inline-item">
-                          <i class="mdi mdi-star"></i>
-                        </li>
-                        <li class="list-inline-item">
-                          <i class="mdi mdi-star"></i>
-                        </li>
-                        <li class="list-inline-item">
-                          <i class="mdi mdi-star"></i>
-                        </li>
-                        <li class="list-inline-item">
-                          <i class="mdi mdi-star"></i>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!--end col-->
-
-              <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
-                <div
-                  class="card shop-list border-0 position-relative overflow-hidden"
-                >
-                  <div
-                    class="shop-image position-relative overflow-hidden rounded shadow"
-                  >
-                    <router-link to="/shop-product-detail"
-                      ><img
-                        src="images/shop/product/s3.jpg"
-                        class="img-fluid"
-                        alt=""
-                    /></router-link>
-                    <router-link to="/shop-product-detail" class="overlay-work">
-                      <img
-                        src="images/shop/product/s-3.jpg"
-                        class="img-fluid"
-                        alt=""
-                      />
-                    </router-link>
-                    <ul class="list-unstyled shop-icons">
-                      <li>
-                        <a
-                          href="javascript:void(0)"
-                          class="btn btn-icon btn-pills btn-soft-danger"
-                        >
-                          <heart-icon class="icons"></heart-icon>
-                        </a>
-                      </li>
-                      <li class="mt-2">
-                        <router-link
-                          to="/shop-product-detail"
-                          class="btn btn-icon btn-pills btn-soft-primary"
-                        >
-                          <eye-icon class="icons"></eye-icon>
-                        </router-link>
-                      </li>
-                      <li class="mt-2">
-                        <router-link
-                          to="/shop-cart"
-                          class="btn btn-icon btn-pills btn-soft-warning"
-                        >
-                          <shopping-cart-icon
-                            class="icons"
-                          ></shopping-cart-icon>
-                        </router-link>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="card-body content pt-4 p-2">
-                    <router-link
-                      to="/shop-product-detail"
-                      class="text-dark product-name h6"
-                      >Elegent Watch</router-link
-                    >
-                    <div class="d-flex justify-content-between mt-1">
-                      <h6 class="text-muted small font-italic mb-0 mt-1">
-                        $5.00 <span class="text-success ml-1">30% off</span>
-                      </h6>
-                      <ul class="list-unstyled text-warning mb-0">
-                        <li class="list-inline-item">
-                          <i class="mdi mdi-star"></i>
-                        </li>
-                        <li class="list-inline-item">
-                          <i class="mdi mdi-star"></i>
-                        </li>
-                        <li class="list-inline-item">
-                          <i class="mdi mdi-star"></i>
-                        </li>
-                        <li class="list-inline-item">
-                          <i class="mdi mdi-star"></i>
-                        </li>
-                        <li class="list-inline-item">
-                          <i class="mdi mdi-star"></i>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!--end col-->
-
-              <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
-                <div
-                  class="card shop-list border-0 position-relative overflow-hidden"
-                >
-                  <div
-                    class="shop-image position-relative overflow-hidden rounded shadow"
-                  >
-                    <router-link to="/shop-product-detail"
-                      ><img
-                        src="images/shop/product/s4.jpg"
-                        class="img-fluid"
-                        alt=""
-                    /></router-link>
-                    <router-link to="/shop-product-detail" class="overlay-work">
-                      <img
-                        src="images/shop/product/s-4.jpg"
-                        class="img-fluid"
-                        alt=""
-                      />
-                    </router-link>
-                    <ul class="list-unstyled shop-icons">
-                      <li>
-                        <a
-                          href="javascript:void(0)"
-                          class="btn btn-icon btn-pills btn-soft-danger"
-                        >
-                          <heart-icon class="icons"></heart-icon>
-                        </a>
-                      </li>
-                      <li class="mt-2">
-                        <router-link
-                          to="/shop-product-detail"
-                          class="btn btn-icon btn-pills btn-soft-primary"
-                        >
-                          <eye-icon class="icons"></eye-icon>
-                        </router-link>
-                      </li>
-                      <li class="mt-2">
-                        <router-link
-                          to="/shop-cart"
-                          class="btn btn-icon btn-pills btn-soft-warning"
-                        >
-                          <shopping-cart-icon
-                            class="icons"
-                          ></shopping-cart-icon>
-                        </router-link>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="card-body content pt-4 p-2">
-                    <router-link
-                      to="/shop-product-detail"
-                      class="text-dark product-name h6"
-                      >Casual Shoes</router-link
-                    >
-                    <div class="d-flex justify-content-between mt-1">
-                      <h6 class="text-muted small font-italic mb-0 mt-1">
-                        $18.00 <del class="text-danger ml-2">$22.00</del>
-                      </h6>
-                      <ul class="list-unstyled text-warning mb-0">
-                        <li class="list-inline-item">
-                          <i class="mdi mdi-star"></i>
-                        </li>
-                        <li class="list-inline-item">
-                          <i class="mdi mdi-star"></i>
-                        </li>
-                        <li class="list-inline-item">
-                          <i class="mdi mdi-star"></i>
-                        </li>
-                        <li class="list-inline-item">
-                          <i class="mdi mdi-star"></i>
-                        </li>
-                        <li class="list-inline-item">
-                          <i class="mdi mdi-star"></i>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!--end col-->
-
-              <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
-                <div
-                  class="card shop-list border-0 position-relative overflow-hidden"
-                >
-                  <div
-                    class="shop-image position-relative overflow-hidden rounded shadow"
-                  >
-                    <router-link to="/shop-product-detail"
-                      ><img
-                        src="images/shop/product/s5.jpg"
-                        class="img-fluid"
-                        alt=""
-                    /></router-link>
-                    <router-link to="/shop-product-detail" class="overlay-work">
-                      <img
-                        src="images/shop/product/s-5.jpg"
-                        class="img-fluid"
-                        alt=""
-                      />
-                    </router-link>
-                    <ul class="list-unstyled shop-icons">
-                      <li>
-                        <a
-                          href="javascript:void(0)"
-                          class="btn btn-icon btn-pills btn-soft-danger"
-                        >
-                          <heart-icon class="icons"></heart-icon>
-                        </a>
-                      </li>
-                      <li class="mt-2">
-                        <router-link
-                          to="/shop-product-detail"
-                          class="btn btn-icon btn-pills btn-soft-primary"
-                        >
-                          <eye-icon class="icons"></eye-icon>
-                        </router-link>
-                      </li>
-                      <li class="mt-2">
-                        <router-link
-                          to="/shop-cart"
-                          class="btn btn-icon btn-pills btn-soft-warning"
-                        >
-                          <shopping-cart-icon
-                            class="icons"
-                          ></shopping-cart-icon>
-                        </router-link>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="card-body content pt-4 p-2">
-                    <router-link
-                      to="/shop-product-detail"
-                      class="text-dark product-name h6"
-                      >Earphones</router-link
-                    >
-                    <div class="d-flex justify-content-between mt-1">
-                      <h6 class="text-muted small font-italic mb-0 mt-1">
-                        $3.00
-                      </h6>
-                      <ul class="list-unstyled text-warning mb-0">
-                        <li class="list-inline-item">
-                          <i class="mdi mdi-star"></i>
-                        </li>
-                        <li class="list-inline-item">
-                          <i class="mdi mdi-star"></i>
-                        </li>
-                        <li class="list-inline-item">
-                          <i class="mdi mdi-star"></i>
-                        </li>
-                        <li class="list-inline-item">
-                          <i class="mdi mdi-star"></i>
-                        </li>
-                        <li class="list-inline-item">
-                          <i class="mdi mdi-star"></i>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!--end col-->
-
-              <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
-                <div
-                  class="card shop-list border-0 position-relative overflow-hidden"
-                >
-                  <div
-                    class="shop-image position-relative overflow-hidden rounded shadow"
-                  >
-                    <router-link to="/shop-product-detail"
-                      ><img
-                        src="images/shop/product/s6.jpg"
-                        class="img-fluid"
-                        alt=""
-                    /></router-link>
-                    <router-link to="/shop-product-detail" class="overlay-work">
-                      <img
-                        src="images/shop/product/s-6.jpg"
-                        class="img-fluid"
-                        alt=""
-                      />
-                    </router-link>
-                    <ul class="list-unstyled shop-icons">
-                      <li>
-                        <a
-                          href="javascript:void(0)"
-                          class="btn btn-icon btn-pills btn-soft-danger"
-                        >
-                          <heart-icon class="icons"></heart-icon>
-                        </a>
-                      </li>
-                      <li class="mt-2">
-                        <router-link
-                          to="/shop-product-detail"
-                          class="btn btn-icon btn-pills btn-soft-primary"
-                        >
-                          <eye-icon class="icons"></eye-icon>
-                        </router-link>
-                      </li>
-                      <li class="mt-2">
-                        <router-link
-                          to="/shop-cart"
-                          class="btn btn-icon btn-pills btn-soft-warning"
-                        >
-                          <shopping-cart-icon
-                            class="icons"
-                          ></shopping-cart-icon>
-                        </router-link>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="card-body content pt-4 p-2">
-                    <router-link
-                      to="/shop-product-detail"
-                      class="text-dark product-name h6"
-                      >Elegent Mug</router-link
-                    >
-                    <div class="d-flex justify-content-between mt-1">
-                      <h6 class="text-muted small font-italic mb-0 mt-1">
-                        $4.50 <del class="text-danger ml-2">$6.50</del>
-                      </h6>
-                      <ul class="list-unstyled text-warning mb-0">
-                        <li class="list-inline-item">
-                          <i class="mdi mdi-star"></i>
-                        </li>
-                        <li class="list-inline-item">
-                          <i class="mdi mdi-star"></i>
-                        </li>
-                        <li class="list-inline-item">
-                          <i class="mdi mdi-star"></i>
-                        </li>
-                        <li class="list-inline-item">
-                          <i class="mdi mdi-star"></i>
-                        </li>
-                        <li class="list-inline-item">
-                          <i class="mdi mdi-star"></i>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!--end col-->
-
-              <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
-                <div
-                  class="card shop-list border-0 position-relative overflow-hidden"
-                >
-                  <div
-                    class="shop-image position-relative overflow-hidden rounded shadow"
-                  >
-                    <router-link to="/shop-product-detail"
-                      ><img
-                        src="images/shop/product/s7.jpg"
-                        class="img-fluid"
-                        alt=""
-                    /></router-link>
-                    <router-link to="/shop-product-detail" class="overlay-work">
-                      <img
-                        src="images/shop/product/s-7.jpg"
-                        class="img-fluid"
-                        alt=""
-                      />
-                    </router-link>
-                    <ul class="list-unstyled shop-icons">
-                      <li>
-                        <a
-                          href="javascript:void(0)"
-                          class="btn btn-icon btn-pills btn-soft-danger"
-                        >
-                          <heart-icon class="icons"></heart-icon>
-                        </a>
-                      </li>
-                      <li class="mt-2">
-                        <router-link
-                          to="/shop-product-detail"
-                          class="btn btn-icon btn-pills btn-soft-primary"
-                        >
-                          <eye-icon class="icons"></eye-icon>
-                        </router-link>
-                      </li>
-                      <li class="mt-2">
-                        <router-link
-                          to="/shop-cart"
-                          class="btn btn-icon btn-pills btn-soft-warning"
-                        >
-                          <shopping-cart-icon
-                            class="icons"
-                          ></shopping-cart-icon>
-                        </router-link>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="card-body content pt-4 p-2">
-                    <router-link
-                      to="/shop-product-detail"
-                      class="text-dark product-name h6"
-                      >Sony Headphones</router-link
-                    >
-                    <div class="d-flex justify-content-between mt-1">
-                      <h6 class="text-muted small font-italic mb-0 mt-1">
-                        $9.99 <span class="text-success ml-2">20% off</span>
-                      </h6>
-                      <ul class="list-unstyled text-warning mb-0">
-                        <li class="list-inline-item">
-                          <i class="mdi mdi-star"></i>
-                        </li>
-                        <li class="list-inline-item">
-                          <i class="mdi mdi-star"></i>
-                        </li>
-                        <li class="list-inline-item">
-                          <i class="mdi mdi-star"></i>
-                        </li>
-                        <li class="list-inline-item">
-                          <i class="mdi mdi-star"></i>
-                        </li>
-                        <li class="list-inline-item">
-                          <i class="mdi mdi-star"></i>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!--end col-->
-
-              <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
-                <div
-                  class="card shop-list border-0 position-relative overflow-hidden"
-                >
-                  <div
-                    class="shop-image position-relative overflow-hidden rounded shadow"
-                  >
-                    <router-link to="/shop-product-detail"
-                      ><img
-                        src="images/shop/product/s8.jpg"
-                        class="img-fluid"
-                        alt=""
-                    /></router-link>
-                    <router-link to="/shop-product-detail" class="overlay-work">
-                      <img
-                        src="images/shop/product/s-8.jpg"
-                        class="img-fluid"
-                        alt=""
-                      />
-                    </router-link>
-                    <ul class="list-unstyled shop-icons">
-                      <li>
-                        <a
-                          href="javascript:void(0)"
-                          class="btn btn-icon btn-pills btn-soft-danger"
-                        >
-                          <heart-icon class="icons"></heart-icon>
-                        </a>
-                      </li>
-                      <li class="mt-2">
-                        <router-link
-                          to="/shop-product-detail"
-                          class="btn btn-icon btn-pills btn-soft-primary"
-                        >
-                          <eye-icon class="icons"></eye-icon>
-                        </router-link>
-                      </li>
-                      <li class="mt-2">
-                        <router-link
-                          to="/shop-cart"
-                          class="btn btn-icon btn-pills btn-soft-warning"
-                        >
-                          <shopping-cart-icon
-                            class="icons"
-                          ></shopping-cart-icon>
-                        </router-link>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="card-body content pt-4 p-2">
-                    <router-link
-                      to="/shop-product-detail"
-                      class="text-dark product-name h6"
-                      >Wooden Stools</router-link
-                    >
-                    <div class="d-flex justify-content-between mt-1">
-                      <h6 class="text-muted small font-italic mb-0 mt-1">
-                        $22.00 <del class="text-danger ml-2">$25.00</del>
-                      </h6>
-                      <ul class="list-unstyled text-warning mb-0">
-                        <li class="list-inline-item">
-                          <i class="mdi mdi-star"></i>
-                        </li>
-                        <li class="list-inline-item">
-                          <i class="mdi mdi-star"></i>
-                        </li>
-                        <li class="list-inline-item">
-                          <i class="mdi mdi-star"></i>
-                        </li>
-                        <li class="list-inline-item">
-                          <i class="mdi mdi-star"></i>
-                        </li>
-                        <li class="list-inline-item">
-                          <i class="mdi mdi-star"></i>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!--end col-->
-
-              <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
-                <div
-                  class="card shop-list border-0 position-relative overflow-hidden"
-                >
-                  <div
-                    class="shop-image position-relative overflow-hidden rounded shadow"
-                  >
-                    <router-link to="/shop-product-detail"
-                      ><img
-                        src="images/shop/product/s9.jpg"
-                        class="img-fluid"
-                        alt=""
-                    /></router-link>
-                    <router-link to="/shop-product-detail" class="overlay-work">
-                      <img
-                        src="images/shop/product/s-9.jpg"
-                        class="img-fluid"
-                        alt=""
-                      />
-                    </router-link>
-                    <ul class="list-unstyled shop-icons">
-                      <li>
-                        <a
-                          href="javascript:void(0)"
-                          class="btn btn-icon btn-pills btn-soft-danger"
-                        >
-                          <heart-icon class="icons"></heart-icon>
-                        </a>
-                      </li>
-                      <li class="mt-2">
-                        <router-link
-                          to="/shop-product-detail"
-                          class="btn btn-icon btn-pills btn-soft-primary"
-                        >
-                          <eye-icon class="icons"></eye-icon>
-                        </router-link>
-                      </li>
-                      <li class="mt-2">
-                        <router-link
-                          to="/shop-cart"
-                          class="btn btn-icon btn-pills btn-soft-warning"
-                        >
-                          <shopping-cart-icon
-                            class="icons"
-                          ></shopping-cart-icon>
-                        </router-link>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="card-body content pt-4 p-2">
-                    <router-link
-                      to="/shop-product-detail"
-                      class="text-dark product-name h6"
-                      >Coffee Cup / Mug</router-link
-                    >
-                    <div class="d-flex justify-content-between mt-1">
-                      <h6 class="text-muted small font-italic mb-0 mt-1">
-                        $16.00 <del class="text-danger ml-2">$21.00</del>
-                      </h6>
-                      <ul class="list-unstyled text-warning mb-0">
-                        <li class="list-inline-item">
-                          <i class="mdi mdi-star"></i>
-                        </li>
-                        <li class="list-inline-item">
-                          <i class="mdi mdi-star"></i>
-                        </li>
-                        <li class="list-inline-item">
-                          <i class="mdi mdi-star"></i>
-                        </li>
-                        <li class="list-inline-item">
-                          <i class="mdi mdi-star"></i>
-                        </li>
-                        <li class="list-inline-item">
-                          <i class="mdi mdi-star"></i>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!--end col-->
-
-              <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
-                <div
-                  class="card shop-list border-0 position-relative overflow-hidden"
-                >
-                  <div
-                    class="shop-image position-relative overflow-hidden rounded shadow"
-                  >
-                    <router-link to="/shop-product-detail"
-                      ><img
-                        src="images/shop/product/s10.jpg"
-                        class="img-fluid"
-                        alt=""
-                    /></router-link>
-                    <router-link to="/shop-product-detail" class="overlay-work">
-                      <img
-                        src="images/shop/product/s-10.jpg"
-                        class="img-fluid"
-                        alt=""
-                      />
-                    </router-link>
-                    <ul class="list-unstyled shop-icons">
-                      <li>
-                        <a
-                          href="javascript:void(0)"
-                          class="btn btn-icon btn-pills btn-soft-danger"
-                        >
-                          <heart-icon class="icons"></heart-icon>
-                        </a>
-                      </li>
-                      <li class="mt-2">
-                        <router-link
-                          to="/shop-product-detail"
-                          class="btn btn-icon btn-pills btn-soft-primary"
-                        >
-                          <eye-icon class="icons"></eye-icon>
-                        </router-link>
-                      </li>
-                      <li class="mt-2">
-                        <router-link
-                          to="/shop-cart"
-                          class="btn btn-icon btn-pills btn-soft-warning"
-                        >
-                          <shopping-cart-icon
-                            class="icons"
-                          ></shopping-cart-icon>
-                        </router-link>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="card-body content pt-4 p-2">
-                    <router-link
-                      to="/shop-product-detail"
-                      class="text-dark product-name h6"
-                      >Sunglasses</router-link
-                    >
-                    <div class="d-flex justify-content-between mt-1">
-                      <h6 class="text-muted small font-italic mb-0 mt-1">
-                        $21.00 <del class="text-danger ml-2">$25.00</del>
-                      </h6>
-                      <ul class="list-unstyled text-warning mb-0">
-                        <li class="list-inline-item">
-                          <i class="mdi mdi-star"></i>
-                        </li>
-                        <li class="list-inline-item">
-                          <i class="mdi mdi-star"></i>
-                        </li>
-                        <li class="list-inline-item">
-                          <i class="mdi mdi-star"></i>
-                        </li>
-                        <li class="list-inline-item">
-                          <i class="mdi mdi-star"></i>
-                        </li>
-                        <li class="list-inline-item">
-                          <i class="mdi mdi-star"></i>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!--end col-->
-
-              <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
-                <div
-                  class="card shop-list border-0 position-relative overflow-hidden"
-                >
-                  <div
-                    class="shop-image position-relative overflow-hidden rounded shadow"
-                  >
-                    <router-link to="/shop-product-detail"
-                      ><img
-                        src="images/shop/product/s11.jpg"
-                        class="img-fluid"
-                        alt=""
-                    /></router-link>
-                    <router-link to="/shop-product-detail" class="overlay-work">
-                      <img
-                        src="images/shop/product/s-11.jpg"
-                        class="img-fluid"
-                        alt=""
-                      />
-                    </router-link>
-                    <ul class="list-unstyled shop-icons">
-                      <li>
-                        <a
-                          href="javascript:void(0)"
-                          class="btn btn-icon btn-pills btn-soft-danger"
-                        >
-                          <heart-icon class="icons"></heart-icon>
-                        </a>
-                      </li>
-                      <li class="mt-2">
-                        <router-link
-                          to="/shop-product-detail"
-                          class="btn btn-icon btn-pills btn-soft-primary"
-                        >
-                          <eye-icon class="icons"></eye-icon>
-                        </router-link>
-                      </li>
-                      <li class="mt-2">
-                        <router-link
-                          to="/shop-cart"
-                          class="btn btn-icon btn-pills btn-soft-warning"
-                        >
-                          <shopping-cart-icon
-                            class="icons"
-                          ></shopping-cart-icon>
-                        </router-link>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="card-body content pt-4 p-2">
-                    <router-link
-                      to="/shop-product-detail"
-                      class="text-dark product-name h6"
-                      >Loafer Shoes</router-link
-                    >
-                    <div class="d-flex justify-content-between mt-1">
-                      <h6 class="text-muted small font-italic mb-0 mt-1">
-                        $5.00 <span class="text-success ml-1">30% off</span>
-                      </h6>
-                      <ul class="list-unstyled text-warning mb-0">
-                        <li class="list-inline-item">
-                          <i class="mdi mdi-star"></i>
-                        </li>
-                        <li class="list-inline-item">
-                          <i class="mdi mdi-star"></i>
-                        </li>
-                        <li class="list-inline-item">
-                          <i class="mdi mdi-star"></i>
-                        </li>
-                        <li class="list-inline-item">
-                          <i class="mdi mdi-star"></i>
-                        </li>
-                        <li class="list-inline-item">
-                          <i class="mdi mdi-star"></i>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!--end col-->
-
-              <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
-                <div
-                  class="card shop-list border-0 position-relative overflow-hidden"
-                >
-                  <div
-                    class="shop-image position-relative overflow-hidden rounded shadow"
-                  >
-                    <router-link to="/shop-product-detail"
-                      ><img
-                        src="images/shop/product/s12.jpg"
-                        class="img-fluid"
-                        alt=""
-                    /></router-link>
-                    <router-link to="/shop-product-detail" class="overlay-work">
-                      <img
-                        src="images/shop/product/s-12.jpg"
-                        class="img-fluid"
-                        alt=""
-                      />
-                    </router-link>
-                    <ul class="list-unstyled shop-icons">
-                      <li>
-                        <a
-                          href="javascript:void(0)"
-                          class="btn btn-icon btn-pills btn-soft-danger"
-                        >
-                          <heart-icon class="icons"></heart-icon>
-                        </a>
-                      </li>
-                      <li class="mt-2">
-                        <router-link
-                          to="/shop-product-detail"
-                          class="btn btn-icon btn-pills btn-soft-primary"
-                        >
-                          <eye-icon class="icons"></eye-icon>
-                        </router-link>
-                      </li>
-                      <li class="mt-2">
-                        <router-link
-                          to="/shop-cart"
-                          class="btn btn-icon btn-pills btn-soft-warning"
-                        >
-                          <shopping-cart-icon
-                            class="icons"
-                          ></shopping-cart-icon>
-                        </router-link>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="card-body content pt-4 p-2">
-                    <router-link
-                      to="/shop-product-detail"
-                      class="text-dark product-name h6"
-                      >T-Shirts</router-link
-                    >
-                    <div class="d-flex justify-content-between mt-1">
-                      <h6 class="text-muted small font-italic mb-0 mt-1">
-                        $18.00 <del class="text-danger ml-2">$22.00</del>
-                      </h6>
-                      <ul class="list-unstyled text-warning mb-0">
-                        <li class="list-inline-item">
-                          <i class="mdi mdi-star"></i>
-                        </li>
-                        <li class="list-inline-item">
-                          <i class="mdi mdi-star"></i>
-                        </li>
-                        <li class="list-inline-item">
-                          <i class="mdi mdi-star"></i>
-                        </li>
-                        <li class="list-inline-item">
-                          <i class="mdi mdi-star"></i>
-                        </li>
-                        <li class="list-inline-item">
-                          <i class="mdi mdi-star"></i>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!--end col-->
-
-              <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
-                <div
-                  class="card shop-list border-0 position-relative overflow-hidden"
-                >
-                  <div
-                    class="shop-image position-relative overflow-hidden rounded shadow"
-                  >
-                    <router-link to="/shop-product-detail"
-                      ><img
-                        src="images/shop/product/s13.jpg"
-                        class="img-fluid"
-                        alt=""
-                    /></router-link>
-                    <router-link to="/shop-product-detail" class="overlay-work">
-                      <img
-                        src="images/shop/product/s-13.jpg"
-                        class="img-fluid"
-                        alt=""
-                      />
-                    </router-link>
-                    <ul class="list-unstyled shop-icons">
-                      <li>
-                        <a
-                          href="javascript:void(0)"
-                          class="btn btn-icon btn-pills btn-soft-danger"
-                        >
-                          <heart-icon class="icons"></heart-icon>
-                        </a>
-                      </li>
-                      <li class="mt-2">
-                        <router-link
-                          to="/shop-product-detail"
-                          class="btn btn-icon btn-pills btn-soft-primary"
-                        >
-                          <eye-icon class="icons"></eye-icon>
-                        </router-link>
-                      </li>
-                      <li class="mt-2">
-                        <router-link
-                          to="/shop-cart"
-                          class="btn btn-icon btn-pills btn-soft-warning"
-                        >
-                          <shopping-cart-icon
-                            class="icons"
-                          ></shopping-cart-icon>
-                        </router-link>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="card-body content pt-4 p-2">
-                    <router-link
-                      to="/shop-product-detail"
-                      class="text-dark product-name h6"
-                      >Wooden Chair</router-link
-                    >
-                    <div class="d-flex justify-content-between mt-1">
-                      <h6 class="text-muted small font-italic mb-0 mt-1">
-                        $16.00 <del class="text-danger ml-2">$21.00</del>
-                      </h6>
-                      <ul class="list-unstyled text-warning mb-0">
-                        <li class="list-inline-item">
-                          <i class="mdi mdi-star"></i>
-                        </li>
-                        <li class="list-inline-item">
-                          <i class="mdi mdi-star"></i>
-                        </li>
-                        <li class="list-inline-item">
-                          <i class="mdi mdi-star"></i>
-                        </li>
-                        <li class="list-inline-item">
-                          <i class="mdi mdi-star"></i>
-                        </li>
-                        <li class="list-inline-item">
-                          <i class="mdi mdi-star"></i>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!--end col-->
-
-              <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
-                <div
-                  class="card shop-list border-0 position-relative overflow-hidden"
-                >
-                  <div
-                    class="shop-image position-relative overflow-hidden rounded shadow"
-                  >
-                    <router-link to="/shop-product-detail"
-                      ><img
-                        src="images/shop/product/s14.jpg"
-                        class="img-fluid"
-                        alt=""
-                    /></router-link>
-                    <router-link to="/shop-product-detail" class="overlay-work">
-                      <img
-                        src="images/shop/product/s-14.jpg"
-                        class="img-fluid"
-                        alt=""
-                      />
-                    </router-link>
-                    <ul class="list-unstyled shop-icons">
-                      <li>
-                        <a
-                          href="javascript:void(0)"
-                          class="btn btn-icon btn-pills btn-soft-danger"
-                        >
-                          <heart-icon class="icons"></heart-icon>
-                        </a>
-                      </li>
-                      <li class="mt-2">
-                        <router-link
-                          to="/shop-product-detail"
-                          class="btn btn-icon btn-pills btn-soft-primary"
-                        >
-                          <eye-icon class="icons"></eye-icon>
-                        </router-link>
-                      </li>
-                      <li class="mt-2">
-                        <router-link
-                          to="/shop-cart"
-                          class="btn btn-icon btn-pills btn-soft-warning"
-                        >
-                          <shopping-cart-icon
-                            class="icons"
-                          ></shopping-cart-icon>
-                        </router-link>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="card-body content pt-4 p-2">
-                    <router-link
-                      to="/shop-product-detail"
-                      class="text-dark product-name h6"
-                      >Women Block Heels</router-link
-                    >
-                    <div class="d-flex justify-content-between mt-1">
-                      <h6 class="text-muted small font-italic mb-0 mt-1">
-                        $21.00 <del class="text-danger ml-2">$25.00</del>
-                      </h6>
-                      <ul class="list-unstyled text-warning mb-0">
-                        <li class="list-inline-item">
-                          <i class="mdi mdi-star"></i>
-                        </li>
-                        <li class="list-inline-item">
-                          <i class="mdi mdi-star"></i>
-                        </li>
-                        <li class="list-inline-item">
-                          <i class="mdi mdi-star"></i>
-                        </li>
-                        <li class="list-inline-item">
-                          <i class="mdi mdi-star"></i>
-                        </li>
-                        <li class="list-inline-item">
-                          <i class="mdi mdi-star"></i>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!--end col-->
-
-              <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
-                <div
-                  class="card shop-list border-0 position-relative overflow-hidden"
-                >
-                  <div
-                    class="shop-image position-relative overflow-hidden rounded shadow"
-                  >
-                    <router-link to="/shop-product-detail"
-                      ><img
-                        src="images/shop/product/s15.jpg"
-                        class="img-fluid"
-                        alt=""
-                    /></router-link>
-                    <router-link to="/shop-product-detail" class="overlay-work">
-                      <img
-                        src="images/shop/product/s-15.jpg"
-                        class="img-fluid"
-                        alt=""
-                      />
-                    </router-link>
-                    <ul class="list-unstyled shop-icons">
-                      <li>
-                        <a
-                          href="javascript:void(0)"
-                          class="btn btn-icon btn-pills btn-soft-danger"
-                        >
-                          <heart-icon class="icons"></heart-icon>
-                        </a>
-                      </li>
-                      <li class="mt-2">
-                        <router-link
-                          to="/shop-product-detail"
-                          class="btn btn-icon btn-pills btn-soft-primary"
-                        >
-                          <eye-icon class="icons"></eye-icon>
-                        </router-link>
-                      </li>
-                      <li class="mt-2">
-                        <router-link
-                          to="/shop-cart"
-                          class="btn btn-icon btn-pills btn-soft-warning"
-                        >
-                          <shopping-cart-icon
-                            class="icons"
-                          ></shopping-cart-icon>
-                        </router-link>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="card-body content pt-4 p-2">
-                    <router-link
-                      to="/shop-product-detail"
-                      class="text-dark product-name h6"
-                      >T-Shirts</router-link
-                    >
-                    <div class="d-flex justify-content-between mt-1">
-                      <h6 class="text-muted small font-italic mb-0 mt-1">
-                        $5.00 <span class="text-success ml-1">30% off</span>
-                      </h6>
-                      <ul class="list-unstyled text-warning mb-0">
-                        <li class="list-inline-item">
-                          <i class="mdi mdi-star"></i>
-                        </li>
-                        <li class="list-inline-item">
-                          <i class="mdi mdi-star"></i>
-                        </li>
-                        <li class="list-inline-item">
-                          <i class="mdi mdi-star"></i>
-                        </li>
-                        <li class="list-inline-item">
-                          <i class="mdi mdi-star"></i>
-                        </li>
-                        <li class="list-inline-item">
-                          <i class="mdi mdi-star"></i>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!--end col-->
-
-              <!-- PAGINATION START -->
-              <div class="col-12 mt-4 pt-2">
-                <ul class="pagination justify-content-center mb-0">
-                  <li class="page-item">
-                    <a
-                      class="page-link"
-                      href="javascript:void(0)"
-                      aria-label="Previous"
-                      ><i class="mdi mdi-arrow-left"></i> Prev</a
-                    >
-                  </li>
-                  <li class="page-item active">
-                    <a class="page-link" href="javascript:void(0)">1</a>
-                  </li>
-                  <li class="page-item">
-                    <a class="page-link" href="javascript:void(0)">2</a>
-                  </li>
-                  <li class="page-item">
-                    <a class="page-link" href="javascript:void(0)">3</a>
-                  </li>
-                  <li class="page-item">
-                    <a
-                      class="page-link"
-                      href="javascript:void(0)"
-                      aria-label="Next"
-                      >Next <i class="mdi mdi-arrow-right"></i
-                    ></a>
-                  </li>
-                </ul>
-              </div>
-              <!--end col-->
-              <!-- PAGINATION END -->
-            </div>
-            <!--end row-->
-          </div>
-          <!--end col-->
         </div>
         <!--end row-->
       </div>
       <!--end container-->
     </section>
     <!--end section-->
-    <!-- End Products -->
+    <!-- End -->
     <!--end section-->
     <Footer />
     <!-- Footer End -->

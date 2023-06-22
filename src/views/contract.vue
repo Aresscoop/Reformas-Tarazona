@@ -39,25 +39,15 @@ export default {
         <div class="row justify-content-center">
           <div class="col-lg-12 text-center">
             <div class="page-next-level">
-              <h4 class="title">New Trends in SEO</h4>
-              <ul class="list-unstyled mt-4">
-                <li class="list-inline-item h6 user text-muted mr-2">
-                  <span class="text-dark">Client :</span> Calvin Carlo
-                </li>
-                <li class="list-inline-item h6 date text-muted">
-                  <span class="text-dark">Date :</span> 23th Sep, 2019
-                </li>
-              </ul>
+              <h1 class="title">Contract</h1>
               <div class="page-next">
                 <nav aria-label="breadcrumb" class="d-inline-block">
                   <ul class="breadcrumb bg-white rounded shadow mb-0">
                     <li class="breadcrumb-item">
-                      <router-link to="/">Landrick</router-link>
+                      <router-link to="/">Inicio</router-link>
                     </li>
-                    <li class="breadcrumb-item"><a href="#">Page</a></li>
-                    <li class="breadcrumb-item"><a href="#">Work</a></li>
                     <li class="breadcrumb-item active" aria-current="page">
-                      Work Detail
+                      Contract
                     </li>
                   </ul>
                 </nav>
@@ -129,43 +119,6 @@ export default {
               </div>
             </div>
 
-            <div class="bg-light rounded p-4 mt-4 pt-2">
-              <p class="text-muted font-italic mb-0">
-                " There is now an abundance of readable dummy texts. These are
-                usually used when a text is required purely to fill a space.
-                These alternatives to the classic Lorem Ipsum texts are often
-                amusing and tell short, funny or nonsensical stories. "
-              </p>
-
-              <ul class="list-unstyled text-muted mt-4">
-                <li class="mb-0">
-                  <span class="text-primary h5 mr-2"
-                    ><i class="uil uil-check-circle align-middle"></i></span
-                  >Digital Marketing Solutions for Tomorrow
-                </li>
-                <li class="mb-0">
-                  <span class="text-primary h5 mr-2"
-                    ><i class="uil uil-check-circle align-middle"></i></span
-                  >Our Talented & Experienced Marketing Agency
-                </li>
-                <li class="mb-0">
-                  <span class="text-primary h5 mr-2"
-                    ><i class="uil uil-check-circle align-middle"></i></span
-                  >Create your own skin to match your brand
-                </li>
-                <li class="mb-0">
-                  <span class="text-primary h5 mr-2"
-                    ><i class="uil uil-check-circle align-middle"></i></span
-                  >Digital Marketing Solutions for Tomorrow
-                </li>
-                <li class="mb-0">
-                  <span class="text-primary h5 mr-2"
-                    ><i class="uil uil-check-circle align-middle"></i></span
-                  >Our Talented & Experienced Marketing Agency
-                </li>
-              </ul>
-            </div>
-
             <div class="row align-items-center">
               <div class="col-lg-6 mt-4 pt-2">
                 <div class="card work-details rounded bg-light border-0">
@@ -201,247 +154,166 @@ export default {
                 <img src="images/work/6.jpg" class="img-fluid rounded" alt="" />
               </div>
             </div>
-
-            <!-- Comment Areas start -->
-            <div class="card shadow rounded border-0 mt-4">
-              <div class="card-body">
-                <h5 class="card-title mb-0">Comments :</h5>
-
-                <ul class="media-list list-unstyled mb-0">
-                  <li class="mt-4">
-                    <div class="d-flex justify-content-between">
-                      <div class="media align-items-center">
-                        <a class="pr-3" href="#">
-                          <img
-                            src="images/client/01.jpg"
-                            class="img-fluid avatar avatar-md-sm rounded-circle shadow"
-                            alt="img"
-                          />
-                        </a>
-                        <div class="commentor-detail">
-                          <h6 class="mb-0">
-                            <a
-                              href="javascript:void(0)"
-                              class="text-dark media-heading"
-                              >Lorenzo Peterson</a
-                            >
-                          </h6>
-                          <small class="text-muted"
-                            >15th August, 2019 at 01:25 pm</small
-                          >
-                        </div>
-                      </div>
-                      <a href="#" class="text-muted"
-                        ><i class="mdi mdi-reply"></i> Reply</a
-                      >
-                    </div>
-                    <div class="mt-3">
-                      <p class="text-muted font-italic p-3 bg-light rounded">
-                        " There are many variations of passages of Lorem Ipsum
-                        available, but the majority have suffered alteration in
-                        some form, by injected humour "
-                      </p>
-                    </div>
-                  </li>
-
-                  <li class="mt-4">
-                    <div class="d-flex justify-content-between">
-                      <div class="media align-items-center">
-                        <a class="pr-3" href="#">
-                          <img
-                            src="images/client/02.jpg"
-                            class="img-fluid avatar avatar-md-sm rounded-circle shadow"
-                            alt="img"
-                          />
-                        </a>
-                        <div class="commentor-detail">
-                          <h6 class="mb-0">
-                            <a
-                              href="javascript:void(0)"
-                              class="media-heading text-dark"
-                              >Tammy Camacho</a
-                            >
-                          </h6>
-                          <small class="text-muted"
-                            >15th August, 2019 at 05:44 pm</small
-                          >
-                        </div>
-                      </div>
-                      <a href="#" class="text-muted"
-                        ><i class="mdi mdi-reply"></i> Reply</a
-                      >
-                    </div>
-                    <div class="mt-3">
-                      <p class="text-muted font-italic p-3 bg-light rounded">
-                        " There are many variations of passages of Lorem Ipsum
-                        available, but the majority have suffered alteration in
-                        some form, by injected humour "
-                      </p>
-                    </div>
-                  </li>
-
-                  <li class="mt-4">
-                    <div class="d-flex justify-content-between">
-                      <div class="media align-items-center">
-                        <a class="pr-3" href="#">
-                          <img
-                            src="images/client/03.jpg"
-                            class="img-fluid avatar avatar-md-sm rounded-circle shadow"
-                            alt="img"
-                          />
-                        </a>
-                        <div class="commentor-detail">
-                          <h6 class="mb-0">
-                            <a
-                              href="javascript:void(0)"
-                              class="media-heading text-dark"
-                              >Tammy Camacho</a
-                            >
-                          </h6>
-                          <small class="text-muted"
-                            >16th August, 2019 at 03:44 pm</small
-                          >
-                        </div>
-                      </div>
-                      <a href="#" class="text-muted"
-                        ><i class="mdi mdi-reply"></i> Reply</a
-                      >
-                    </div>
-                    <div class="mt-3">
-                      <p class="text-muted font-italic p-3 bg-light rounded">
-                        " There are many variations of passages of Lorem Ipsum
-                        available, but the majority have suffered alteration in
-                        some form, by injected humour "
-                      </p>
-                    </div>
-
-                    <ul class="list-unstyled pl-4 pl-md-5 sub-comment">
-                      <li class="mt-4">
-                        <div class="d-flex justify-content-between">
-                          <div class="media align-items-center">
-                            <a class="pr-3" href="#">
-                              <img
-                                src="images/client/01.jpg"
-                                class="img-fluid avatar avatar-md-sm rounded-circle shadow"
-                                alt="img"
-                              />
-                            </a>
-                            <div class="commentor-detail">
-                              <h6 class="mb-0">
-                                <a
-                                  href="javascript:void(0)"
-                                  class="text-dark media-heading"
-                                  >Lorenzo Peterson</a
-                                >
-                              </h6>
-                              <small class="text-muted"
-                                >17th August, 2019 at 01:25 pm</small
-                              >
-                            </div>
-                          </div>
-                          <a href="#" class="text-muted"
-                            ><i class="mdi mdi-reply"></i> Reply</a
-                          >
-                        </div>
-                        <div class="mt-3">
-                          <p
-                            class="text-muted font-italic p-3 bg-light rounded"
-                          >
-                            " There are many variations of passages of Lorem
-                            Ipsum available, but the majority have suffered
-                            alteration in some form, by injected humour "
-                          </p>
-                        </div>
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <!-- Comments -->
-            <div class="card shadow rounded border-0 mt-4">
-              <div class="card-body">
-                <h5 class="card-title mb-0">Leave A Comment :</h5>
-
-                <form class="mt-3">
-                  <div class="row">
-                    <div class="col-md-12">
-                      <div class="form-group">
-                        <label>Your Comment</label>
-                        <div class="position-relative">
-                          <message-circle-icon
-                            class="fea icon-sm icons"
-                          ></message-circle-icon>
-                          <textarea
-                            id="message"
-                            placeholder="Your Comment"
-                            rows="5"
-                            name="message"
-                            class="form-control pl-5"
-                            required=""
-                          ></textarea>
-                        </div>
-                      </div>
-                    </div>
-                    <!--end col-->
-
-                    <div class="col-lg-6">
-                      <div class="form-group">
-                        <label>Name <span class="text-danger">*</span></label>
-                        <div class="position-relative">
-                          <user-icon class="fea icon-sm icons"></user-icon>
-                          <input
-                            id="name"
-                            name="name"
-                            type="text"
-                            placeholder="Name"
-                            class="form-control pl-5"
-                            required=""
-                          />
-                        </div>
-                      </div>
-                    </div>
-                    <!--end col-->
-
-                    <div class="col-lg-6">
-                      <div class="form-group">
-                        <label
-                          >Your Email <span class="text-danger">*</span></label
-                        >
-                        <div class="position-relative">
-                          <mail-icon class="fea icon-sm icons"></mail-icon>
-                          <input
-                            id="email"
-                            type="email"
-                            placeholder="Email"
-                            name="email"
-                            class="form-control pl-5"
-                            required=""
-                          />
-                        </div>
-                      </div>
-                    </div>
-                    <!--end col-->
-
-                    <div class="col-md-12">
-                      <div class="send">
-                        <button type="submit" class="btn btn-primary btn-block">
-                          Send Message
-                        </button>
-                      </div>
-                    </div>
-                    <!--end col-->
-                  </div>
-                  <!--end row-->
-                </form>
-                <!--end form-->
-              </div>
-            </div>
           </div>
         </div>
       </div>
     </section>
+    <!-- Project Start -->
+    <section class="section bg-light">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 text-center">
+            <div class="section-title mb-4 pb-2">
+              <h4 class="title mb-4">Proyectos de Contract</h4>
+              <p class="text-muted para-desc mx-auto mb-0">
+                Contamos con un amplia experiencia en el sector de las reformas,
+                aquí puedes ver algunos de nuestros trabajos ya realizados.
+              </p>
+            </div>
+          </div>
+          <!--end col-->
+        </div>
+        <!--end row-->
+
+        <div class="row">
+          <div class="col-md-6 col-12 mt-4 pt-2">
+            <div
+              class="card work-container work-modern position-relative overflow-hidden shadow rounded border-0"
+            >
+              <div class="card-body p-0">
+                <img
+                  src="images/work/1.jpg"
+                  class="img-fluid rounded"
+                  alt="work-image"
+                />
+                <div class="overlay-work bg-dark"></div>
+                <div class="content">
+                  <router-link
+                    to="/page-work-detail"
+                    class="title text-white d-block font-weight-bold"
+                    >Shifting Perspective</router-link
+                  >
+                  <small class="text-light">Studio</small>
+                </div>
+                <div class="client">
+                  <small class="text-light user d-block"
+                    ><i class="mdi mdi-account"></i> Calvin Carlo</small
+                  >
+                  <small class="text-light date"
+                    ><i class="mdi mdi-calendar-check"></i> 13th August,
+                    2019</small
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--end col-->
+
+          <div class="col-md-6 col-12 mt-4 pt-2">
+            <div
+              class="card work-container work-modern position-relative overflow-hidden shadow rounded border-0"
+            >
+              <div class="card-body p-0">
+                <img
+                  src="images/work/2.jpg"
+                  class="img-fluid rounded"
+                  alt="work-image"
+                />
+                <div class="overlay-work bg-dark"></div>
+                <div class="content">
+                  <router-link
+                    to="/page-work-detail"
+                    class="title text-white d-block font-weight-bold"
+                    >Colors Magazine</router-link
+                  >
+                  <small class="text-light">Web Design</small>
+                </div>
+                <div class="client">
+                  <small class="text-light user d-block"
+                    ><i class="mdi mdi-account"></i> Calvin Carlo</small
+                  >
+                  <small class="text-light date"
+                    ><i class="mdi mdi-calendar-check"></i> 13th August,
+                    2019</small
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--end col-->
+
+          <div class="col-md-6 col-12 mt-4 pt-2">
+            <div
+              class="card work-container work-modern position-relative overflow-hidden shadow rounded border-0"
+            >
+              <div class="card-body p-0">
+                <img
+                  src="images/work/3.jpg"
+                  class="img-fluid rounded"
+                  alt="work-image"
+                />
+                <div class="overlay-work bg-dark"></div>
+                <div class="content">
+                  <router-link
+                    to="/page-work-detail"
+                    class="title text-white d-block font-weight-bold"
+                    >Spa Cosmetics</router-link
+                  >
+                  <small class="text-light">Developing</small>
+                </div>
+                <div class="client">
+                  <small class="text-light user d-block"
+                    ><i class="mdi mdi-account"></i> Calvin Carlo</small
+                  >
+                  <small class="text-light date"
+                    ><i class="mdi mdi-calendar-check"></i> 13th August,
+                    2019</small
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--end col-->
+
+          <div class="col-md-6 col-12 mt-4 pt-2">
+            <div
+              class="card work-container work-modern position-relative overflow-hidden shadow rounded border-0"
+            >
+              <div class="card-body p-0">
+                <img
+                  src="images/work/4.jpg"
+                  class="img-fluid rounded"
+                  alt="work-image"
+                />
+                <div class="overlay-work bg-dark"></div>
+                <div class="content">
+                  <router-link
+                    to="/page-work-detail"
+                    class="title text-white d-block font-weight-bold"
+                    >Riser Coffee</router-link
+                  >
+                  <small class="text-light">Branding</small>
+                </div>
+                <div class="client">
+                  <small class="text-light user d-block"
+                    ><i class="mdi mdi-account"></i> Calvin Carlo</small
+                  >
+                  <small class="text-light date"
+                    ><i class="mdi mdi-calendar-check"></i> 13th August,
+                    2019</small
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--end col-->
+        </div>
+        <!--end row-->
+      </div>
+      <!--end container-->
+    </section>
+    <!--end section-->
+    <!-- Project End -->
     <!-- End Work Detail -->
     <!--end section-->
     <Footer />
