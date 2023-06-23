@@ -13,11 +13,10 @@ export default {
     return {
       workData: [
         {
-          image: "images/work/4.jpg",
+          image: "images/productos/cat-griferia.png",
           title: "Grifería",
           type: "Cocina",
           category: "cocina",
-          url: "/src/views/shop-product-detail.vue",
         },
         {
           image: "images/work/4.jpg",

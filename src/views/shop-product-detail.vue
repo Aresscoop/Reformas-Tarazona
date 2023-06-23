@@ -60,7 +60,7 @@ export default {
         <div class="row justify-content-center">
           <div class="col-lg-12 text-center">
             <div class="page-next-level">
-              <h1 class="title">Nombre Producto</h1>
+              <h1 class="title">Grifo modelo 1</h1>
               <div class="page-next">
                 <nav aria-label="breadcrumb" class="d-inline-block">
                   <ul class="breadcrumb bg-white rounded shadow mb-0">
@@ -70,8 +70,11 @@ export default {
                     <li class="breadcrumb-item">
                       <router-link to="/productos">Productos</router-link>
                     </li>
+                    <li class="breadcrumb-item">
+                      <router-link to="/page-blog-grid">Grifería</router-link>
+                    </li>
                     <li class="breadcrumb-item active" aria-current="page">
-                      Categoría
+                      Grifo modelo 1
                     </li>
                   </ul>
                 </nav>
@@ -116,42 +119,35 @@ export default {
             >
               <div>
                 <img
-                  src="images/shop/product/single-2.jpg"
+                  src="images/productos/sub-grifo-modelo1-1.png"
                   class="img-fluid rounded"
                   alt=""
                 />
               </div>
               <div>
                 <img
-                  src="images/shop/product/single-3.jpg"
+                  src="images/productos/sub-grifo-modelo1-2.png"
                   class="img-fluid rounded"
                   alt=""
                 />
               </div>
               <div>
                 <img
-                  src="images/shop/product/single-4.jpg"
+                  src="images/productos/sub-grifo-modelo1-3.png"
                   class="img-fluid rounded"
                   alt=""
                 />
               </div>
               <div>
                 <img
-                  src="images/shop/product/single-5.jpg"
+                  src="images/productos/sub-grifo-modelo1-4.png"
                   class="img-fluid rounded"
                   alt=""
                 />
               </div>
               <div>
                 <img
-                  src="images/shop/product/single-6.jpg"
-                  class="img-fluid rounded"
-                  alt=""
-                />
-              </div>
-              <div>
-                <img
-                  src="images/shop/product/single-3.jpg"
+                  src="images/productos/sub-grifo-modelo1-5.png"
                   class="img-fluid rounded"
                   alt=""
                 />
@@ -168,42 +164,35 @@ export default {
             >
               <div>
                 <img
-                  src="images/shop/product/single-2.jpg"
+                  src="images/productos/sub-grifo-modelo1-1.png"
                   class="img-fluid"
                   alt=""
                 />
               </div>
               <div>
                 <img
-                  src="images/shop/product/single-3.jpg"
+                  src="images/productos/sub-grifo-modelo1-2.png"
                   class="img-fluid"
                   alt=""
                 />
               </div>
               <div>
                 <img
-                  src="images/shop/product/single-4.jpg"
+                  src="images/productos/sub-grifo-modelo1-3.png"
                   class="img-fluid"
                   alt=""
                 />
               </div>
               <div>
                 <img
-                  src="images/shop/product/single-5.jpg"
+                  src="images/productos/sub-grifo-modelo1-4.png"
                   class="img-fluid"
                   alt=""
                 />
               </div>
               <div>
                 <img
-                  src="images/shop/product/single-6.jpg"
-                  class="img-fluid"
-                  alt=""
-                />
-              </div>
-              <div>
-                <img
-                  src="images/shop/product/single-3.jpg"
+                  src="images/productos/sub-grifo-modelo1-5.png"
                   class="img-fluid"
                   alt=""
                 />
@@ -214,7 +203,7 @@ export default {
 
           <div class="col-md-7 mt-4 mt-sm-0 pt-2 pt-sm-0">
             <div class="section-title ml-md-4">
-              <h2 class="title">Nombre del Producto</h2>
+              <h2 class="title">Grifo modelo 1</h2>
               <p class="text-muted">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
                 exercitationem, unde molestiae sint quae inventore atque minima
@@ -227,19 +216,19 @@ export default {
                   <span class="text-primary h5 mr-2"
                     ><i class="uil uil-check-circle align-middle"></i
                   ></span>
-                  Digital Marketing Solutions for Tomorrow
+                  Acero inoxidable.
                 </li>
                 <li class="mb-0">
                   <span class="text-primary h5 mr-2"
                     ><i class="uil uil-check-circle align-middle"></i
                   ></span>
-                  Our Talented &amp; Experienced Marketing Agency
+                  Resistente y perdurable.
                 </li>
                 <li class="mb-0">
                   <span class="text-primary h5 mr-2"
                     ><i class="uil uil-check-circle align-middle"></i
                   ></span>
-                  Create your own skin to match your brand
+                  Moderno y minimalista.
                 </li>
               </ul>
               <!--end row-->
@@ -339,13 +328,13 @@ export default {
                   >
                     <router-link to="/shop-product-detail"
                       ><img
-                        src="images/shop/product/s1.jpg"
+                        src="images/productos/sub-grifo-modelo2.png"
                         class="img-fluid"
                         alt=""
                     /></router-link>
                     <router-link to="/shop-product-detail" class="overlay-work">
                       <img
-                        src="images/shop/product/s-1.jpg"
+                        src="images/productos/sub-grifo-modelo2-1.png"
                         class="img-fluid"
                         alt=""
                       />
@@ -373,7 +362,7 @@ export default {
                     <router-link
                       to="/shop-product-detail"
                       class="text-dark product-name h6"
-                      >Branded T-Shirt</router-link
+                      >Grifo modelo 2</router-link
                     >
                   </div>
                 </div>
@@ -387,13 +376,13 @@ export default {
                   >
                     <router-link to="/shop-product-detail"
                       ><img
-                        src="images/shop/product/s3.jpg"
+                        src="images/productos/sub-grifo-modelo3.png"
                         class="img-fluid"
                         alt=""
                     /></router-link>
                     <router-link to="/shop-product-detail" class="overlay-work">
                       <img
-                        src="images/shop/product/s-3.jpg"
+                        src="images/productos/sub-grifo-modelo3-1.png"
                         class="img-fluid"
                         alt=""
                       />
@@ -421,7 +410,7 @@ export default {
                     <router-link
                       to="/shop-product-detail"
                       class="text-dark product-name h6"
-                      >Elegent Watch</router-link
+                      >Grifo modelo 3</router-link
                     >
                   </div>
                 </div>
@@ -435,13 +424,13 @@ export default {
                   >
                     <router-link to="/shop-product-detail"
                       ><img
-                        src="images/shop/product/s6.jpg"
+                        src="images/productos/sub-grifo-modelo4.png"
                         class="img-fluid"
                         alt=""
                     /></router-link>
                     <router-link to="/shop-product-detail" class="overlay-work">
                       <img
-                        src="images/shop/product/s-6.jpg"
+                        src="images/productos/sub-grifo-modelo4-1.png"
                         class="img-fluid"
                         alt=""
                       />
@@ -469,7 +458,7 @@ export default {
                     <router-link
                       to="/shop-product-detail"
                       class="text-dark product-name h6"
-                      >Elegent Mug</router-link
+                      >Grifo modelo 4</router-link
                     >
                   </div>
                 </div>
@@ -483,13 +472,13 @@ export default {
                   >
                     <router-link to="/shop-product-detail"
                       ><img
-                        src="images/shop/product/s8.jpg"
+                        src="images/productos/sub-grifo-modelo5.png"
                         class="img-fluid"
                         alt=""
                     /></router-link>
                     <router-link to="/shop-product-detail" class="overlay-work">
                       <img
-                        src="images/shop/product/s-8.jpg"
+                        src="images/productos/sub-grifo-modelo5-1.png"
                         class="img-fluid"
                         alt=""
                       />
@@ -517,55 +506,7 @@ export default {
                     <router-link
                       to="/shop-product-detail"
                       class="text-dark product-name h6"
-                      >Wooden Stools</router-link
-                    >
-                  </div>
-                </div>
-              </Slide>
-              <Slide>
-                <div
-                  class="card shop-list border-0 position-relative overflow-hidden m-2"
-                >
-                  <div
-                    class="shop-image position-relative overflow-hidden rounded shadow"
-                  >
-                    <router-link to="/shop-product-detail"
-                      ><img
-                        src="images/shop/product/s14.jpg"
-                        class="img-fluid"
-                        alt=""
-                    /></router-link>
-                    <router-link to="/shop-product-detail" class="overlay-work">
-                      <img
-                        src="images/shop/product/s-14.jpg"
-                        class="img-fluid"
-                        alt=""
-                      />
-                    </router-link>
-                    <ul class="list-unstyled shop-icons">
-                      <li>
-                        <a
-                          href="javascript:void(0)"
-                          class="btn btn-icon btn-pills btn-soft-danger"
-                        >
-                          <heart-icon class="icons"></heart-icon>
-                        </a>
-                      </li>
-                      <li class="mt-2">
-                        <router-link
-                          to="/shop-product-detail"
-                          class="btn btn-icon btn-pills btn-soft-primary"
-                        >
-                          <eye-icon class="icons"></eye-icon>
-                        </router-link>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="card-body content pt-4 p-2">
-                    <router-link
-                      to="/shop-product-detail"
-                      class="text-dark product-name h6"
-                      >Women Block Heels</router-link
+                      >Grifo modelo 5</router-link
                     >
                   </div>
                 </div>

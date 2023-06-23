@@ -123,8 +123,8 @@ export default {
                 mamparas, etc.
               </p>
               <div class="mt-4 pt-2">
-                <a href="../views/contacto.vue" class="btn btn-primary"
-                  >Contáctanos!</a
+                <router-link to="/contacto" class="btn btn-primary"
+                  >Contáctanos</router-link
                 >
               </div>
             </div>
@@ -246,8 +246,8 @@ export default {
           <div class="col-12 mt-4 pt-2 text-center">
             <p class="text-muted mb-0">
               Si quieres conocer todos nuestros servicios.
-              <a href="../views/servicios.vue" class="text-primary h6"
-                >Haz click aquí</a
+              <router-link to="/servicios" class="text-primary h6"
+                >Haz click aquí</router-link
               >, si tienes cualquier duda te asesoraremos!
             </p>
           </div>
@@ -380,8 +380,8 @@ export default {
                   que hemos realizado desde el siguiente enlace.
                 </p>
                 <div class="mt-4">
-                  <a href="../views/proyectos.vue" class="btn btn-primary"
-                    >Proyectos</a
+                  <router-link to="/proyectos" class="btn btn-primary"
+                    >Proyectos</router-link
                   >
                 </div>
               </div>
@@ -404,13 +404,14 @@ export default {
               <div class="col-12">
                 <div class="section-title">
                   <h2 class="font-weight-bold mb-4">
-                    End of Season Clearance <br />
-                    Sale upto 30%
+                    Cambio de bañera por plato de ducha <br />
+                    Descuento del 30%
                   </h2>
                   <p class="para-desc para-white text-muted mb-0">
-                    Launch your campaign and benefit from our expertise on
-                    designing and managing conversion centered bootstrap4 html
-                    page.
+                    ¿Cansado de hacer esfuerzos cuando vas a ducharte? ¿Sufres
+                    de dolor de rodilla? En Reformas Tarazona tenemos la
+                    solución! Cambia tu bañera por un moderno plato de ducha,
+                    verás lo cómodo y fácil que puede ser.
                   </p>
                   <div class="mt-4">
                     <a href="javascript:void(0)" class="btn btn-primary"
@@ -445,10 +446,11 @@ export default {
                 algunos de nuestros proyectos.
               </p>
               <div class="mt-4 d-none d-md-block">
-                <a href="../views/proyectos.vue)" class="btn btn-soft-primary"
-                  >Ver más
-                  <arrow-right-icon class="fea icon-sm"></arrow-right-icon
-                ></a>
+                <router-link to="/proyectos" class="btn btn-soft-primary"
+                  >Ver más<arrow-right-icon
+                    class="fea icon-sm"
+                  ></arrow-right-icon
+                ></router-link>
               </div>
             </div>
           </div>
@@ -465,7 +467,7 @@ export default {
                     class="categories-name border d-block text-dark rounded"
                     @click="updateFilter('all')"
                     :class="{ active: filterCategory == 'all' }"
-                    >All</a
+                    >Todos</a
                   >
                 </li>
                 <li class="list-inline-item">

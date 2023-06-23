@@ -31,17 +31,18 @@ export default {
         <div class="row justify-content-center">
           <div class="col-lg-12 text-center">
             <div class="page-next-level">
-              <h4 class="title">Blog</h4>
+              <h1 class="title">Grifería</h1>
               <div class="page-next">
                 <nav aria-label="breadcrumb" class="d-inline-block">
                   <ul class="breadcrumb bg-white rounded shadow mb-0">
                     <li class="breadcrumb-item">
-                      <router-link to="/">Landrick</router-link>
+                      <router-link to="/">Inicio</router-link>
                     </li>
-                    <li class="breadcrumb-item"><a href="#">Page</a></li>
-                    <li class="breadcrumb-item"><a href="#">Blog</a></li>
+                    <li class="breadcrumb-item">
+                      <router-link to="/productos">Productos</router-link>
+                    </li>
                     <li class="breadcrumb-item active" aria-current="page">
-                      Blog Grid
+                      Grifería
                     </li>
                   </ul>
                 </nav>
@@ -81,7 +82,11 @@ export default {
           <div class="col-lg-4 col-md-6 mb-4 pb-2">
             <div class="card blog rounded border-0 shadow overflow-hidden">
               <div class="position-relative">
-                <img src="images/blog/01.jpg" class="card-img-top" alt="..." />
+                <img
+                  src="images/productos/sub-griferia-1.png"
+                  class="card-img-top"
+                  alt="..."
+                />
                 <div class="overlay rounded-top bg-dark"></div>
               </div>
               <div class="card-body content">
@@ -93,33 +98,12 @@ export default {
                   >
                 </h5>
                 <div class="post-meta d-flex justify-content-between mt-3">
-                  <ul class="list-unstyled mb-0">
-                    <li class="list-inline-item mr-2 mb-0">
-                      <a href="javascript:void(0)" class="text-muted like"
-                        ><i class="mdi mdi-heart-outline mr-1"></i>33</a
-                      >
-                    </li>
-                    <li class="list-inline-item">
-                      <a href="javascript:void(0)" class="text-muted comments"
-                        ><i class="mdi mdi-comment-outline mr-1"></i>08</a
-                      >
-                    </li>
-                  </ul>
                   <router-link
                     to="/shop-product-detail"
                     class="text-muted readmore"
-                    >Read More <i class="mdi mdi-chevron-right"></i
+                    >Saber más <i class="mdi mdi-chevron-right"></i
                   ></router-link>
                 </div>
-              </div>
-              <div class="author">
-                <small class="text-light user d-block"
-                  ><i class="mdi mdi-account"></i> Calvin Carlo</small
-                >
-                <small class="text-light date"
-                  ><i class="mdi mdi-calendar-check"></i> 13th August,
-                  2019</small
-                >
               </div>
             </div>
           </div>
@@ -128,7 +112,11 @@ export default {
           <div class="col-lg-4 col-md-6 mb-4 pb-2">
             <div class="card blog rounded border-0 shadow overflow-hidden">
               <div class="position-relative">
-                <img src="images/blog/02.jpg" class="card-img-top" alt="..." />
+                <img
+                  src="images/productos/sub-griferia-2.png"
+                  class="card-img-top"
+                  alt="..."
+                />
                 <div class="overlay rounded-top bg-dark"></div>
               </div>
               <div class="card-body content">
@@ -136,37 +124,16 @@ export default {
                   <a
                     href="javascript:void(0)"
                     class="card-title title text-dark"
-                    >How apps is changing the IT world</a
+                    >Grifo modelo 2</a
                   >
                 </h5>
                 <div class="post-meta d-flex justify-content-between mt-3">
-                  <ul class="list-unstyled mb-0">
-                    <li class="list-inline-item mr-2 mb-0">
-                      <a href="javascript:void(0)" class="text-muted like"
-                        ><i class="mdi mdi-heart-outline mr-1"></i>33</a
-                      >
-                    </li>
-                    <li class="list-inline-item">
-                      <a href="javascript:void(0)" class="text-muted comments"
-                        ><i class="mdi mdi-comment-outline mr-1"></i>08</a
-                      >
-                    </li>
-                  </ul>
                   <router-link
                     to="/page-blog-detail"
                     class="text-muted readmore"
-                    >Read More <i class="mdi mdi-chevron-right"></i
+                    >Saber más <i class="mdi mdi-chevron-right"></i
                   ></router-link>
                 </div>
-              </div>
-              <div class="author">
-                <small class="text-light user d-block"
-                  ><i class="mdi mdi-account"></i> Calvin Carlo</small
-                >
-                <small class="text-light date"
-                  ><i class="mdi mdi-calendar-check"></i> 13th August,
-                  2019</small
-                >
               </div>
             </div>
           </div>
@@ -175,7 +142,11 @@ export default {
           <div class="col-lg-4 col-md-6 mb-4 pb-2">
             <div class="card blog rounded border-0 shadow overflow-hidden">
               <div class="position-relative">
-                <img src="images/blog/03.jpg" class="card-img-top" alt="..." />
+                <img
+                  src="images/productos/sub-griferia-3.png"
+                  class="card-img-top"
+                  alt="..."
+                />
                 <div class="overlay rounded-top bg-dark"></div>
               </div>
               <div class="card-body content">
@@ -183,37 +154,16 @@ export default {
                   <a
                     href="javascript:void(0)"
                     class="card-title title text-dark"
-                    >Smartest Applications for Business</a
+                    >Grifo modelo 3</a
                   >
                 </h5>
                 <div class="post-meta d-flex justify-content-between mt-3">
-                  <ul class="list-unstyled mb-0">
-                    <li class="list-inline-item mr-2 mb-0">
-                      <a href="javascript:void(0)" class="text-muted like"
-                        ><i class="mdi mdi-heart-outline mr-1"></i>33</a
-                      >
-                    </li>
-                    <li class="list-inline-item">
-                      <a href="javascript:void(0)" class="text-muted comments"
-                        ><i class="mdi mdi-comment-outline mr-1"></i>08</a
-                      >
-                    </li>
-                  </ul>
                   <router-link
                     to="/page-blog-detail"
                     class="text-muted readmore"
-                    >Read More <i class="mdi mdi-chevron-right"></i
+                    >Saber más <i class="mdi mdi-chevron-right"></i
                   ></router-link>
                 </div>
-              </div>
-              <div class="author">
-                <small class="text-light user d-block"
-                  ><i class="mdi mdi-account"></i> Calvin Carlo</small
-                >
-                <small class="text-light date"
-                  ><i class="mdi mdi-calendar-check"></i> 13th August,
-                  2019</small
-                >
               </div>
             </div>
           </div>
@@ -222,7 +172,11 @@ export default {
           <div class="col-lg-4 col-md-6 mb-4 pb-2">
             <div class="card blog rounded border-0 shadow overflow-hidden">
               <div class="position-relative">
-                <img src="images/blog/04.jpg" class="card-img-top" alt="..." />
+                <img
+                  src="images/productos/sub-griferia-4.png"
+                  class="card-img-top"
+                  alt="..."
+                />
                 <div class="overlay rounded-top bg-dark"></div>
               </div>
               <div class="card-body content">
@@ -230,37 +184,16 @@ export default {
                   <a
                     href="javascript:void(0)"
                     class="card-title title text-dark"
-                    >How apps is changing the IT world</a
+                    >Grifo modelo 4</a
                   >
                 </h5>
                 <div class="post-meta d-flex justify-content-between mt-3">
-                  <ul class="list-unstyled mb-0">
-                    <li class="list-inline-item mr-2 mb-0">
-                      <a href="javascript:void(0)" class="text-muted like"
-                        ><i class="mdi mdi-heart-outline mr-1"></i>33</a
-                      >
-                    </li>
-                    <li class="list-inline-item">
-                      <a href="javascript:void(0)" class="text-muted comments"
-                        ><i class="mdi mdi-comment-outline mr-1"></i>08</a
-                      >
-                    </li>
-                  </ul>
                   <router-link
                     to="/page-blog-detail"
                     class="text-muted readmore"
-                    >Read More <i class="mdi mdi-chevron-right"></i
+                    >Saber más <i class="mdi mdi-chevron-right"></i
                   ></router-link>
                 </div>
-              </div>
-              <div class="author">
-                <small class="text-light user d-block"
-                  ><i class="mdi mdi-account"></i> Calvin Carlo</small
-                >
-                <small class="text-light date"
-                  ><i class="mdi mdi-calendar-check"></i> 13th August,
-                  2019</small
-                >
               </div>
             </div>
           </div>
@@ -269,7 +202,11 @@ export default {
           <div class="col-lg-4 col-md-6 mb-4 pb-2">
             <div class="card blog rounded border-0 shadow overflow-hidden">
               <div class="position-relative">
-                <img src="images/blog/05.jpg" class="card-img-top" alt="..." />
+                <img
+                  src="images/productos/sub-griferia-5.png"
+                  class="card-img-top"
+                  alt="..."
+                />
                 <div class="overlay rounded-top bg-dark"></div>
               </div>
               <div class="card-body content">
@@ -277,178 +214,16 @@ export default {
                   <a
                     href="javascript:void(0)"
                     class="card-title title text-dark"
-                    >Design your apps in your own way</a
+                    >Grifo modelo 5</a
                   >
                 </h5>
                 <div class="post-meta d-flex justify-content-between mt-3">
-                  <ul class="list-unstyled mb-0">
-                    <li class="list-inline-item mr-2 mb-0">
-                      <a href="javascript:void(0)" class="text-muted like"
-                        ><i class="mdi mdi-heart-outline mr-1"></i>33</a
-                      >
-                    </li>
-                    <li class="list-inline-item">
-                      <a href="javascript:void(0)" class="text-muted comments"
-                        ><i class="mdi mdi-comment-outline mr-1"></i>08</a
-                      >
-                    </li>
-                  </ul>
                   <router-link
                     to="/shop-product-detail"
                     class="text-muted readmore"
-                    >Read More <i class="mdi mdi-chevron-right"></i
+                    >Saber más <i class="mdi mdi-chevron-right"></i
                   ></router-link>
                 </div>
-              </div>
-              <div class="author">
-                <small class="text-light user d-block"
-                  ><i class="mdi mdi-account"></i> Calvin Carlo</small
-                >
-                <small class="text-light date"
-                  ><i class="mdi mdi-calendar-check"></i> 13th August,
-                  2019</small
-                >
-              </div>
-            </div>
-          </div>
-          <!--end col-->
-
-          <div class="col-lg-4 col-md-6 mb-4 pb-2">
-            <div class="card blog rounded border-0 shadow overflow-hidden">
-              <div class="position-relative">
-                <img src="images/blog/06.jpg" class="card-img-top" alt="..." />
-                <div class="overlay rounded-top bg-dark"></div>
-              </div>
-              <div class="card-body content">
-                <h5>
-                  <a
-                    href="javascript:void(0)"
-                    class="card-title title text-dark"
-                    >Smartest Applications for Business</a
-                  >
-                </h5>
-                <div class="post-meta d-flex justify-content-between mt-3">
-                  <ul class="list-unstyled mb-0">
-                    <li class="list-inline-item mr-2 mb-0">
-                      <a href="javascript:void(0)" class="text-muted like"
-                        ><i class="mdi mdi-heart-outline mr-1"></i>33</a
-                      >
-                    </li>
-                    <li class="list-inline-item">
-                      <a href="javascript:void(0)" class="text-muted comments"
-                        ><i class="mdi mdi-comment-outline mr-1"></i>08</a
-                      >
-                    </li>
-                  </ul>
-                  <router-link
-                    to="/page-blog-detail"
-                    class="text-muted readmore"
-                    >Read More <i class="mdi mdi-chevron-right"></i
-                  ></router-link>
-                </div>
-              </div>
-              <div class="author">
-                <small class="text-light user d-block"
-                  ><i class="mdi mdi-account"></i> Calvin Carlo</small
-                >
-                <small class="text-light date"
-                  ><i class="mdi mdi-calendar-check"></i> 13th August,
-                  2019</small
-                >
-              </div>
-            </div>
-          </div>
-          <!--end col-->
-
-          <div class="col-lg-4 col-md-6 mb-4 pb-2">
-            <div class="card blog rounded border-0 shadow overflow-hidden">
-              <div class="position-relative">
-                <img src="images/blog/07.jpg" class="card-img-top" alt="..." />
-                <div class="overlay rounded-top bg-dark"></div>
-              </div>
-              <div class="card-body content">
-                <h5>
-                  <a
-                    href="javascript:void(0)"
-                    class="card-title title text-dark"
-                    >Design your apps in your own way</a
-                  >
-                </h5>
-                <div class="post-meta d-flex justify-content-between mt-3">
-                  <ul class="list-unstyled mb-0">
-                    <li class="list-inline-item mr-2 mb-0">
-                      <a href="javascript:void(0)" class="text-muted like"
-                        ><i class="mdi mdi-heart-outline mr-1"></i>33</a
-                      >
-                    </li>
-                    <li class="list-inline-item">
-                      <a href="javascript:void(0)" class="text-muted comments"
-                        ><i class="mdi mdi-comment-outline mr-1"></i>08</a
-                      >
-                    </li>
-                  </ul>
-                  <router-link
-                    to="/page-blog-detail"
-                    class="text-muted readmore"
-                    >Read More <i class="mdi mdi-chevron-right"></i
-                  ></router-link>
-                </div>
-              </div>
-              <div class="author">
-                <small class="text-light user d-block"
-                  ><i class="mdi mdi-account"></i> Calvin Carlo</small
-                >
-                <small class="text-light date"
-                  ><i class="mdi mdi-calendar-check"></i> 13th August,
-                  2019</small
-                >
-              </div>
-            </div>
-          </div>
-          <!--end col-->
-
-          <div class="col-lg-4 col-md-6 mb-4 pb-2">
-            <div class="card blog rounded border-0 shadow overflow-hidden">
-              <div class="position-relative">
-                <img src="images/blog/08.jpg" class="card-img-top" alt="..." />
-                <div class="overlay rounded-top bg-dark"></div>
-              </div>
-              <div class="card-body content">
-                <h5>
-                  <a
-                    href="javascript:void(0)"
-                    class="card-title title text-dark"
-                    >Smartest Applications for Business</a
-                  >
-                </h5>
-                <div class="post-meta d-flex justify-content-between mt-3">
-                  <ul class="list-unstyled mb-0">
-                    <li class="list-inline-item mr-2 mb-0">
-                      <a href="javascript:void(0)" class="text-muted like"
-                        ><i class="mdi mdi-heart-outline mr-1"></i>33</a
-                      >
-                    </li>
-                    <li class="list-inline-item">
-                      <a href="javascript:void(0)" class="text-muted comments"
-                        ><i class="mdi mdi-comment-outline mr-1"></i>08</a
-                      >
-                    </li>
-                  </ul>
-                  <router-link
-                    to="/page-blog-detail"
-                    class="text-muted readmore"
-                    >Read More <i class="mdi mdi-chevron-right"></i
-                  ></router-link>
-                </div>
-              </div>
-              <div class="author">
-                <small class="text-light user d-block"
-                  ><i class="mdi mdi-account"></i> Calvin Carlo</small
-                >
-                <small class="text-light date"
-                  ><i class="mdi mdi-calendar-check"></i> 13th August,
-                  2019</small
-                >
               </div>
             </div>
           </div>
@@ -462,7 +237,7 @@ export default {
                   class="page-link"
                   href="javascript:void(0)"
                   aria-label="Previous"
-                  >Prev</a
+                  >Ant</a
                 >
               </li>
               <li class="page-item active">
@@ -476,7 +251,7 @@ export default {
               </li>
               <li class="page-item">
                 <a class="page-link" href="javascript:void(0)" aria-label="Next"
-                  >Next</a
+                  >Sig</a
                 >
               </li>
             </ul>
