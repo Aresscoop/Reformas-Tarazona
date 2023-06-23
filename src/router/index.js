@@ -554,14 +554,14 @@ const routes = [
     component: () => import("../views/auth-re-password-three"),
   },
   {
-    path: "/page-privacy",
+    path: "/politica-de-privacidad",
     name: "privacy",
-    component: () => import("../views/page-privacy"),
+    component: () => import("../views/politica-de-privacidad"),
   },
   {
-    path: "/page-terms",
+    path: "/politica-de-cookies",
     name: "terms",
-    component: () => import("../views/page-terms"),
+    component: () => import("../views/politica-de-cookies"),
   },
   {
     path: "/page-comingsoon",
@@ -609,9 +609,9 @@ const routes = [
     component: () => import("../views/contacto"),
   },
   {
-    path: "/documentation",
-    name: "documentation",
-    component: () => import("../views/documentation"),
+    path: "/proteccion-de-datos",
+    name: "proteccion-de-datos",
+    component: () => import("../views/proteccion-de-datos"),
   },
   {
     path: "/changelog",

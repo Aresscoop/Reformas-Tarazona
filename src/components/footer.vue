@@ -131,19 +131,19 @@ export default {
             <h5 class="text-light footer-head">Textos Legales</h5>
             <ul class="list-unstyled footer-list mt-4">
               <li>
-                <router-link to="/page-terms" class="text-foot"
+                <router-link to="/politica-de-cookies" class="text-foot"
                   ><i class="mdi mdi-chevron-right mr-1"></i> Política de
                   Cookies</router-link
                 >
               </li>
               <li>
-                <router-link to="/page-privacy" class="text-foot"
+                <router-link to="/politica-de-privacidad" class="text-foot"
                   ><i class="mdi mdi-chevron-right mr-1"></i> Política de
                   Privacidad</router-link
                 >
               </li>
               <li>
-                <router-link to="/documentation" class="text-foot"
+                <router-link to="/proteccion-de-datos" class="text-foot"
                   ><i class="mdi mdi-chevron-right mr-1"></i> Protección de
                   Datos</router-link
                 >

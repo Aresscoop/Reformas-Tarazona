@@ -864,21 +864,21 @@ export default {
             <h5 class="text-dark footer-head">Usefull Links</h5>
             <ul class="list-unstyled footer-list mt-4">
               <li>
-                <router-link to="/page-terms" class="text-foot"
+                <router-link to="/politica-de-cookies" class="text-foot"
                   ><i class="mdi mdi-chevron-right mr-1"></i> Terms of
                   Services</router-link
                 >
               </li>
               <li>
-                <router-link to="/page-privacy" class="text-foot"
+                <router-link to="/politica-de-privacidad" class="text-foot"
                   ><i class="mdi mdi-chevron-right mr-1"></i> Privacy
                   Policy</router-link
                 >
               </li>
               <li>
-                <router-link to="/documentation" class="text-foot"
+                <router-link to="/proteccion-de-datos" class="text-foot"
                   ><i class="mdi mdi-chevron-right mr-1"></i>
-                  Documentation</router-link
+                  proteccion-de-datos</router-link
                 >
               </li>
               <li>

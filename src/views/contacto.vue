@@ -36,11 +36,7 @@ export default {
     <Navbar />
 
     <!-- Hero Start -->
-    <section
-      class="bg-half bg-light d-table w-100"
-      style="background: url('images/salon2.png') center center"
-    >
-      <div class="bg-overlay bg-overlay-white"></div>
+    <section class="bg-half bg-light d-table w-100">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-12 text-center">

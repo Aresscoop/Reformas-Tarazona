@@ -139,7 +139,7 @@ export default {
                           <router-link
                             to="/forums-comments"
                             class="forum-title text-primary font-weight-bold"
-                            >Documentation</router-link
+                            >proteccion-de-datos</router-link
                           >
                           <p class="text-muted small mb-0 mt-2">
                             Write by:
@@ -286,20 +286,20 @@ export default {
                   <form class="login-form mt-4">
                     <div class="row">
                       <div class="col-lg-12">
-                        <div class="form-group ">
+                        <div class="form-group">
                           <label
                             >Your Email
                             <span class="text-danger">*</span></label
                           >
                           <div class="position-relative">
-                          <user-icon class="fea icon-sm icons"></user-icon>
-                          <input
-                            type="email"
-                            class="form-control pl-5"
-                            placeholder="Email"
-                            name="email"
-                            required=""
-                          />
+                            <user-icon class="fea icon-sm icons"></user-icon>
+                            <input
+                              type="email"
+                              class="form-control pl-5"
+                              placeholder="Email"
+                              name="email"
+                              required=""
+                            />
                           </div>
                         </div>
                       </div>
@@ -309,15 +309,15 @@ export default {
                           <label
                             >Password <span class="text-danger">*</span></label
                           >
-                              <div class="position-relative">
-                          <key-icon class="fea icon-sm icons"></key-icon>
-                          <input
-                            type="password"
-                            class="form-control pl-5"
-                            placeholder="Password"
-                            required=""
-                          />
-                              </div>
+                          <div class="position-relative">
+                            <key-icon class="fea icon-sm icons"></key-icon>
+                            <input
+                              type="password"
+                              class="form-control pl-5"
+                              placeholder="Password"
+                              required=""
+                            />
+                          </div>
                         </div>
                       </div>
 

@@ -1,24 +1,20 @@
 <script>
-import {
-    ArrowUpIcon
-} from 'vue-feather-icons';
+import { ArrowUpIcon } from "vue-feather-icons";
 
 import Navbar from "@/components/navbar";
-import Switcher from "@/components/switcher";
+// import Switcher from "@/components/switcher";
 import Footer from "@/components/footer";
 export default {
-    data() {
-        return {
-
-        }
-    },
-    components: {
-        Navbar,
-        Switcher,
-        Footer,
-        ArrowUpIcon
-    }
-}
+  data() {
+    return {};
+  },
+  components: {
+    Navbar,
+    // Switcher,
+    Footer,
+    ArrowUpIcon,
+  },
+};
 </script>
 
 <template lang="en">
@@ -31,15 +27,14 @@ export default {
             <div class="row justify-content-center">
                 <div class="col-lg-12 text-center">
                     <div class="page-next-level">
-                        <h4 class="title"> Documentation </h4>
+                        <h1 class="title">Protección de Datos</h1>
                         <div class="page-next">
                             <nav aria-label="breadcrumb" class="d-inline-block">
                                 <ul class="breadcrumb bg-white rounded shadow mb-0">
                                     <li class="breadcrumb-item">
-                                        <router-link to="/">Landrick</router-link>
+                                        <router-link to="/">Inicio</router-link>
                                     </li>
-                                    <li class="breadcrumb-item"><a href="#">Docs</a></li>
-                                    <li class="breadcrumb-item active" aria-current="page">Documentation</li>
+                                    <li class="breadcrumb-item active" aria-current="page">Protección de Datos</li>
                                 </ul>
                             </nav>
                         </div>
@@ -64,15 +59,15 @@ export default {
     </div>
     <!--Shape End-->
 
-    <!-- Documentation Start -->
+    <!-- proteccion-de-datos Start -->
     <section class="section">
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <h1>Introduction</h1>
+                    <h2>Introducción</h2>
                     <div class="mt-4 p-4 bg-light rounded shadow">
                         <p class="mb-0 text-muted">
-                            To access the full documentation, instructions please purchase the Landrick VueJs from ThemeForest.
+                            To access the full proteccion-de-datos, instructions please purchase the Landrick VueJs from ThemeForest.
                         </p>
                     </div>
                 </div>
@@ -83,7 +78,7 @@ export default {
         <!--end container-->
     </section>
     <!--en d section-->
-    <!-- Documentation End -->
+    <!-- proteccion-de-datos End -->
 
     <!--end section-->
     <Footer />

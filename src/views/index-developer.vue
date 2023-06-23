@@ -1,5 +1,5 @@
 <script>
-import { ArrowUpIcon,ArrowRightIcon } from "vue-feather-icons";
+import { ArrowUpIcon, ArrowRightIcon } from "vue-feather-icons";
 
 import Navbar from "@/components/navbar";
 import Switcher from "@/components/switcher";
@@ -14,14 +14,14 @@ export default {
     Switcher,
     Footer,
     ArrowUpIcon,
-    ArrowRightIcon
+    ArrowRightIcon,
   },
 };
 </script>
 
 <template>
   <div>
-    <Navbar :isIcons="true"/>
+    <Navbar :isIcons="true" />
 
     <!-- Hero Start -->
     <section class="bg-half bg-light d-table w-100">
@@ -45,7 +45,7 @@ export default {
                   >Get Started</a
                 >
                 <a href="javascript:void(0)" class="btn btn-outline-primary"
-                  >Documentation</a
+                  >proteccion-de-datos</a
                 >
               </div>
               <p class="text-muted mb-0 mt-3">Current Version: v2.6.0</p>
@@ -305,7 +305,10 @@ export default {
                           <h5 class="title font-weight-normal mb-0">npm</h5>
                         </div>
                       </template>
-                     <p class="text-muted font-weight-bold mb-0"><span class="text-success">$</span> npm install <span class="text-success">-g</span> claps.js </p>
+                      <p class="text-muted font-weight-bold mb-0">
+                        <span class="text-success">$</span> npm install
+                        <span class="text-success">-g</span> claps.js
+                      </p>
                     </b-tab>
                     <b-tab>
                       <template v-slot:title>
@@ -313,7 +316,9 @@ export default {
                           <h5 class="title font-weight-normal mb-0">nuget</h5>
                         </div>
                       </template>
-                     <p class="text-muted font-weight-bold mb-0">coming soon ...</p>
+                      <p class="text-muted font-weight-bold mb-0">
+                        coming soon ...
+                      </p>
                     </b-tab>
                     <b-tab>
                       <template v-slot:title>
@@ -321,7 +326,9 @@ export default {
                           <h5 class="title font-weight-normal mb-0">spm</h5>
                         </div>
                       </template>
-                       <p class="text-muted font-weight-bold mb-0">coming soon ...</p>
+                      <p class="text-muted font-weight-bold mb-0">
+                        coming soon ...
+                      </p>
                     </b-tab>
                     <b-tab>
                       <template v-slot:title>
@@ -329,7 +336,9 @@ export default {
                           <h5 class="title font-weight-normal mb-0">github</h5>
                         </div>
                       </template>
-                       <p class="text-muted font-weight-bold mb-0">coming soon ...</p>
+                      <p class="text-muted font-weight-bold mb-0">
+                        coming soon ...
+                      </p>
                     </b-tab>
                   </b-tabs>
                   <!--end nav pills-->
@@ -398,7 +407,8 @@ export default {
               <div class="mt-4">
                 <a href="javascript:void(0)" class="btn btn-primary"
                   >Read More
-                 <arrow-right-icon class="fea icon-sm"></arrow-right-icon></a>
+                  <arrow-right-icon class="fea icon-sm"></arrow-right-icon
+                ></a>
               </div>
             </div>
           </div>

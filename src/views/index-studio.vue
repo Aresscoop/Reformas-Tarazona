@@ -88,10 +88,10 @@ export default {
                   ><i class="mdi mdi-phone"></i> Get Started</router-link
                 >
                 <router-link
-                  to="/documentation"
+                  to="/proteccion-de-datos"
                   class="btn btn-outline-primary mt-2"
                   ><i class="mdi mdi-book-outline"></i>
-                  Documentation</router-link
+                  proteccion-de-datos</router-link
                 >
               </div>
             </div>
@@ -300,11 +300,13 @@ export default {
                 /></router-link>
                 <div class="content pt-3">
                   <h5 class="mb-0">
-                    <router-link to="/page-work-detail" class="text-dark title"
-                      >{{item.title}}</router-link
+                    <router-link
+                      to="/page-work-detail"
+                      class="text-dark title"
+                      >{{ item.title }}</router-link
                     >
                   </h5>
-                  <h6 class="text-muted tag mb-0">{{item.subtext}}</h6>
+                  <h6 class="text-muted tag mb-0">{{ item.subtext }}</h6>
                 </div>
               </div>
             </div>
