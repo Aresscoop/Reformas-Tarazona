@@ -203,19 +203,20 @@ export default {
               >
             </li>
             <div style="padding-top: 20px; padding-left: 20px">
-              <a href="#"
+              <router-link to="/" class="side-nav-link-ref"
                 ><img
                   src="../../public/images/español.png"
                   width="30px"
                   height="20px"
                   style="margin-right: 10px"
-              /></a>
-              <a href="#"
+              /></router-link>
+              <router-link to="/" class="side-nav-link-ref"
                 ><img
                   src="../../public/images/ingles.png"
                   width="30px"
                   height="20px"
-              /></a>
+                  style="margin-right: 10px"
+              /></router-link>
             </div>
           </ul>
 
