@@ -217,6 +217,13 @@ export default {
                   height="20px"
                   style="margin-right: 10px"
               /></router-link>
+              <router-link to="/" class="side-nav-link-ref"
+                ><img
+                  src="../../public/images/catalan.png"
+                  width="30px"
+                  height="20px"
+                  style="margin-right: 10px"
+              /></router-link>
             </div>
           </ul>
 

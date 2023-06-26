@@ -150,6 +150,22 @@ export default {
               </li>
             </ul>
           </div>
+          <div class="col-lg-3 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
+            <!-- <h5 class="text-light footer-head">Textos Legales</h5> -->
+            <div>
+              <img
+                src="../../public/images/Finan-UE-blanco.png"
+                width="200"
+                height="auto"
+                style="margin-bottom: 30px"
+              />
+              <img
+                src="../../public/images/Plan-recu-blanco.png"
+                width="200"
+                height="auto"
+              />
+            </div>
+          </div>
           <!--end col-->
         </div>
         <!--end row-->
