@@ -588,66 +588,66 @@ const routes = [
   //   name: "page-blog-detail-ca",
   //   component: () => import("../views/ca/page-blog-detail-ca"),
   // },
-  {
-    path: "/index-ca",
-    name: "index-ca",
-    component: () => import("../views/ca/index-ca"),
-  },
-  {
-    path: "/contacte",
-    name: "contacte",
-    component: () => import("../views/ca/contacte"),
-  },
-  {
-    path: "/pagina-errada",
-    name: "pagina-errada",
-    component: () => import("../views/ca/pagina-errada"),
-  },
-  {
-    path: "/productes",
-    name: "productes",
-    component: () => import("../views/ca/productes"),
-  },
-  {
-    path: "/projectes",
-    name: "projectes",
-    component: () => import("../views/ca/projectes"),
-  },
-  {
-    path: "/proteccio-dades",
-    name: "proteccio-dades",
-    component: () => import("../views/ca/proteccio-dades"),
-  },
-  {
-    path: "/contract-ca",
-    name: "contract-ca",
-    component: () => import("../views/ca/contract-ca"),
-  },
-  {
-    path: "/politica-de-privacitat",
-    name: "politica-de-privacitat",
-    component: () => import("../views/ca/politica-de-privacitat"),
-  },
-  {
-    path: "/politica-cookies-ca",
-    name: "politica-cookies-ca",
-    component: () => import("../views/ca/politica-cookies-ca"),
-  },
-  {
-    path: "/page-blog-grid-ca",
-    name: "page-blog-grid-ca",
-    component: () => import("../views/ca/page-blog-grid-ca"),
-  },
-  {
-    path: "/shop-product-detail-ca",
-    name: "shop-product-detail-ca",
-    component: () => import("../views/ca/shop-product-detail-ca"),
-  },
-  {
-    path: "/page-blog-detail-ca",
-    name: "page-blog-detail-ca",
-    component: () => import("../views/ca/page-blog-detail-ca"),
-  },
+  // {
+  //   path: "/index-ca",
+  //   name: "index-ca",
+  //   component: () => import("../views/ca/index-ca"),
+  // },
+  // {
+  //   path: "/contacte",
+  //   name: "contacte",
+  //   component: () => import("../views/ca/contacte"),
+  // },
+  // {
+  //   path: "/pagina-errada",
+  //   name: "pagina-errada",
+  //   component: () => import("../views/ca/pagina-errada"),
+  // },
+  // {
+  //   path: "/productes",
+  //   name: "productes",
+  //   component: () => import("../views/ca/productes"),
+  // },
+  // {
+  //   path: "/projectes",
+  //   name: "projectes",
+  //   component: () => import("../views/ca/projectes"),
+  // },
+  // {
+  //   path: "/proteccio-dades",
+  //   name: "proteccio-dades",
+  //   component: () => import("../views/ca/proteccio-dades"),
+  // },
+  // {
+  //   path: "/contract-ca",
+  //   name: "contract-ca",
+  //   component: () => import("../views/ca/contract-ca"),
+  // },
+  // {
+  //   path: "/politica-de-privacitat",
+  //   name: "politica-de-privacitat",
+  //   component: () => import("../views/ca/politica-de-privacitat"),
+  // },
+  // {
+  //   path: "/politica-cookies-ca",
+  //   name: "politica-cookies-ca",
+  //   component: () => import("../views/ca/politica-cookies-ca"),
+  // },
+  // {
+  //   path: "/page-blog-grid-ca",
+  //   name: "page-blog-grid-ca",
+  //   component: () => import("../views/ca/page-blog-grid-ca"),
+  // },
+  // {
+  //   path: "/shop-product-detail-ca",
+  //   name: "shop-product-detail-ca",
+  //   component: () => import("../views/ca/shop-product-detail-ca"),
+  // },
+  // {
+  //   path: "/page-blog-detail-ca",
+  //   name: "page-blog-detail-ca",
+  //   component: () => import("../views/ca/page-blog-detail-ca"),
+  // },
   {
     path: "/auth-cover-signup",
     name: "cover-signup",
