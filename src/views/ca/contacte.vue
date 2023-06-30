@@ -1,0 +1,291 @@
+<script>
+import {
+  ArrowUpIcon,
+  UserIcon,
+  MailIcon,
+  BookIcon,
+  MessageCircleIcon,
+} from "vue-feather-icons";
+
+import Navbar from "@/components/ca/navbar";
+// import Switcher from "@/components/switcher";
+import Footer from "@/components/ca/footer";
+
+/**
+ * contacto component
+ */
+export default {
+  data() {
+    return {};
+  },
+  components: {
+    Navbar,
+    // Switcher,
+    Footer,
+    UserIcon,
+    ArrowUpIcon,
+    MailIcon,
+    BookIcon,
+    MessageCircleIcon,
+  },
+};
+</script>
+
+<template>
+  <div>
+    <Navbar />
+
+    <!-- Hero Start -->
+    <section class="bg-half bg-light d-table w-100">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-12 text-center">
+            <div class="page-next-level">
+              <h1 class="title">Contacte</h1>
+              <div class="page-next">
+                <nav aria-label="breadcrumb" class="d-inline-block">
+                  <ul class="breadcrumb bg-white rounded shadow mb-0">
+                    <li class="breadcrumb-item">
+                      <router-link to="/">Inici</router-link>
+                    </li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                      Contacte
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+          <!--end col-->
+        </div>
+        <!--end row-->
+      </div>
+      <!--end container-->
+    </section>
+    <!--end section-->
+    <!-- Hero End -->
+
+    <!-- Shape Start -->
+    <div class="position-relative">
+      <div class="shape overflow-hidden text-white">
+        <svg
+          viewBox="0 0 2880 48"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0 48H1437.5H2880V0H2160C1442.5 52 720 0 720 0H0V48Z"
+            fill="currentColor"
+          ></path>
+        </svg>
+      </div>
+    </div>
+    <!--Shape End-->
+
+    <!-- Start Contact -->
+    <section class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-6 mt-4 pt-2">
+            <div class="card shadow rounded border-0">
+              <div class="card-body py-5">
+                <h2 class="card-title">Contacta'ns !</h2>
+                <div class="custom-form mt-4">
+                  <div id="message"></div>
+                  <form name="contact-form" id="contact-form">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label>Nom <span class="text-danger">*</span></label>
+                          <div class="position-relative">
+                            <user-icon class="fea icon-sm icons"></user-icon>
+                            <input
+                              name="name"
+                              id="name"
+                              type="text"
+                              class="form-control pl-5"
+                              placeholder="Nom:"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <!--end col-->
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label
+                            >Correu electrònic
+                            <span class="text-danger">*</span></label
+                          >
+                          <div class="position-relative">
+                            <mail-icon class="fea icon-sm icons"></mail-icon>
+                            <input
+                              name="email"
+                              id="email"
+                              type="email"
+                              class="form-control pl-5"
+                              placeholder="example@example.com"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <!--end col-->
+                      <div class="col-md-12">
+                        <div class="form-group">
+                          <label>Motiu del missatge</label>
+                          <div class="position-relative">
+                            <book-icon class="fea icon-sm icons"></book-icon>
+                            <input
+                              name="subject"
+                              id="subject"
+                              type="text"
+                              class="form-control pl-5"
+                              placeholder="Motiu"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <!--end col-->
+                      <div class="col-md-12">
+                        <div class="form-group">
+                          <label>Mensaje</label>
+                          <div class="position-relative">
+                            <message-circle-icon
+                              class="fea icon-sm icons"
+                            ></message-circle-icon>
+                            <textarea
+                              name="comments"
+                              id="comments"
+                              rows="4"
+                              class="form-control pl-5"
+                              placeholder="Escrivir missatge..."
+                            ></textarea>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!--end row-->
+                    <div class="row">
+                      <div class="col-sm-12 text-center">
+                        <input
+                          type="button"
+                          id="submit"
+                          name="send"
+                          class="submitBnt btn btn-primary btn-block"
+                          value="Enviar missatge"
+                        />
+                        <div id="simple-msg"></div>
+                      </div>
+                      <!--end col-->
+                    </div>
+                    <!--end row-->
+                  </form>
+                  <!--end form-->
+                </div>
+                <!--end custom-form-->
+              </div>
+            </div>
+          </div>
+          <!--end col-->
+
+          <div class="col-lg-8 col-md-6 pl-md-3 pr-md-3 mt-4 pt-2">
+            <div class="card map map-height-two rounded map-gray border-0">
+              <div class="card-body p-0">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24658.65688901229!2d-0.40887074339804175!3d39.41661383759325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd604e9c97ccea21%3A0x8b8534f159f832a!2sReformas%20Tarazona!5e0!3m2!1ses!2ses!4v1687256989937!5m2!1ses!2ses"
+                  width="600"
+                  height="450"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+          <!--end col-->
+        </div>
+        <!--end row-->
+      </div>
+      <!--end container-->
+
+      <div class="container mt-100 mt-60">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card border-0 text-center features feature-clean">
+              <div class="icons text-primary text-center mx-auto">
+                <i class="uil uil-phone d-block rounded h3 mb-0"></i>
+              </div>
+              <div class="content mt-3">
+                <h5 class="font-weight-bold">Telèfon</h5>
+                <p class="text-muted">
+                  Si tens qualsevol dubte contacta amb nosaltres!
+                </p>
+                <a href="tel:+34961262385" class="text-primary"
+                  >(+34) 96 126 23 85</a
+                >
+              </div>
+            </div>
+          </div>
+          <!--end col-->
+
+          <div class="col-md-4 mt-4 mt-sm-0 pt-2 pt-sm-0">
+            <div class="card border-0 text-center features feature-clean">
+              <div class="icons text-primary text-center mx-auto">
+                <i class="uil uil-envelope d-block rounded h3 mb-0"></i>
+              </div>
+              <div class="content mt-3">
+                <h5 class="font-weight-bold">Correu electrònic</h5>
+                <p class="text-muted">
+                  O si ho prefereixes pots enviar-nos un correu!
+                </p>
+                <a href="mailto:info@reformastarazona.es" class="text-primary"
+                  >info@reformastarazona.es</a
+                >
+              </div>
+            </div>
+          </div>
+          <!--end col-->
+
+          <div class="col-md-4 mt-4 mt-sm-0 pt-2 pt-sm-0">
+            <div class="card border-0 text-center features feature-clean">
+              <div class="icons text-primary text-center mx-auto">
+                <i class="uil uil-map-marker d-block rounded h3 mb-0"></i>
+              </div>
+              <div class="content mt-3">
+                <h5 class="font-weight-bold">Lloc</h5>
+                <p class="text-muted">
+                  Av. Ramón y Cajal, 89, Bajo.<br />
+                  Catarroja (Valencia) 46470
+                </p>
+                <a
+                  href="https://goo.gl/maps/kNVnJkdgqCh6Wqad7"
+                  class="video-play-icon h6 text-primary"
+                  >Veure a Google Maps</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--end col-->
+        <!--end row-->
+      </div>
+      <!--end container-->
+    </section>
+    <!--end section-->
+    <!-- End contact -->
+    <!--end section-->
+    <Footer />
+    <!-- Footer End -->
+    <Switcher />
+    <!-- Back to top -->
+    <a
+      href="javascript: void(0);"
+      class="btn btn-icon btn-primary back-to-top"
+      id="back-to-top"
+      v-scroll-to="'#topnav'"
+    >
+      <arrow-up-icon class="icons"></arrow-up-icon>
+    </a>
+    <!-- Back to top -->
+  </div>
+</template>
