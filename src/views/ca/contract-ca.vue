@@ -6,9 +6,9 @@ import {
   MessageCircleIcon,
 } from "vue-feather-icons";
 
-import Navbar from "@/components/navbar";
+import Navbar from "@/components/ca/navbar";
 // import Switcher from "@/components/switcher";
-import Footer from "@/components/footer";
+import Footer from "@/components/ca/footer";
 
 /**
  * Page-work-detail component
@@ -44,7 +44,7 @@ export default {
                 <nav aria-label="breadcrumb" class="d-inline-block">
                   <ul class="breadcrumb bg-white rounded shadow mb-0">
                     <li class="breadcrumb-item">
-                      <router-link to="/">Inicio</router-link>
+                      <router-link to="/">Inici</router-link>
                     </li>
                     <li class="breadcrumb-item active" aria-current="page">
                       Contract
@@ -93,31 +93,31 @@ export default {
           </div>
 
           <div class="col-md-10 mt-4 pt-2 text-justify">
-            <h2>¿Quieres un diseño único, creado para tí a tu medida?</h2>
+            <h2>Vols un disseny únic, creat per a *tí a la teua mesura?</h2>
             <p>
-              El Contract es la solución, crea espacios personalizados y
-              adaptados a tu estilo y al espacio, con muebles a medida y una
-              decoración en consonancia con el espacio. El Contract busca que
-              cada cliente disfrute de una estancia armónica, con un diseño
-              exclusivo, al cual se llega tras un estudio del cliente, sus
-              necesidades y sus expectativas, creando así proyectos a medida.
+              El Contract és la solució, crea espais personalitzats i adaptats
+              al teu estil i a l'espai, amb mobles a mesura i una decoració
+              d'acord amb l'espai. El Contract busca que cada client gaudisca
+              d'una estada harmònica, amb un disseny exclusiu, al qual s'arriba
+              després d'un estudi del client, les seues necessitats i les seues
+              expectatives, creant així projectes a mesura.
             </p>
             <p>
-              Este tipo de reforma se diferencia del resto por el tipo de
-              mobiliario usado, tanto en sus materiales como en su resistencia,
-              diseñados para un uso extremo e intensivo como es el de los
-              muebles de la hostelería. Estos muebles cuentan con una gran
-              personalización y exigencia. Algunas cualidades del Contract son:
-              Facilidad de adaptación del estilo y la decoración, Creación de
-              atmósferas más acogedoras, Aporte de atractivo visual a los
-              espacios, Gran nivel de resistencia y durabilidad, Oferta amplia
-              (modelos, colores…) y Perfecta conexión entre decoración,
-              interiorismo y comodidad.
+              Aquest tipus de reforma es diferencia de la resta pel tipus de
+              mobiliari usat, tant en els seus materials com en la seua
+              resistència, dissenyats per a un ús extrem i intensiu com és el
+              dels mobles de l'hostaleria. Aquests mobles compten amb una gran
+              personalització i exigència. Algunes qualitats del Contract són:
+              Facilitat d'adaptació de l'estil i la decoració, Creació
+              d'atmosferes més acollidores, Aportació d'atractiu visual als
+              espais, Gran nivell de resistència i durabilitat, Oferta àmplia
+              (models, colors…) i Perfecta connexió entre decoració,
+              interiorisme i comoditat.
             </p>
             <div class="bg-light rounded p-4">
               <p class="text-muted font-italic mb-0">
-                En Reformas Tarazona sabemos, que en un diseño cada parte del
-                mismo cuenta tanto cómo la suma de todas sus partes.
+                En Reformes Tarazona sabem, que en un disseny cada part del
+                mateix compte tant com la suma de totes les seues parts.
               </p>
             </div>
 
@@ -176,10 +176,10 @@ export default {
         <div class="row justify-content-center">
           <div class="col-12 text-center">
             <div class="section-title mb-4 pb-2">
-              <h4 class="title mb-4">Proyectos de Contract</h4>
+              <h4 class="title mb-4">Projectes de Contract</h4>
               <p class="text-muted para-desc mx-auto mb-0">
-                Contamos con un amplia experiencia en el sector de las reformas,
-                aquí puedes ver algunos de nuestros trabajos ya realizados.
+                Comptem amb un àmplia experiència en el sector de les reformes,
+                ací pots veure alguns dels nostres treballs ja realitzats.
               </p>
             </div>
           </div>

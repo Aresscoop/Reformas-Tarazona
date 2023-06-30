@@ -19,7 +19,7 @@ export default {
 <template>
   <div>
     <div class="back-to-home rounded d-none d-sm-block">
-      <router-link to="/" class="btn btn-icon btn-soft-primary">
+      <router-link to="/index-ca" class="btn btn-icon btn-soft-primary">
         <home-icon class="icons"></home-icon>
       </router-link>
     </div>
@@ -32,11 +32,12 @@ export default {
             <img src="images/404.svg" class="img-fluid" alt="" />
             <div class="text-uppercase mt-4 display-3">Oh ! no</div>
             <div class="text-capitalize text-dark mb-4 error-page">
-              Página no encontrada
+              Pàgina no trobada
             </div>
             <p class="text-muted para-desc mx-auto">
-              Parece que algo no funciona, o la página está en mantenimiento,
-              vuelve atrás o a la página principal con los botones de abajo.
+              Sembla que alguna cosa no funciona, o la pàgina està en
+              manteniment, torna arrere o a la pàgina principal amb els botons
+              de baix.
             </p>
           </div>
           <!--end col-->
@@ -46,10 +47,10 @@ export default {
         <div class="row">
           <div class="col-md-12 text-center">
             <router-link to="/" class="btn btn-outline-primary mt-4"
-              >Volver Atrás</router-link
+              >Tornar Arrere</router-link
             >
             <router-link to="/" class="btn btn-primary mt-4 ml-2"
-              >Página Inicio</router-link
+              >Pàgina d'Inici</router-link
             >
           </div>
           <!--end col-->
