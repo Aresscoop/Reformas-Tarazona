@@ -7,9 +7,9 @@ import {
   MessageCircleIcon,
 } from "vue-feather-icons";
 
-import Navbar from "@/components/navbar";
+import Navbar from "@/components/ca/navbar";
 // import Switcher from "@/components/switcher";
-import Footer from "@/components/footer";
+import Footer from "@/components/ca/footer";
 
 /**
  * contacto component
@@ -41,15 +41,15 @@ export default {
         <div class="row justify-content-center">
           <div class="col-lg-12 text-center">
             <div class="page-next-level">
-              <h1 class="title">Contacto</h1>
+              <h1 class="title">Contacte</h1>
               <div class="page-next">
                 <nav aria-label="breadcrumb" class="d-inline-block">
                   <ul class="breadcrumb bg-white rounded shadow mb-0">
                     <li class="breadcrumb-item">
-                      <router-link to="/">Inicio</router-link>
+                      <router-link to="/">Inici</router-link>
                     </li>
                     <li class="breadcrumb-item active" aria-current="page">
-                      Contacto
+                      Contacte
                     </li>
                   </ul>
                 </nav>
@@ -89,16 +89,14 @@ export default {
           <div class="col-lg-4 col-md-6 mt-4 pt-2">
             <div class="card shadow rounded border-0">
               <div class="card-body py-5">
-                <h2 class="card-title">Contáctanos !</h2>
+                <h2 class="card-title">Contacta'ns !</h2>
                 <div class="custom-form mt-4">
                   <div id="message"></div>
                   <form name="contact-form" id="contact-form">
                     <div class="row">
                       <div class="col-md-6">
                         <div class="form-group">
-                          <label
-                            >Nombre <span class="text-danger">*</span></label
-                          >
+                          <label>Nom <span class="text-danger">*</span></label>
                           <div class="position-relative">
                             <user-icon class="fea icon-sm icons"></user-icon>
                             <input
@@ -106,7 +104,7 @@ export default {
                               id="name"
                               type="text"
                               class="form-control pl-5"
-                              placeholder="Nombre:"
+                              placeholder="Nom:"
                             />
                           </div>
                         </div>
@@ -115,7 +113,8 @@ export default {
                       <div class="col-md-6">
                         <div class="form-group">
                           <label
-                            >Email <span class="text-danger">*</span></label
+                            >Correu electrònic
+                            <span class="text-danger">*</span></label
                           >
                           <div class="position-relative">
                             <mail-icon class="fea icon-sm icons"></mail-icon>
@@ -124,7 +123,7 @@ export default {
                               id="email"
                               type="email"
                               class="form-control pl-5"
-                              placeholder="Email:"
+                              placeholder="example@example.com"
                             />
                           </div>
                         </div>
@@ -132,7 +131,7 @@ export default {
                       <!--end col-->
                       <div class="col-md-12">
                         <div class="form-group">
-                          <label>Motivo del mensaje</label>
+                          <label>Motiu del missatge</label>
                           <div class="position-relative">
                             <book-icon class="fea icon-sm icons"></book-icon>
                             <input
@@ -140,7 +139,7 @@ export default {
                               id="subject"
                               type="text"
                               class="form-control pl-5"
-                              placeholder="Motivo"
+                              placeholder="Motiu"
                             />
                           </div>
                         </div>
@@ -158,7 +157,7 @@ export default {
                               id="comments"
                               rows="4"
                               class="form-control pl-5"
-                              placeholder="Escribir mensaje..."
+                              placeholder="Escrivir missatge..."
                             ></textarea>
                           </div>
                         </div>
@@ -172,7 +171,7 @@ export default {
                           id="submit"
                           name="send"
                           class="submitBnt btn btn-primary btn-block"
-                          value="Enviar mensaje"
+                          value="Enviar missatge"
                         />
                         <div id="simple-msg"></div>
                       </div>
@@ -217,9 +216,9 @@ export default {
                 <i class="uil uil-phone d-block rounded h3 mb-0"></i>
               </div>
               <div class="content mt-3">
-                <h5 class="font-weight-bold">Teléfono</h5>
+                <h5 class="font-weight-bold">Telèfon</h5>
                 <p class="text-muted">
-                  ¡Si tienes cualquier duda contacta con nosotros!
+                  Si tens qualsevol dubte contacta amb nosaltres!
                 </p>
                 <a href="tel:+34961262385" class="text-primary"
                   >(+34) 96 126 23 85</a
@@ -235,9 +234,9 @@ export default {
                 <i class="uil uil-envelope d-block rounded h3 mb-0"></i>
               </div>
               <div class="content mt-3">
-                <h5 class="font-weight-bold">Email</h5>
+                <h5 class="font-weight-bold">Correu electrònic</h5>
                 <p class="text-muted">
-                  ¡O si lo prefieres puedes enviarnos un correo!
+                  O si ho prefereixes pots enviar-nos un correu!
                 </p>
                 <a href="mailto:info@reformastarazona.es" class="text-primary"
                   >info@reformastarazona.es</a
@@ -253,7 +252,7 @@ export default {
                 <i class="uil uil-map-marker d-block rounded h3 mb-0"></i>
               </div>
               <div class="content mt-3">
-                <h5 class="font-weight-bold">Direción</h5>
+                <h5 class="font-weight-bold">Lloc</h5>
                 <p class="text-muted">
                   Av. Ramón y Cajal, 89, Bajo.<br />
                   Catarroja (Valencia) 46470
@@ -261,7 +260,7 @@ export default {
                 <a
                   href="https://goo.gl/maps/kNVnJkdgqCh6Wqad7"
                   class="video-play-icon h6 text-primary"
-                  >Ver en Google Maps</a
+                  >Veure a Google Maps</a
                 >
               </div>
             </div>

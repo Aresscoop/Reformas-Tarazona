@@ -115,7 +115,7 @@ export default {
 
 <template>
   <div>
-    <!-- Navbar STart -->
+    <!-- Navbar Start -->
     <header
       id="topnav"
       class="defaultscroll sticky"
@@ -175,31 +175,32 @@ export default {
             :class="{ 'nav-light': navLight === true }"
           >
             <li>
-              <router-link to="/" class="side-nav-link-ref">Inicio</router-link>
+              <router-link to="/" class="side-nav-link-ref">Inici</router-link>
             </li>
             <li>
-              <router-link to="/proyectos" class="side-nav-link-ref"
-                >Proyectos</router-link
+              <router-link to="/projectes" class="side-nav-link-ref"
+                >Projectes</router-link
               >
             </li>
             <li>
-              <router-link to="/productos" class="side-nav-link-ref"
-                >Productos</router-link
+              <router-link to="/productes" class="side-nav-link-ref"
+                >Productes</router-link
               >
             </li>
             <li>
-              <router-link to="/servicios" class="side-nav-link-ref"
-                >Servicios</router-link
+              <router-link to="/serveis" class="side-nav-link-ref"
+                >Serveis</router-link
               >
             </li>
             <li>
-              <router-link to="/contract" class="side-nav-link-ref"
+              <router-link to="/contract-ca" class="side-nav-link-ref"
                 >Contract</router-link
               >
+              <!-- Contract??? -->
             </li>
             <li>
-              <router-link to="/contacto" class="side-nav-link-ref"
-                >Contacto</router-link
+              <router-link to="/contacte" class="side-nav-link-ref"
+                >Contacte</router-link
               >
             </li>
             <div style="padding-top: 20px; padding-left: 20px">
@@ -210,13 +211,13 @@ export default {
                   height="20px"
                   style="margin-right: 10px"
               /></router-link>
-              <!--              <router-link to="/" class="side-nav-link-ref"
+              <router-link to="/" class="side-nav-link-ref"
                 ><img
                   src="../../public/images/ingles.png"
                   width="30px"
                   height="20px"
                   style="margin-right: 10px"
-              /></router-link> -->
+              /></router-link>
               <router-link to="/index-ca" class="side-nav-link-ref"
                 ><img
                   src="../../public/images/catalan.png"

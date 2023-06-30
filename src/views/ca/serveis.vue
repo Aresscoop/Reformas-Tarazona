@@ -1,30 +1,116 @@
 <script>
-import {
-  ArrowUpIcon,
-  MailIcon,
-  UserIcon,
-  MessageCircleIcon,
-} from "vue-feather-icons";
+import { ArrowUpIcon } from "vue-feather-icons";
+import { Carousel, Slide } from "vue-carousel";
 
-import Navbar from "@/components/navbar";
+import Navbar from "@/components/ca/navbar";
 // import Switcher from "@/components/switcher";
-import Footer from "@/components/footer";
+import Footer from "@/components/ca/footer";
+import Testimonial from "@/components/testimonial";
 
 /**
- * Page-work-detail component
+ * servicios component
  */
 export default {
   data() {
-    return {};
+    return {
+      featuresData: [
+        {
+          icon: "uil uil-edit-alt",
+          title: "Carpintería",
+          description:
+            "Nisi aenean vulputate eleifend tellus vitae eleifend enim a Aliquam aenean elementum semper.",
+        },
+        {
+          icon: "uil uil-vector-square",
+          title: "Albañilería",
+          description:
+            "Allegedly, a Latin scholar established the origin of the text by established compiling unusual word.",
+        },
+        {
+          icon: "uil uil-file-search-alt",
+          title: "Fontanería",
+          description:
+            "It seems that only fragments of the original text remain in the Lorem the original Ipsum texts used today.",
+        },
+        {
+          icon: "uil uil-airplay",
+          title: "Electricidad",
+          description:
+            "Nisi aenean vulputate eleifend tellus vitae eleifend enim a Aliquam eleifend aenean elementum semper.",
+        },
+        {
+          icon: "uil uil-calendar-alt",
+          title: "Climatización",
+          description:
+            "Allegedly, a Latin scholar established the origin of the established text by compiling unusual word.",
+        },
+        {
+          icon: "uil uil-clock",
+          title: "Otros",
+          description:
+            "It seems that only fragments of the original text remain in only fragments the Lorem Ipsum texts used today.",
+        },
+      ],
+      testimonialData: [
+        {
+          id: 1,
+          profile: "images/client/01.jpg",
+          message:
+            "It seems that only fragments of the original text remain in the Lorem Ipsum texts used today.",
+          name: "Thomas Israel",
+          designation: "C.E.O",
+        },
+        {
+          id: 2,
+          profile: "images/client/02.jpg",
+          message:
+            "One disadvantage of Lorum Ipsum is that in Latin certain letters appear more frequently than others.",
+          name: "Barbara McIntosh",
+          designation: "M.D",
+        },
+        {
+          id: 3,
+          profile: "images/client/03.jpg",
+          message:
+            "The most well-known dummy text is the 'Lorem Ipsum', which is said to have originated in the 16th century.",
+          name: "Carl Oliver",
+          designation: "P.A",
+        },
+        {
+          id: 4,
+          profile: "images/client/04.jpg",
+          message:
+            "According to most sources, Lorum Ipsum can be traced back to a text composed by Cicero.",
+          name: "Christa Smith",
+          designation: "Manager",
+        },
+        {
+          id: 5,
+          profile: "images/client/05.jpg",
+          message:
+            "There is now an abundance of readable dummy texts. These are usually used when a text is required.",
+          name: "Dean Tolle",
+          designation: "Developer",
+        },
+        {
+          id: 6,
+          profile: "images/client/05.jpg",
+          message:
+            "Thus, Lorem Ipsum has only limited suitability as a visual filler for German texts.",
+          name: "Jill Webb",
+          designation: "Designer",
+        },
+      ],
+    };
   },
   components: {
     Navbar,
     // Switcher,
     Footer,
+    Carousel,
+    Testimonial,
+    Slide,
     ArrowUpIcon,
-    MailIcon,
-    UserIcon,
-    MessageCircleIcon,
   },
 };
 </script>
@@ -39,15 +125,15 @@ export default {
         <div class="row justify-content-center">
           <div class="col-lg-12 text-center">
             <div class="page-next-level">
-              <h1 class="title">Contract</h1>
+              <h1 class="title">Serveis</h1>
               <div class="page-next">
                 <nav aria-label="breadcrumb" class="d-inline-block">
                   <ul class="breadcrumb bg-white rounded shadow mb-0">
                     <li class="breadcrumb-item">
-                      <router-link to="/">Inicio</router-link>
+                      <router-link to="/">Inici</router-link>
                     </li>
                     <li class="breadcrumb-item active" aria-current="page">
-                      Contract
+                      Serveis
                     </li>
                   </ul>
                 </nav>
@@ -80,106 +166,129 @@ export default {
     </div>
     <!--Shape End-->
 
-    <!-- Start Work Detail -->
+    <!-- Feature Start -->
     <section class="section">
       <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-12 text-center">
-            <img
-              src="images/work/single.jpg"
-              class="img-fluid rounded"
-              alt=""
-            />
-          </div>
-
-          <div class="col-md-10 mt-4 pt-2 text-justify">
-            <h2>¿Quieres un diseño único, creado para tí a tu medida?</h2>
-            <p>
-              El Contract es la solución, crea espacios personalizados y
-              adaptados a tu estilo y al espacio, con muebles a medida y una
-              decoración en consonancia con el espacio. El Contract busca que
-              cada cliente disfrute de una estancia armónica, con un diseño
-              exclusivo, al cual se llega tras un estudio del cliente, sus
-              necesidades y sus expectativas, creando así proyectos a medida.
-            </p>
-            <p>
-              Este tipo de reforma se diferencia del resto por el tipo de
-              mobiliario usado, tanto en sus materiales como en su resistencia,
-              diseñados para un uso extremo e intensivo como es el de los
-              muebles de la hostelería. Estos muebles cuentan con una gran
-              personalización y exigencia. Algunas cualidades del Contract son:
-              Facilidad de adaptación del estilo y la decoración, Creación de
-              atmósferas más acogedoras, Aporte de atractivo visual a los
-              espacios, Gran nivel de resistencia y durabilidad, Oferta amplia
-              (modelos, colores…) y Perfecta conexión entre decoración,
-              interiorismo y comodidad.
-            </p>
-            <div class="bg-light rounded p-4">
-              <p class="text-muted font-italic mb-0">
-                En Reformas Tarazona sabemos, que en un diseño cada parte del
-                mismo cuenta tanto cómo la suma de todas sus partes.
-              </p>
-            </div>
-
-            <div class="row">
-              <div class="col-md-6 mt-4 pt-2">
-                <img src="images/work/2.jpg" class="img-fluid rounded" alt="" />
+        <div class="row">
+          <div
+            class="col-md-4 col-12"
+            v-for="(data, index) of featuresData"
+            :key="index"
+          >
+            <div class="features mt-5">
+              <div class="image position-relative d-inline-block">
+                <i :class="`${data.icon} h1 text-primary`"></i>
               </div>
 
-              <div class="col-md-6 mt-4 pt-2">
-                <img src="images/work/3.jpg" class="img-fluid rounded" alt="" />
-              </div>
-            </div>
-
-            <div class="row align-items-center">
-              <div class="col-lg-6 mt-4 pt-2">
-                <div class="card work-details rounded bg-light border-0">
-                  <div class="card-body">
-                    <h5 class="card-title border-bottom pb-3 mb-3">
-                      Project Info :
-                    </h5>
-                    <dl class="row mb-0">
-                      <dt class="col-md-4 col-5">Client :</dt>
-                      <dd class="col-md-8 col-7 text-muted">Calvin Carlo</dd>
-
-                      <dt class="col-md-4 col-5">Category :</dt>
-                      <dd class="col-md-8 col-7 text-muted">Web Design</dd>
-
-                      <dt class="col-md-4 col-5">Date :</dt>
-                      <dd class="col-md-8 col-7 text-muted">23rd Sep, 2019</dd>
-
-                      <dt class="col-md-4 col-5">Website :</dt>
-                      <dd class="col-md-8 col-7 text-muted">
-                        www.yourdomain.com
-                      </dd>
-
-                      <dt class="col-md-4 col-5">Location :</dt>
-                      <dd class="col-md-8 col-7 text-muted">
-                        3/2/64 Mongus Street, UK
-                      </dd>
-                    </dl>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-lg-6 mt-4 pt-2">
-                <img src="images/work/6.jpg" class="img-fluid rounded" alt="" />
+              <div class="content mt-4">
+                <h5>{{ data.title }}</h5>
+                <p class="text-muted mb-0">{{ data.description }}</p>
               </div>
             </div>
           </div>
         </div>
       </div>
+      <!--end container-->
+      <div class="container mt-100 mt-60">
+        <div class="row align-items-center">
+          <div class="col-lg-4 col-md-3">
+            <p class="text-muted mb-0">
+              Treballem amb gran varietat d'empreses i marques per a oferir
+              serveis de qualitat.
+            </p>
+          </div>
+          <!--end col-->
+
+          <div class="col-lg-8 col-md-9 mt-4 pt-2 mt-sm-0 pt-sm-0">
+            <div class="rounded shadow bg-light p-4">
+              <div class="row justify-content-center">
+                <div class="col-lg-3 col-md-3 col-6 text-center py-4">
+                  <img
+                    src="images/client/amazon.svg"
+                    class="avatar avatar-ex-sm"
+                    alt=""
+                  />
+                </div>
+                <!--end col-->
+
+                <div class="col-lg-3 col-md-3 col-6 text-center py-4">
+                  <img
+                    src="images/client/google.svg"
+                    class="avatar avatar-ex-sm"
+                    alt=""
+                  />
+                </div>
+                <!--end col-->
+
+                <div class="col-lg-3 col-md-3 col-6 text-center py-4">
+                  <img
+                    src="images/client/lenovo.svg"
+                    class="avatar avatar-ex-sm"
+                    alt=""
+                  />
+                </div>
+                <!--end col-->
+
+                <div class="col-lg-3 col-md-3 col-6 text-center py-4">
+                  <img
+                    src="images/client/paypal.svg"
+                    class="avatar avatar-ex-sm"
+                    alt=""
+                  />
+                </div>
+                <!--end col-->
+              </div>
+              <!--end row-->
+            </div>
+          </div>
+          <!--end col-->
+        </div>
+        <!--end row-->
+      </div>
+      <!--end container-->
+
+      <div class="container mt-100 mt-60">
+        <div class="row justify-content-center">
+          <div class="col-12 text-center">
+            <div class="section-title mb-4 pb-2">
+              <h2 class="title mb-4">Opinions</h2>
+              <p class="text-muted para-desc mx-auto mb-0">
+                Per a nosaltres cada client és únic per això en
+                <span class="text-primary font-weight-bold"
+                  >Reformes Tarazona</span
+                >
+                ens agrada tractar a cada client de manera individual i
+                personalitzada.
+              </p>
+            </div>
+          </div>
+          <!--end col-->
+        </div>
+        <!--end row-->
+
+        <div class="row justify-content-center">
+          <div class="col-lg-12 mt-4">
+            <Testimonial :testimonialData="testimonialData" />
+          </div>
+          <!--end col-->
+        </div>
+        <!--end row-->
+      </div>
+      <!--end container-->
     </section>
+    <!--end section-->
+    <!-- Feature Start -->
+
     <!-- Project Start -->
     <section class="section bg-light">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-12 text-center">
             <div class="section-title mb-4 pb-2">
-              <h4 class="title mb-4">Proyectos de Contract</h4>
+              <h4 class="title mb-4">Alguns Projectes</h4>
               <p class="text-muted para-desc mx-auto mb-0">
-                Contamos con un amplia experiencia en el sector de las reformas,
-                aquí puedes ver algunos de nuestros trabajos ya realizados.
+                Comptem amb un àmplia experiència en el sector de les reformes,
+                ací pots veure alguns dels nostres treballs ja realitzats.
               </p>
             </div>
           </div>
@@ -326,7 +435,6 @@ export default {
     </section>
     <!--end section-->
     <!-- Project End -->
-    <!-- End Work Detail -->
     <!--end section-->
     <Footer />
     <!-- Footer End -->

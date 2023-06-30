@@ -8,9 +8,9 @@ import {
   LinkedinIcon,
 } from "vue-feather-icons";
 
-import Navbar from "@/components/navbar";
+import Navbar from "@/components/ca/navbar";
 // import Switcher from "@/components/switcher";
-import Footer from "@/components/footer";
+import Footer from "@/components/ca/footer";
 
 /**
  * Index-seo-agency component
@@ -113,18 +113,18 @@ export default {
           <div class="col-12">
             <div class="title-heading">
               <h1 class="display-4 mb-4 font-weight-bold text-white title-dark">
-                ¿Quieres la
+                Vols la teua
                 <span class="text-primary font-weight-bold">casa</span><br />
-                de tus sueños?
+                somniada?
               </h1>
               <p class="para-desc text-white-50">
-                En Reformas Tarazona realizamos todo tipo de reformas, desde tu
-                cocina a tu baño, cambiando azulejos, parquet, muebles,
-                mamparas, etc.
+                En Reformes Tarazona realitzem tot tipus de reformes, des de la
+                teua cuina al teu bany, canviant taulells, parquet, mobles,
+                mampares, etc.
               </p>
               <div class="mt-4 pt-2">
-                <router-link to="/contacto" class="btn btn-primary"
-                  >Contáctanos</router-link
+                <router-link to="/contacte" class="btn btn-primary"
+                  >Contacta'ns</router-link
                 >
               </div>
             </div>
@@ -156,10 +156,10 @@ export default {
                           ></i>
                         </div>
                         <div class="media-body">
-                          <h2 class="title">Venta de productos</h2>
+                          <h2 class="title">Venda de productes</h2>
                           <p class="text-muted para mb-0">
-                            Gran variedad de productos y muebles para el baño,
-                            la cocina y el hogar.
+                            Gran varietat de productes i mobles per al bany, la
+                            cuina i la llar.
                           </p>
                         </div>
                       </div>
@@ -176,10 +176,10 @@ export default {
                           ></i>
                         </div>
                         <div class="media-body">
-                          <h2 class="title">Reformas</h2>
+                          <h2 class="title">Reformes</h2>
                           <p class="text-muted para mb-0">
-                            Reformas de las distintas zonas de tu casa, tanto de
-                            interior como de exterior.
+                            Reformes de les diferents zones de la teua casa,
+                            tant d'interior com d'exterior.
                           </p>
                         </div>
                       </div>
@@ -198,8 +198,8 @@ export default {
                         <div class="media-body">
                           <h2 class="title">Contract</h2>
                           <p class="text-muted para mb-0">
-                            Diseños exclusivos a medida para conseguir la
-                            estancia de tus sueños.
+                            Dissenys exclusius a mesura per a aconseguir
+                            l'estada dels teus somnis.
                           </p>
                         </div>
                       </div>
@@ -214,9 +214,9 @@ export default {
                           <i class="uil uil-selfie align-middle h4 mb-0"></i>
                         </div>
                         <div class="media-body">
-                          <h2 class="title">Asesoramiento</h2>
+                          <h2 class="title">Assessorament</h2>
                           <p class="text-muted para mb-0">
-                            Te asesoramos y aconsejamos sobre como mejorar tu
+                            T'assessorem i aconsellem sobre com millorar la teua
                             casa.
                           </p>
                         </div>
@@ -245,10 +245,10 @@ export default {
 
           <div class="col-12 mt-4 pt-2 text-center">
             <p class="text-muted mb-0">
-              Si quieres conocer todos nuestros servicios.
+              Si vols conéixer tots els nostres serveis.
               <router-link to="/servicios" class="text-primary h6"
-                >Haz click aquí</router-link
-              >, si tienes cualquier duda te asesoraremos!
+                >Fes clic ací</router-link
+              >, si tens qualsevol dubte t'assessorarem!
             </p>
           </div>
           <!--end col-->
@@ -268,13 +268,13 @@ export default {
             >
               <div class="p-4 banner">
                 <h3>
-                  Descuentos en <br />
-                  Cocinas
+                  Descomptes en <br />
+                  Cuines
                 </h3>
                 <a
                   href="javascript:void(0)"
                   class="btn btn-sm btn-soft-primary mt-2"
-                  >Más info.</a
+                  >Més info.</a
                 >
               </div>
             </div>
@@ -290,14 +290,14 @@ export default {
             >
               <div class="p-4 banner">
                 <h3>
-                  Descuentos en <br />
-                  Baños
+                  Descomptes en <br />
+                  Banys
                 </h3>
                 <a
                   href="javascript:void(0)"
                   class="btn btn-sm btn-soft-primary mt-2"
                   style="color= yellow"
-                  >Más info.</a
+                  >Més info.</a
                 >
               </div>
             </div>
@@ -314,13 +314,13 @@ export default {
             >
               <div class="p-4 banner">
                 <h3>
-                  Descuentos en <br />
-                  Mamparas
+                  Descomptes en <br />
+                  Mampares
                 </h3>
                 <a
                   href="javascript:void(0)"
                   class="btn btn-sm btn-soft-primary mt-2"
-                  >Más info.</a
+                  >Més info.</a
                 >
               </div>
             </div>
@@ -352,36 +352,36 @@ export default {
             <div class="ml-lg-5 ml-md-4">
               <div class="section-title">
                 <span class="badge badge-pill badge-soft-primary"
-                  >Sobre nosotros</span
+                  >Sobre nosaltres</span
                 >
                 <h2 class="title mt-3 mb-4">
-                  El cambio que tu hogar se
-                  <span class="text-primary">merece</span>.
+                  El canvi que la teua llar es
+                  <span class="text-primary">mereix</span>.
                 </h2>
                 <p class="text-muted para-desc mx-auto">
                   En
                   <span class="text-primary font-weight-bold"
-                    >Reformas Tarazona</span
+                    >Reformes Tarazona</span
                   >
-                  hacemos cualquier tipo de reforma, así como instalación y
-                  venta de mamparas de baño, muebles de cocina y baño, venta de
-                  azulejos y pavimento, instalación y venta de parquet, mamparas
-                  de baño, grifería, etc.
+                  fem qualsevol tipus de reforma, així com instal·lació i venda
+                  de mampares de bany, mobles de cuina i bany, venda de taulells
+                  i paviment, instal·lació i venda de parquet, mampares de bany,
+                  aixeteria, etc.
                 </p>
                 <p class="text-muted para-desc mx-auto mb-0">
-                  Es momento de conseguir el cambio en tu hogar que tanto
-                  deseabas, reformamos el interior y exterior de tu casa, para
-                  conseguir una armonía en los espacios. Especialistas en
-                  cocinas y baños.
+                  És moment d'aconseguir el canvi en la teua llar que tant
+                  desitjaves, reformem l'interior i exterior de la teua casa,
+                  per a aconseguir una harmonia en els espais. Especialistes en
+                  cuines i banys.
                 </p>
                 <br />
                 <p class="text-muted para-desc mx-auto mb-0">
-                  Si quieres saber más sobre nosotros puedes ver los proyectos
-                  que hemos realizado desde el siguiente enlace.
+                  Si vols saber més sobre nosaltres pots veure els projectes que
+                  hem realitzat des del següent enllaç.
                 </p>
                 <div class="mt-4">
                   <router-link to="/proyectos" class="btn btn-primary"
-                    >Proyectos</router-link
+                    >Projectes</router-link
                   >
                 </div>
               </div>
@@ -404,18 +404,18 @@ export default {
               <div class="col-12">
                 <div class="section-title">
                   <h2 class="font-weight-bold mb-4">
-                    Cambio de bañera por plato de ducha <br />
-                    Descuento del 30%
+                    Canvi de banyera per plat de dutxa <br />
+                    Descompte del 30%
                   </h2>
                   <p class="para-desc para-white text-muted mb-0">
-                    ¿Cansado de hacer esfuerzos cuando vas a ducharte? ¿Sufres
-                    de dolor de rodilla? En Reformas Tarazona tenemos la
-                    solución! Cambia tu bañera por un moderno plato de ducha,
-                    verás lo cómodo y fácil que puede ser.
+                    Cansat de fer esforços quan et dutxaràs? Pateixes de dolor
+                    de genoll? En Reformes Tarazona tenim la solució! Canvia la
+                    teua banyera per un modern plat de dutxa, veuràs el còmode i
+                    fàcil que pot ser.
                   </p>
                   <div class="mt-4">
                     <a href="javascript:void(0)" class="btn btn-primary"
-                      >Saber más</a
+                      >Saber més</a
                     >
                   </div>
                 </div>
@@ -434,16 +434,16 @@ export default {
         <div class="row">
           <div class="col-lg-4 col-md-6">
             <div class="section-title sticky-bar position-sticky">
-              <span class="badge badge-pill badge-soft-primary">Proyectos</span>
-              <h2 class="title mt-3 mb-4">Nuestros proyectos</h2>
+              <span class="badge badge-pill badge-soft-primary">Projectes</span>
+              <h2 class="title mt-3 mb-4">Els nostres projectes</h2>
               <p class="text-muted para-desc mb-0">
                 En
                 <span class="text-primary font-weight-bold"
-                  >Reformas Tarazona</span
+                  >Reformes Tarazona</span
                 >
-                contamos con gran experiencia en el sector de la construcción y
-                las reformas, especialistas en baños y cocinas, aquí tienes
-                algunos de nuestros proyectos.
+                comptem amb gran experiència en el sector de la construcció i
+                les reformes, especialistes en banys i cuines, ací tens alguns
+                dels nostres projectes.
               </p>
               <div class="mt-4 d-none d-md-block">
                 <router-link to="/proyectos" class="btn btn-soft-primary"
@@ -467,7 +467,7 @@ export default {
                     class="categories-name border d-block text-dark rounded"
                     @click="updateFilter('all')"
                     :class="{ active: filterCategory == 'all' }"
-                    >Todos</a
+                    >Tots</a
                   >
                 </li>
                 <li class="list-inline-item">
@@ -533,7 +533,7 @@ export default {
               <div class="col-12 mt-4 pt-2">
                 <div class="d-block d-md-none">
                   <a href="javascript:void(0)" class="btn btn-soft-primary"
-                    >See More
+                    >Veure més
                     <arrow-right-icon class="fea icon-sm"></arrow-right-icon
                   ></a>
                 </div>
@@ -548,8 +548,8 @@ export default {
         <div class="row align-items-center">
           <div class="col-lg-4 col-md-3">
             <p class="text-muted mb-0">
-              Trabajamos con gran variedad de empresas y marcas para ofrecer
-              servicios de calidad.
+              Treballem amb gran varietat d'empreses i marques per a oferir
+              serveis de qualitat.
             </p>
           </div>
           <!--end col-->
