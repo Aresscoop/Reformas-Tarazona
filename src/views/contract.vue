@@ -92,20 +92,32 @@ export default {
             />
           </div>
 
-          <div class="col-md-10 mt-4 pt-2">
+          <div class="col-md-10 mt-4 pt-2 text-justify">
+            <h2>¿Quieres un diseño único, creado para tí a tu medida?</h2>
+            <p>
+              El Contract es la solución, crea espacios personalizados y
+              adaptados a tu estilo y al espacio, con muebles a medida y una
+              decoración en consonancia con el espacio. El Contract busca que
+              cada cliente disfrute de una estancia armónica, con un diseño
+              exclusivo, al cual se llega tras un estudio del cliente, sus
+              necesidades y sus expectativas, creando así proyectos a medida.
+            </p>
+            <p>
+              Este tipo de reforma se diferencia del resto por el tipo de
+              mobiliario usado, tanto en sus materiales como en su resistencia,
+              diseñados para un uso extremo e intensivo como es el de los
+              muebles de la hostelería. Estos muebles cuentan con una gran
+              personalización y exigencia. Algunas cualidades del contract son:
+              Facilidad de adaptación del estilo y la decoración, Creación de
+              atmósferas más acogedoras, Aporte de atractivo visual a los
+              espacios, Gran nivel de resistencia y durabilidad, Oferta amplia
+              (modelos, colores…) y Perfecta conexión entre decoración,
+              interiorismo y comodidad.
+            </p>
             <div class="bg-light rounded p-4">
               <p class="text-muted font-italic mb-0">
-                " One disadvantage of Lorum Ipsum is that in Latin certain
-                letters appear more frequently than others - which creates a
-                distinct visual impression. Moreover, in Latin only words at the
-                beginning of sentences are capitalized; this means that Lorem
-                Ipsum cannot accurately represent, for example, German, in which
-                all nouns are capitalized. Thus, Lorem Ipsum has only limited
-                suitability as a visual filler for German texts. If the fill
-                text is intended to illustrate the characteristics of different
-                typefaces, it sometimes makes sense to select texts containing
-                the various letters and symbols specific to the output language.
-                "
+                En Reformas Trazona sabemos, que en un diseño cada parte del
+                mismo cuenta tanto cómo la suma de todas sus partes.
               </p>
             </div>
 
@@ -124,7 +136,7 @@ export default {
                 <div class="card work-details rounded bg-light border-0">
                   <div class="card-body">
                     <h5 class="card-title border-bottom pb-3 mb-3">
-                      Project Info :
+                      Info. del Proyecto:
                     </h5>
                     <dl class="row mb-0">
                       <dt class="col-md-4 col-5">Client :</dt>
@@ -166,8 +178,9 @@ export default {
             <div class="section-title mb-4 pb-2">
               <h4 class="title mb-4">Proyectos de Contract</h4>
               <p class="text-muted para-desc mx-auto mb-0">
-                Contamos con un amplia experiencia en el sector de las reformas,
-                aquí puedes ver algunos de nuestros trabajos ya realizados.
+                Contamos con un amplia experiencia en el sector de las reformas
+                Contract, aquí puedes ver algunos de nuestros trabajos ya
+                realizados.
               </p>
             </div>
           </div>
